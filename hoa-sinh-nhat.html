@@ -9,7 +9,7 @@
         <!-- FontAwesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/flower.css">
     </head>
     <body>
         <Header>
@@ -163,68 +163,89 @@
         <Main>
             <div class="container">
                 <h2 class="section-title">Hoa Sinh Nhật</h2>
-                <div class="row">
-                    <!-- Sản phẩm 1 -->
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 1">
-                            <div class="card-body">
-                                <div class="sale-badge">Giảm 30%</div>
-                                <h5 class="product-name">Kiss Me</h5>
-                                <p class="product-price">300,000đ</p>
-                                <a href="#" class="btn btn-buy">Đặt Hàng</a>
-                            </div>
-                        </div>
+                <div class="sort-bar">
+                    <div class="view-options">
+                        <i class="fa fa-th"></i>
+                        <i class="fa fa-th-list"></i>
                     </div>
-                    <!-- Sản phẩm 2 -->
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
-                            <div class="card-body">
-                                <div class="sale-badge">Giảm 30%</div>
-                                <h5 class="product-name">Infallible</h5>
-                                <p class="product-price">350,000đ</p>
-                                <a href="#" class="btn btn-buy">Đặt Hàng</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
-                            <div class="card-body">
-                                <div class="sale-badge">Giảm 30%</div>
-                                <h5 class="product-name">Infallible</h5>
-                                <p class="product-price">350,000đ</p>
-                                <a href="#" class="btn btn-buy">Đặt Hàng</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
-                            <div class="card-body">
-                                <div class="sale-badge">Giảm 30%</div>
-                                <h5 class="product-name">Infallible</h5>
-                                <p class="product-price">350,000đ</p>
-                                <a href="#" class="btn btn-buy">Đặt Hàng</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
-                            <div class="card-body">
-                                <h5 class="product-name">Infallible</h5>
-                                <p class="product-price">350,000đ</p>
-                                <a href="#" class="btn btn-buy">Đặt Hàng</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Thêm các sản phẩm khác tương tự -->
+                    <label for="sort-by">Sắp xếp theo:</label>
+                    <select id="sort-by">
+                        <option value="default">Mặc định</option>
+                        <option value="price-asc">Giá: Thấp đến Cao</option>
+                        <option value="price-desc">Giá: Cao đến Thấp</option>
+                        <option value="best-seller">Bán chạy nhất</option>
+                    </select>
+                    <select id="items-per-page">
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <option value="48">48</option>
+                    </select>
                 </div>
             </div>
+
+            <div class="container product-section">
+                <div class="row">
+                <!-- Sản phẩm 1 -->
+                <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 1">
+                    <div class="card-body">
+                        <div class="sale-badge">Giảm 30%</div>
+                        <h5 class="product-name">Kiss Me</h5>
+                        <p class="product-price">300,000đ</p>
+                        <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                    </div>
+                </div>
+                </div>
+                <!-- Sản phẩm 2 -->
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
+                        <div class="card-body">
+                            <div class="sale-badge">Giảm 30%</div>
+                            <h5 class="product-name">Infallible</h5>
+                            <p class="product-price">350,000đ</p>
+                            <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
+                        <div class="card-body">
+                            <div class="sale-badge">Giảm 30%</div>
+                            <h5 class="product-name">Infallible</h5>
+                            <p class="product-price">350,000đ</p>
+                            <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
+                        <div class="card-body">
+                            <div class="sale-badge">Giảm 30%</div>
+                            <h5 class="product-name">Infallible</h5>
+                            <p class="product-price">350,000đ</p>
+                            <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 2">
+                        <div class="card-body">
+                            <h5 class="product-name">Infallible</h5>
+                            <p class="product-price">350,000đ</p>
+                            <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- Thêm các sản phẩm khác tương tự -->
+                </div>
+            </div>  
         </Main>
-        
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
