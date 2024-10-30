@@ -205,13 +205,13 @@
 }
 
 .related-products {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .related-products .related-title {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .related-products .product-card {
@@ -263,6 +263,29 @@
     color: #fff;
 }
 
+/* CSS cho màu mũi tên */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff5757; /* Màu hồng đỏ cho mũi tên */
+    border-radius: 50%; /* Làm cho mũi tên có hình tròn */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: brightness(0.1) invert(0.5);
+    width: 5%; /* Đặt chiều rộng nút */
+    opacity: 0.5; /* Đảm bảo nút không trong suốt */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu */
+}
+
+/* Đưa nút ra xa khỏi sản phẩm */
+.carousel-control-prev {
+    left: -50px; /* Di chuyển nút Previous ra ngoài */
+}
+
+.carousel-control-next {
+    right: -50px; /* Di chuyển nút Next ra ngoài */
+}
 
 /*Footer*/
 .footer {
