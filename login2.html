@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Shop</title>
     <link rel="stylesheet" href="login2.css" />
+    <link rel="stylesheet1" href="login2.js" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -30,14 +31,22 @@
         <div class="login-form">
           <h2>Đăng nhập</h2>
           <div class="input-group">
-            <input type="text" placeholder="Email" />
-          </div>
-          <div class="input-group">
-            <input type="password" placeholder="Mật khẩu" />
-          </div>
-          <div class="input-group">
-            <button>Đăng nhập</button>
-          </div>
+            <input type="text" id="login-email" placeholder="Email" />
+            
+           
+        <small id="login-email-error" class="error-message"></small>
+        </div>
+        <div class="input-group">
+            <input type="password" id="login-password" placeholder="Mật khẩu" />
+            <small id="login-password-error" class="error-message"></small>
+        
+        </div>
+        
+        
+        
+        <div class="input-group">
+            <button onclick="validateLogin()">Đăng nhập</button>
+        </div>
           <p>Hoặc đăng nhập bằng</p>
           <div class="social-login">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -48,25 +57,37 @@
         <div class="register-form" style="display: none">
           <h2>Đăng ký tài khoản</h2>
           <div class="input-group">
-            <input type="text" placeholder="Họ tên" />
+            <input type="text" id="fullname" placeholder="Họ tên" />
+            <span class="error-message" id="name-error"
+              >Tên phải có từ 1 đến 32 ký tự!</span
+            >
           </div>
           <div class="input-group">
-            <input type="email" placeholder="E-mail" />
+            <input type="email" id="email" placeholder="E-mail" />
+            <span class="error-message" id="email-error"
+              >Địa chỉ E-Mail dường như không hợp lệ!</span
+            >
           </div>
           <div class="input-group">
-            <input type="text" placeholder="Điện thoại" />
+            <input type="text" id="phone" placeholder="Điện thoại" />
+            <span class="error-message" id="phone-error"
+              >Điện thoại phải có từ 10 đến 12 số!</span
+            >
           </div>
           <div class="input-group">
-            <input type="password" placeholder="Mật khẩu" />
+            <input type="password" id="password" placeholder="Mật khẩu" />
+            <span class="error-message" id="password-error"
+              >Mật khẩu phải từ 4 đến 20 ký tự!</span
+            >
           </div>
           <div class="input-group">
-            <button>Đăng ký</button>
+            <button onclick="validateForm()">Đăng ký</button>
           </div>
           <p class="signup" onclick="showLogin()">Đăng nhập</p>
         </div>
-      </div>
-    </div>
+    
 
+  
     <script>
       function toggleModal() {
         document.getElementById("account-modal").classList.toggle("show-modal");
@@ -85,6 +106,55 @@
       document
         .getElementById("account-link")
         .addEventListener("click", toggleModal);
+
+      function validateForm() {
+        let isValid = true;
+
+        // Lấy giá trị các trường
+        const fullname = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        // Kiểm tra Họ tên
+        if (fullname.length < 1 || fullname.length > 32) {
+          document.getElementById("name-error").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("name-error").style.display = "none";
+        }
+
+        // Kiểm tra E-mail
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+          document.getElementById("email-error").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("email-error").style.display = "none";
+        }
+
+        // Kiểm tra Điện thoại
+        const phonePattern = /^[0-9]{10,12}$/;
+        if (!phonePattern.test(phone)) {
+          document.getElementById("phone-error").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("phone-error").style.display = "none";
+        }
+
+        // Kiểm tra Mật khẩu
+        if (password.length < 4 || password.length > 20) {
+          document.getElementById("password-error").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("password-error").style.display = "none";
+        }
+
+        // Nếu tất cả hợp lệ, thông báo đăng ký thành công
+        if (isValid) {
+          alert("Đăng ký thành công!");
+        }
+      }
     </script>
   </body>
 </html>
