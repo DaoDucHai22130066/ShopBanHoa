@@ -96,7 +96,6 @@
     display: none;
 }
 
-
 /* Main */
 .banner {
     width: 100%;
@@ -203,4 +202,27 @@
 .footer a:hover {
     color: #ff6f61;
     text-decoration: none;
+}
+/*nút cuộn trở về đầu trang*/
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    display: none; /* Ẩn nút ban đầu */
+    background-color: #fd8ad9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #fafafa;
+    color: #fd8ad9;
+    border:5px solid #fd8ad9;
+    border-radius: 5px;
+    border-style: 10px;
 }
