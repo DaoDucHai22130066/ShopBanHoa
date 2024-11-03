@@ -248,3 +248,24 @@
     color: #ff6f61;
     text-decoration: none;
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    display: none; /* Ẩn nút ban đầu */
+    background-color: #fd8ad9;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #fafafa00;
+    color: #fd8ad9;
+    border:2px solid #fd8ad9;
+}
