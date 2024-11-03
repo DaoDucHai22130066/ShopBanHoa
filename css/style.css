@@ -212,7 +212,7 @@
     display: none; /* Ẩn nút ban đầu */
     background-color: #fd8ad9;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
@@ -220,7 +220,7 @@
 }
 
 #scrollToTopBtn:hover {
-    background-color: #fafafa;
+    background-color: #fafafa00;
     color: #fd8ad9;
     border:2px solid #fd8ad9;
 }
