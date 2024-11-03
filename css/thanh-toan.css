@@ -1,0 +1,81 @@
+/* Phần hotline và mạng xã hội, (Header) */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+.top-bar .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+.top-bar .hotline {
+    margin-right: 30px;
+}
+
+
+
+/* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.main-header .logo img {
+    height: 80px;
+}
+.main-header .search-bar {
+    max-width: 400px;
+    margin: auto;
+}
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+.main-header .cart {
+    position: relative;
+}
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+
+
+/* Thanh menu */
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+    color: #ff35a4;
+}
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    display: none;
+}
+
+
+
+/*Main */
+
+
+
