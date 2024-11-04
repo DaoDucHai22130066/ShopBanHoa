@@ -166,6 +166,7 @@
          <!-- Carousel quảng cáo -->
         <div class="container">
             <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
+                
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="P649ea8ef2ed4f0.09844576.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 1">
@@ -198,9 +199,9 @@
                         <img src="kiss-me.jpg.webp" class="card-img-top" alt="Hoa 1">
                         <div class="card-body">
                             <div class="sale-badge">Giảm 30%</div>
-                            <h5 class="product-name">Kiss Me</h5>
+                             <a href="chi-tiet-sp.html"><h5 class="product-name">Kiss Me</h5></a>
                             <p class="product-price">300,000đ</p>
-                            <a href="#" class="btn btn-buy">Đặt Hàng</a>
+                            <a href="chi-tiet-sp.html" class="btn btn-buy">Đặt Hàng</a>
                         </div>
                     </div>
                 </div>
@@ -434,28 +435,47 @@
             </div>
         </div>
     </footer>
-    
+    <button id="scrollToTopBtn" title="Cuộn lên đầu trang">↑</button>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // JavaScript để xử lý cuộn trang
-window.onscroll = function() { toggleStickyHeader() };
+<script>
+    // Lấy phần tử thanh menu và offset của nó
+const navbar = document.querySelector('.navbar');
+const navbarOffsetTop = navbar.offsetTop;
 
-const header = document.querySelector('.main-header');
-const stickyNav = document.querySelector('.navbar');
-const stickyOffset = header.offsetTop + header.offsetHeight;
+// Lấy nút scroll-to-top
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-function toggleStickyHeader() {
-    if (window.pageYOffset > stickyOffset) {
-        header.classList.add('sticky');
-        stickyNav.classList.add('sticky');
+// Hàm xử lý hiệu ứng sticky cho thanh menu và hiển thị nút cuộn trở về đầu trang
+function handleScroll() {
+    // Sticky Navbar
+    if (window.scrollY >= navbarOffsetTop) {
+        navbar.classList.add('sticky');
     } else {
-        header.classList.remove('sticky');
-        stickyNav.classList.remove('sticky');
+        navbar.classList.remove('sticky');
+    }
+
+    // Hiển thị hoặc ẩn nút cuộn trở về đầu trang
+    if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
     }
 }
 
-    </script>
+// Cuộn về đầu trang khi nhấn vào nút scroll-to-top
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Thêm sự kiện cuộn để gọi hàm handleScroll
+window.addEventListener('scroll', handleScroll);
+
+</script>
+
     </body>
 </html>
     
