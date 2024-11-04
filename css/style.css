@@ -103,8 +103,17 @@
     background-color: #404040; /* Màu xám nhạt cho dấu chấm chưa chọn */
 }
 
+.carousel-indicators [data-bs-target] {
+    background-color: #6c757d; /* Màu xám cho các dấu chấm không hoạt động */
+    width: 10px; /* Độ rộng dấu chấm */
+    height: 10px; /* Chiều cao dấu chấm */
+    border-radius: 50%; /* Làm cho các dấu chấm thành hình tròn */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt khi chuyển màu và kích thước */
+}
+
 .carousel-indicators .active {
     background-color: #000000; /* Màu xám đậm cho dấu chấm đang được chọn */
+    transform: scale(1.2); /* Phóng to dấu chấm khi hoạt động */
 }
 
 .section-title {
