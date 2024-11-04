@@ -99,6 +99,14 @@
     margin-bottom: 30px;
 }
 
+.carousel-indicators button {
+    background-color: #404040; /* Màu xám nhạt cho dấu chấm chưa chọn */
+}
+
+.carousel-indicators .active {
+    background-color: #000000; /* Màu xám đậm cho dấu chấm đang được chọn */
+}
+
 .section-title {
     text-align: center;
     margin: 30px 0;
