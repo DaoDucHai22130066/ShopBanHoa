@@ -266,13 +266,32 @@
 /* CSS cho màu mũi tên */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #ff5757; /* Màu hồng đỏ cho mũi tên */
-    border-radius: 50%; /* Làm cho mũi tên có hình tròn */
+    background-image: none; /* Loại bỏ ảnh nền mặc định */
+    background-color: #f62fc88e; /* Màu hồng đỏ cho nút */
+    border-radius: 50%; /* Làm tròn nền nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Màu trắng cho mũi tên */
+    font-size: 24px; /* Kích thước mũi tên */
+    width: 30px; /* Kích thước vòng tròn */
+    height: 30px;
+}
+
+.carousel-control-prev-icon::before {
+    content: '\f053'; /* Mã Unicode của mũi tên trái */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.carousel-control-next-icon::before {
+    content: '\f054'; /* Mã Unicode của mũi tên phải */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    filter: brightness(0.1) invert(0.5);
     width: 5%; /* Đặt chiều rộng nút */
     opacity: 0.5; /* Đảm bảo nút không trong suốt */
     transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu */
@@ -284,7 +303,7 @@
 }
 
 .carousel-control-next {
-    right: -50px; /* Di chuyển nút Next ra ngoài */
+    right: -80px; /* Di chuyển nút Next ra ngoài */
 }
 
 /*Footer*/
