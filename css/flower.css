@@ -273,34 +273,28 @@
 /* CSS cho phân trang */
 .pagination {
     display: flex;
-    gap: 10px;
     justify-content: center;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
-.pagination .page-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: #f8f9fa;
-    color: #e55350;
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.pagination .page-link:hover {
-    background-color: #e55350;
-    color: #ffffff;
+.pagination a:hover {
+    background-color: #f0f0f0;
 }
 
-.pagination .page-link.active {
-    background-color: #e55350;
-    color: #ffffff;
+.pagination a.active {
+    background-color: #ff6666;
+    color: white;
+    border: 1px solid #ff6666;
 }
 
 .pagination-info {
