@@ -285,7 +285,7 @@
     width: 32px;
     height: 32px;
     background-color: #f8f9fa;
-    color: #ff007f;
+    color: #e55350;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-decoration: none;
@@ -294,12 +294,12 @@
 }
 
 .pagination .page-link:hover {
-    background-color: #ff007f;
+    background-color: #e55350;
     color: #ffffff;
 }
 
 .pagination .page-link.active {
-    background-color: #ff007f;
+    background-color: #e55350;
     color: #ffffff;
 }
 
