@@ -269,3 +269,37 @@
     color: #fd8ad9;
     border:2px solid #fd8ad9;
 }
+
+/* CSS cho phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #ff6666;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #ff6666;
+    color: white;
+    border: 1px solid #ff6666;
+}
+
+.pagination-info {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
