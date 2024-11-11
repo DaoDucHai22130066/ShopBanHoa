@@ -6,6 +6,7 @@
     <title>Trang Chủ - Cửa Hàng Hoa Tươi</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -47,111 +48,90 @@
 
                 <!-- Tài khoản, giỏ hàng, thanh toán -->
                 <div class="icon-links">
-                    <a href="#" id="account-link"><i class="fas fa-user"></i> Tài khoản</a>
+                    <a href="#" id="account-link" onclick="checkLoginStatus(event)">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    
+                    <a href="#" id="logout-link" onclick="logout()" style="display: none;">
+                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                    </a>
                     <a href="#" class="cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </a>
                     <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
                 </div>
+                
         </header>
 
         <!-- Modal đăng nhập/đăng ký -->
         <div id="account-modal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="toggleModal()">&times;</span>
-                <div class="login-form">
+                <div class="login-form" id="loginForm">
                     <h2>Đăng nhập</h2>
                     <div class="input-group">
-                        <input type="text" placeholder="Email" />
+                        <input type="email" id="loginEmail" placeholder="Email">
+                        <p class="error-message" id="loginEmailError">Vui lòng nhập email</p>
                     </div>
                     <div class="input-group">
-                        <input type="password" placeholder="Mật khẩu" />
+                        <input type="password" id="loginPassword" placeholder="Mật khẩu">
+                        <p class="error-message" id="loginPasswordError">Vui lòng nhập mật khẩu</p>
                     </div>
                     <div class="input-group">
-                        <button>Đăng nhập</button>
-                    </div>
-                    <p>Hoặc đăng nhập bằng</p>
-                    <div class="social-login">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
+                        <button onclick="login()">Đăng nhập</button>
                     </div>
                     <p class="signup" onclick="showRegister()">Đăng ký</p>
+                    <p class="error-message" id="loginError">Email hoặc mật khẩu không đúng!</p>
                 </div>
-                <div class="register-form" style="display: none;">
+                
+                    
+                </div>
+                <div class="register-form" style="display: none" id="registerForm">
                     <h2>Đăng ký tài khoản</h2>
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Họ tên" />
-                        <span id="nameError" class="error-message" style="display: none;">Vui lòng nhập họ tên</span>
+                        <input type="text" id="name" placeholder="Họ tên">
+                        <p class="error-message" id="nameError">Vui lòng nhập họ tên</p>
                     </div>
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="E-mail" />
-                        <span id="emailError" class="error-message" style="display: none;">Vui lòng nhập email</span>
+                        <input type="email" id="email" placeholder="E-mail">
+                        <p class="error-message" id="emailError">Vui lòng nhập email hợp lệ</p>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="phone" placeholder="Điện thoại" />
-                        <span id="phoneError" class="error-message" style="display: none;">Vui lòng nhập số điện thoại</span>
+                        <input type="text" id="phone" placeholder="Điện thoại">
+                        <p class="error-message" id="phoneError">Số điện thoại phải có từ 10 đến 12 số</p>
                     </div>
                     <div class="input-group">
-                        <input type="password" id="password" placeholder="Mật khẩu" />
-                        <span id="passwordError" class="error-message" style="display: none;">Vui lòng nhập mật khẩu</span>
+                        <input type="password" id="password" placeholder="Mật khẩu">
+                        <p class="error-message" id="passwordError">Mật khẩu phải có từ 4 đến 20 ký tự</p>
                     </div>
                     <div class="input-group">
                         <button onclick="register()">Đăng ký</button>
                     </div>
                     <p class="signup" onclick="showLogin()">Đăng nhập</p>
                 </div>
+            </div>
+        </div>
 
         <script>
             
-            function register() {
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const password = document.getElementById("password").value.trim();
+            function toggleModal() {
+                document.getElementById("account-modal").classList.toggle("show-modal");
+            }
 
-        let isValid = true;
+            function showRegister() {
+                document.querySelector(".login-form").style.display = "none";
+                document.querySelector(".register-form").style.display = "block";
+            }
 
-        // Display error messages if fields are empty
-        document.getElementById("nameError").style.display = name ? "none" : "block";
-        document.getElementById("emailError").style.display = email ? "none" : "block";
-        document.getElementById("phoneError").style.display = phone ? "none" : "block";
-        document.getElementById("passwordError").style.display = password ? "none" : "block";
+            function showLogin() {
+                document.querySelector(".login-form").style.display = "block";
+                document.querySelector(".register-form").style.display = "none";
+            }
 
-        isValid = name && email && phone && password;
-
-        if (isValid) {
-            localStorage.setItem("userData", JSON.stringify({ email, password }));
-            alert("Đăng ký thành công!");
-            showLogin();
-        }
-    }
-
-    function login() {
-        const email = document.getElementById("loginEmail").value.trim();
-        const password = document.getElementById("loginPassword").value.trim();
-        const userData = JSON.parse(localStorage.getItem("userData"));
-
-        if (userData && userData.email === email && userData.password === password) {
-            window.location.href = "index.html";
-        } else {
-            document.getElementById("loginError").style.display = "block";
-        }
-    }
-
-    function showRegister() {
-        document.querySelector(".login-form").style.display = "none";
-        document.querySelector(".register-form").style.display = "block";
-    }
-
-    function showLogin() {
-        document.querySelector(".login-form").style.display = "block";
-        document.querySelector(".register-form").style.display = "none";
-    }
-
-    document.getElementById("account-link").addEventListener("click", function() {
-        document.getElementById("account-modal").classList.toggle("show-modal");
-    });
+            document
+                .getElementById("account-link")
+                .addEventListener("click", toggleModal);
         </script>
         
 
@@ -541,41 +521,97 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     
     
-    <script>
-        function register() {
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const phone = document.getElementById("phone").value.trim();
-          const password = document.getElementById("password").value.trim();
     
-          let isValid = true;
-          document.getElementById("nameError").style.display = name ? "none" : "block";
-          document.getElementById("emailError").style.display = email ? "none" : "block";
-          document.getElementById("phoneError").style.display = phone ? "none" : "block";
-          document.getElementById("passwordError").style.display = password ? "none" : "block";
-          isValid = name && email && phone && password;
-    
-          if (isValid) {
-            localStorage.setItem("userData", JSON.stringify({ email, password }));
+   <script>
+    // Hàm đăng ký tài khoản
+    function register() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        let isValid = true;
+
+        // Kiểm tra tính hợp lệ của các trường
+        if (!name) document.getElementById("nameError").style.display = "block";
+        else document.getElementById("nameError").style.display = "none";
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailPattern.test(email)) document.getElementById("emailError").style.display = "block";
+        else document.getElementById("emailError").style.display = "none";
+
+        const phonePattern = /^\d{10,12}$/;
+        if (!phone || !phonePattern.test(phone)) document.getElementById("phoneError").style.display = "block";
+        else document.getElementById("phoneError").style.display = "none";
+
+        if (password.length < 4 || password.length > 20) document.getElementById("passwordError").style.display = "block";
+        else document.getElementById("passwordError").style.display = "none";
+
+        isValid = name && email && emailPattern.test(email) && phonePattern.test(phone) && (password.length >= 4 && password.length <= 20);
+
+        // Nếu hợp lệ, lưu vào localStorage
+        if (isValid) {
+            const user = { name, email, phone, password };
+            localStorage.setItem("userData", JSON.stringify(user));
             alert("Đăng ký thành công!");
-            document.getElementById("registrationForm").reset();
-            document.getElementById("registerForm").style.display = "none";
-            document.getElementById("loginForm").style.display = "block";
-          }
+            showLogin();
         }
-    
-        function login() {
-          const email = document.getElementById("loginEmail").value.trim();
-          const password = document.getElementById("loginPassword").value.trim();
-          const userData = JSON.parse(localStorage.getItem("userData"));
-    
-          if (userData && userData.email === email && userData.password === password) {
-            window.location.href = "index.html"; // Chuyển đến trang chính sau khi đăng nhập thành công
-          } else {
+    }
+
+    // Hàm đăng nhập
+    function login() {
+        const email = document.getElementById("loginEmail").value.trim();
+        const password = document.getElementById("loginPassword").value.trim();
+        const userData = JSON.parse(localStorage.getItem("userData"));
+
+        if (userData && userData.email === email && userData.password === password) {
+            alert("Đăng nhập thành công!");
+            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
+            document.getElementById("logout-link").style.display = "inline-block";
+            window.location.href = "index.html"; // Chuyển về trang index
+        } else {
             document.getElementById("loginError").style.display = "block";
-          }
         }
-      </script>
+    }
+
+    // Chuyển đổi giữa form đăng ký và đăng nhập
+    function showRegister() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+    }
+
+    function showLogin() {
+        document.getElementById("registerForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+    }
+
+    // Kiểm tra trạng thái đăng nhập khi tải trang
+    window.onload = function() {
+        const userData = JSON.parse(localStorage.getItem("userData"));
+        if (userData && userData.email) {
+            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
+        }
+    };
+
+    window.onload = function() {
+        const userData = JSON.parse(localStorage.getItem("userData"));
+        if (userData && userData.email) {
+            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
+            document.getElementById("logout-link").style.display = "inline-block"; // Hiển thị nút Đăng xuất
+        } else {
+            document.getElementById("logout-link").style.display = "none";
+        }
+    };
+
+    // Hàm đăng xuất
+    function logout() {
+        localStorage.removeItem("userData"); // Xóa thông tin người dùng khỏi localStorage
+        alert("Bạn đã đăng xuất thành công!");
+        window.location.reload(); // Tải lại trang
+    }
+</script>
+>
+    
     
     </body>
 </html>
