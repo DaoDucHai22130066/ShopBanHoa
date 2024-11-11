@@ -40,6 +40,38 @@
     text-decoration: none;
 }
 
+.main-header .icon-links .dropdown-menu {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 100%; /* Phủ đầy chiều rộng */
+    left: 0; /* Đặt dropdown từ bên trái */
+    overflow: hidden; /* Ngăn ngừa tràn */
+}
+
+.main-header .icon-links .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap; 
+    width: 100%; /* Phủ đầy chiều ngang của dropdown */
+    text-align: left;
+}
+
+.main-header .icon-links .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .main-header .cart {
     position: relative;
 }
