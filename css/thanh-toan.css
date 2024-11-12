@@ -15,7 +15,6 @@
 }
 
 
-
 /* Phần chính của header */
 .main-header {
     padding: 20px 0;
@@ -53,8 +52,14 @@
 }
 
 
-
 /* Thanh menu */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng nếu muốn */
+}
+
 .navbar-nav .nav-link {
     color: #3d3d3d;
     font-weight: bold;
@@ -72,10 +77,6 @@
 .dropdown-menu {
     display: none;
 }
-
-
-
-/*Main */
 
 
 
