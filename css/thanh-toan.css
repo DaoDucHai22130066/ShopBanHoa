@@ -66,6 +66,10 @@
     text-transform: uppercase;
 }
 
+.navbar-expand-lg .navbar-collapse {
+    flex-flow: column
+}
+
 .navbar-light .navbar-toggler {
     font-size: 15px;
     font-stretch: expanded;
@@ -81,8 +85,7 @@
     box-shadow: none
 }
 
-.navbar-nav .nav-link:hover,
-.dropdown-menu .dropdown-item:hover {
+.navbar-nav .nav-link:hover, .dropdown-menu .dropdown-item:hover {
     color: #ff35a4;
 }
 /* Hiện dropdown khi hover */
@@ -91,18 +94,22 @@
 }
 /* Ẩn dropdown mặc định */
 .dropdown-menu {
+    padding: 0;
     display: none;
 }
 
 
 
+
 /*Footer*/
-.footer {
-    background-color: #f8f8f8;
-    padding: 40px 0;
-    color: #333;
-    font-size: 14px;
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd
 }
+
 .footer .footer-logo img {
     height: 60px;
 }
@@ -133,12 +140,20 @@
     margin-top: 10px;
 }
 
-.footer a {
-    color: #333;
+.footer, footer a, footer h5 {
+    color: #3d3d3d;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #ff35a4;
+    color: #e91e63;
     text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: .75rem
+}
+
+.footer .col-md-3 {
+    padding: 0 20px
 }
