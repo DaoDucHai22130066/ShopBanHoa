@@ -1,0 +1,155 @@
+/* Phần hotline và mạng xã hội, (Header) */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.top-bar .hotline {
+    margin-right: 30px;
+}
+
+/* Phần chính của header */
+/* Các lớp CSS cơ bản */
+main {
+    font-family: Arial, sans-serif;
+}
+
+main .section-title {
+    font-size: 2.5rem; /* Sử dụng size lớn cho tiêu đề chính trong phần giới thiệu */
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Tiêu đề của các phần nhỏ trong phần giới thiệu */
+main .section-title-small {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+main .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Đảm bảo các thẻ ul không ảnh hưởng tới footer */
+main .intro-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main .intro-list li {
+    color: #333;
+}
+
+/* Đảm bảo các card trong phần giới thiệu được tùy chỉnh riêng */
+main .quality-card {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+main .quality-card .card-title {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+main .quality-card .card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Cải thiện giao diện trên mobile */
+@media (max-width: 768px) {
+    .intro-list {
+        padding-left: 15px;  /* Điều chỉnh khi trên màn hình nhỏ */
+    }
+
+    .intro-text {
+        font-size: 1rem;  /* Giảm font-size cho đoạn văn bản trên mobile */
+    }
+
+    .section-title, .section-title-small {
+        text-align: center;  /* Căn giữa tiêu đề trên màn hình di động */
+    }
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 60px;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.footer .contact-info span,
+.footer .contact-info a {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer .certification img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff6f61;
+    text-decoration: none;
+}
+/*nút cuộn trở về đầu trang*/
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    display: none; /* Ẩn nút ban đầu */
+    background-color: #fd8ad9;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #fafafa00;
+    color: #fd8ad9;
+    border:2px solid #fd8ad9;
+}
