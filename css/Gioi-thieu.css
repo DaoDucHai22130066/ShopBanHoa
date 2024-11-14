@@ -17,13 +17,129 @@
 }
 
 /* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo img {
+    height: 80px;
+}
+
+.main-header .search-bar {
+    max-width: 700px;
+    margin: auto;
+}
+
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+/* Đảm bảo dropdown có kích thước chính xác */
+.main-header .icon-links .dropdown-menu {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 100%;
+    /* Phủ đầy chiều rộng */
+    left: 0;
+    /* Đặt dropdown từ bên trái */
+    overflow: hidden;
+    /* Ngăn ngừa tràn */
+}
+
+.main-header .icon-links .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100%;
+    /* Phủ đầy chiều ngang của dropdown */
+    text-align: left;
+}
+
+.main-header .icon-links .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.main-header .cart {
+    position: relative;
+}
+
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+/* CSS cho phần menu */
+.navbar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+}
+
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff35a4;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    display: none;
+}
+
 /* Các lớp CSS cơ bản */
 main {
     font-family: Arial, sans-serif;
 }
 
 main .section-title {
-    font-size: 2.5rem; /* Sử dụng size lớn cho tiêu đề chính trong phần giới thiệu */
+    font-size: 2.5rem;
+    /* Sử dụng size lớn cho tiêu đề chính trong phần giới thiệu */
     color: #333;
     margin-bottom: 1rem;
 }
@@ -50,21 +166,62 @@ main .intro-list li {
     color: #333;
 }
 
-/* Đảm bảo các card trong phần giới thiệu được tùy chỉnh riêng */
+/* Định kiểu cho các card */
 main .quality-card {
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Sử dụng ease-in-out để có hiệu ứng mượt */
+    cursor: pointer;
+    /* Thêm con trỏ khi hover vào card */
+    will-change: transform, box-shadow;
+    /* Giúp trình duyệt tối ưu hiệu suất */
 }
 
+/* Hiệu ứng hover: phóng to và thêm bóng đổ */
+main .quality-card:hover {
+    transform: scale(1.05);
+    /* Phóng to nhẹ */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    /* Bóng đổ mượt */
+}
+
+/* Cải thiện độ mượt cho hình ảnh */
+main .quality-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    /* Thêm hiệu ứng mượt cho hình ảnh */
+}
+
+/* Hiệu ứng zoom cho ảnh khi hover */
+main .quality-card:hover img {
+    transform: scale(1.0);
+    /* Phóng to ảnh một chút khi hover */
+}
+
+/* Hiệu ứng cho các tiêu đề card */
 main .quality-card .card-title {
-    font-size: 1.3rem;
-    color: #333;
+    transition: color 0.3s ease-in-out;
+    /* Thêm hiệu ứng mượt cho tiêu đề */
 }
 
-main .quality-card .card-text {
-    font-size: 1rem;
-    color: #777;
+main .quality-card:hover .card-title {
+    color: #ff6f61;
+    /* Đổi màu tiêu đề khi hover */
 }
+
+/* Đảm bảo responsive cho các card */
+main .card-body {
+    text-align: center;
+}
+
+/* Đảm bảo responsive cho các card */
+@media (max-width: 768px) {
+    .quality-card {
+        margin-bottom: 20px;
+    }
+}
+
 /* Định kiểu cho các nút mạng xã hội */
 #contact-info .btn {
     padding: 10px 20px;
@@ -94,7 +251,7 @@ main .quality-card .card-text {
     #contact-info ul.intro-list {
         padding-left: 15px;
     }
-    
+
     #contact-info .list-inline {
         text-align: center;
     }
@@ -104,15 +261,19 @@ main .quality-card .card-text {
 /* Cải thiện giao diện trên mobile */
 @media (max-width: 768px) {
     .intro-list {
-        padding-left: 15px;  /* Điều chỉnh khi trên màn hình nhỏ */
+        padding-left: 15px;
+        /* Điều chỉnh khi trên màn hình nhỏ */
     }
 
     .intro-text {
-        font-size: 1rem;  /* Giảm font-size cho đoạn văn bản trên mobile */
+        font-size: 1rem;
+        /* Giảm font-size cho đoạn văn bản trên mobile */
     }
 
-    .section-title, .section-title-small {
-        text-align: center;  /* Căn giữa tiêu đề trên màn hình di động */
+    .section-title,
+    .section-title-small {
+        text-align: center;
+        /* Căn giữa tiêu đề trên màn hình di động */
     }
 }
 
@@ -167,13 +328,15 @@ main .quality-card .card-text {
     color: #ff6f61;
     text-decoration: none;
 }
+
 /*nút cuộn trở về đầu trang*/
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 30px;
     width: 50px;
-    display: none; /* Ẩn nút ban đầu */
+    display: none;
+    /* Ẩn nút ban đầu */
     background-color: #fd8ad9;
     color: white;
     border: 2px solid white;
@@ -186,5 +349,5 @@ main .quality-card .card-text {
 #scrollToTopBtn:hover {
     background-color: #fafafa00;
     color: #fd8ad9;
-    border:2px solid #fd8ad9;
+    border: 2px solid #fd8ad9;
 }
