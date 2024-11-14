@@ -1,3 +1,4 @@
+/* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
     background-color: #f8f8f8;
     padding: 10px 0;
@@ -15,6 +16,7 @@
     margin-right: 30px;
 }
 
+/* Phần chính của header */
 .main-header {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
@@ -25,7 +27,7 @@
 }
 
 .main-header .search-bar {
-    max-width: 400px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -34,12 +36,14 @@
     margin-left: 20px;
     font-size: 18px;
     text-decoration: none;
+    
 }
 
 .main-header .icon-links a:hover {
     text-decoration: none;
 }
 
+/* Đảm bảo dropdown có kích thước chính xác */
 .main-header .icon-links .dropdown-menu {
     background-color: #fff;
     padding: 0;
@@ -88,31 +92,30 @@
 }
 
 /* Thanh menu */
+
+/* CSS cho phần menu */
 .navbar {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
     transition: all 0.3s ease-in-out;
 }
-
 .sticky {
-    border-bottom: none;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
 }
 .navbar-nav .nav-link {
     color: #3d3d3d;
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .navbar-nav .nav-link:hover {
     color: #ff35a4;
 }
-
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
     display: block;
