@@ -36,7 +36,7 @@
     margin-left: 20px;
     font-size: 18px;
     text-decoration: none;
-    
+
 }
 
 .main-header .icon-links a:hover {
@@ -49,9 +49,12 @@
     padding: 0;
     border: 1px solid #ddd;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    min-width: 100%; /* Phủ đầy chiều rộng */
-    left: 0; /* Đặt dropdown từ bên trái */
-    overflow: hidden; /* Ngăn ngừa tràn */
+    min-width: 100%;
+    /* Phủ đầy chiều rộng */
+    left: 0;
+    /* Đặt dropdown từ bên trái */
+    overflow: hidden;
+    /* Ngăn ngừa tràn */
 }
 
 .main-header .icon-links .dropdown-menu a {
@@ -60,8 +63,9 @@
     color: #333;
     font-size: 16px;
     text-decoration: none;
-    white-space: nowrap; 
-    width: 100%; /* Phủ đầy chiều ngang của dropdown */
+    white-space: nowrap;
+    width: 100%;
+    /* Phủ đầy chiều ngang của dropdown */
     text-align: left;
 }
 
@@ -100,6 +104,7 @@
     padding: 10px 0;
     transition: all 0.3s ease-in-out;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -108,14 +113,17 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: none;
 }
+
 .navbar-nav .nav-link {
     color: #3d3d3d;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .navbar-nav .nav-link:hover {
     color: #ff35a4;
 }
+
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -132,6 +140,7 @@
     height: auto;
     margin-bottom: 30px;
 }
+
 .section-title {
     text-align: center;
     margin: 30px 0;
@@ -141,7 +150,7 @@
 }
 
 
-        
+
 /* Thanh sắp xếp sản phẩm */
 .sort-bar {
     display: flex;
@@ -290,7 +299,8 @@
     bottom: 20px;
     right: 30px;
     width: 50px;
-    display: none; /* Ẩn nút ban đầu */
+    display: none;
+    /* Ẩn nút ban đầu */
     background-color: #fd8ad9;
     color: white;
     border: 2px solid white;
@@ -303,7 +313,7 @@
 #scrollToTopBtn:hover {
     background-color: #fafafa00;
     color: #fd8ad9;
-    border:2px solid #fd8ad9;
+    border: 2px solid #fd8ad9;
 }
 
 /* CSS cho phân trang */
@@ -313,7 +323,7 @@
     padding: 20px 0;
 }
 
-.pagination a {
+.pagination .page-btn {
     color: #333;
     padding: 8px 16px;
     text-decoration: none;
@@ -323,12 +333,12 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.pagination a:hover {
+.page-btn:hover {
     background-color: #ff6666;
     color: white;
 }
 
-.pagination a.active {
+.page-btn.active {
     background-color: #ff6666;
     color: white;
     border: 1px solid #ff6666;
