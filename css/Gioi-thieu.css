@@ -65,6 +65,41 @@ main .quality-card .card-text {
     font-size: 1rem;
     color: #777;
 }
+/* Định kiểu cho các nút mạng xã hội */
+#contact-info .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Nút mạng xã hội khi di chuột qua */
+#contact-info .btn:hover {
+    opacity: 0.8;
+}
+
+/* Định dạng địa chỉ và thông tin liên hệ */
+#contact-info ul.intro-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contact-info ul.intro-list li {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Đảm bảo tính responsive */
+@media (max-width: 768px) {
+    #contact-info ul.intro-list {
+        padding-left: 15px;
+    }
+    
+    #contact-info .list-inline {
+        text-align: center;
+    }
+}
+
 
 /* Cải thiện giao diện trên mobile */
 @media (max-width: 768px) {
