@@ -454,14 +454,18 @@
                                     </div>
                                 </fieldset>
                             </div>
+
                         </div>
+
                         <div class="text-end d-none" id="edit_details_div">
                             <button type="button" id="edit_details" class="btn btn-dark">Chỉnh sửa thông tin</button>
                         </div>
+
                     </div>
 
                     <div id="ckh_step_2" class="col-md-5 whole-disabled">
                         <div id="checkout-confirm">
+
                             <legend>Chi tiết đơn hàng</legend>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover">
@@ -510,6 +514,7 @@
                                     </tfoot>
                                 </table>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <form id="form-coupon" action="" method="post">
@@ -527,11 +532,13 @@
                                     </form>
                                 </div>
                             </div>
+
                             <div id="checkout-payment">
                                 <div class="text-end">
                                     <button type="button" class="btn btn-primary" disabled>Xác nhận đơn hàng</button>
                                 </div>
                             </div>
+
                         </div>
 
 <!--                        Phương thức vận chuyển ( viết thêm nếu cần )-->
@@ -541,10 +548,57 @@
                             <form id="form-payment-method">
                                 <fieldset>
                                     <div class="input-group">
-                                        <div class="input-payment-method-group"></div>
-                                        <button type="button" id="button-payment-method" class="btn contentbtn-light d-none">
-                                            <i class="fa-solid fa-rotate"></i>
-                                        </button>
+                                        <div class="input-payment-method-group">
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="bank_transfer" id="input-payment-method-bank_transfer"  checked class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-bank_transfer" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/bank-transfer.png"/>
+                                                    Chuyển khoản ngân hàng
+                                                    <span class="payment-brand-icon-bank_transfer"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="vnpay" id="input-payment-method-vnpay"  class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-vnpay" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/vnpay.png"/>
+                                                    Thẻ ATM, Visa, Master, QR (VNPAY)
+                                                    <span class="payment-brand-icon-vnpay"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="onepay" id="input-payment-method-onepay"  class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-onepay" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/onepay.png"/>
+                                                    Visa, Master, JCB, UnionPay, Amex
+                                                    <span class="payment-brand-icon-onepay"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="cheque" id="input-payment-method-cheque"  class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-cheque" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/cheque.png"/>
+                                                    Ví điện tử
+                                                    <span class="payment-brand-icon-cheque"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="paypal" id="input-payment-method-paypal"  class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-paypal" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/paypal.png"/>
+                                                    Paypal (Paypal, Thẻ Visa, Master)
+                                                    <span class="payment-brand-icon-paypal"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="payment_method" value="cod" id="input-payment-method-cod"  class="form-check-input input-payment-method">
+                                                <label for="input-payment-method-cod" class="form-check-label">
+                                                    <img class="payment-method-icon" src="images/cod.png"/>
+                                                    Thanh toán khi giao hàng
+                                                    <span class="payment-brand-icon-cod"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="button" id="button-payment-method" class="btn btn-light d-none"><i class="fa-solid fa-rotate"></i></button>
                                     </div>
                                 </fieldset>
                             </form>
