@@ -1,3 +1,4 @@
+
 /* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
     background-color: #f8f8f8;
@@ -97,6 +98,73 @@
     padding: 0;
     display: none;
 }
+
+
+
+/*Thông tin người nhận*/
+legend {
+    margin-bottom: 20px
+}
+
+button:focus {
+    outline: 0 !important
+}
+
+div.required .col-form-label:before, div.required .form-label:before {
+    content: "* ";
+    color: red;
+    font-weight: 700
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #e91e63
+}
+
+.btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-position: 0;
+    color: #fff;
+    border-color: #ff87b0;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-primary:focus, .form-check-input:focus, .form-control:focus, .form-select:focus, .input-group-text:focus {
+    border-color: #ff87b0;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+/*Ẩn phần breadcrumb và các thuộc tính ở Hóa đơn VAT*/
+#checkout-payment, .breadcrumb, .section-shipping-address .col.custom-field-37, .section-shipping-address .col.custom-field-38, .section-shipping-address .col.custom-field-39, .section-shipping-address .col.custom-field-40, .section-shipping-address .col.custom-field-41 {
+    display: none
+}
+
+label {
+    font-size: 13px
+}
+
+.form-select, .input-group-text {
+    font-size: 1rem
+}
+
+.section-shipping-address .col {
+    order: 100
+}
+
+.section-shipping-address .col.custom-field-29 {
+    order: 2
+}
+
+.date.form-control:read-only {
+    background-color: #fff
+}
+
+.form-select {
+    padding: .575rem 2.25rem .575rem .75rem
+}
+
+
 
 
 

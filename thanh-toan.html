@@ -164,6 +164,264 @@
         </div>
     </nav>
 
+    <div id="checkout-checkout" class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=common/home"><i
+                    class="fas fa-home"> </i></a></li>
+            <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=checkout/cart">Giỏ hàng</a></li>
+            <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=checkout/checkout">Thanh toán</a>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div id="content" class="col mt-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="ckh_step_1">
+
+
+                            <div id="checkout-shipping-address">
+                                <fieldset>
+                                    <legend>Thông tin người nhận</legend>
+                                    <div id="shipping-existing" style="display: none;">
+                                        <select name="address_id" id="input-shipping-address" class="form-select">
+                                            <option>--- Vui lòng chọn ---</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <div id="shipping-new">
+                                        <form autocomplete="off" id="form-shipping-address"
+                                              class="section-shipping-address">
+                                            <div class="row row-cols-1 row-cols-md-2">
+                                                <div class="col mb-3 required order-1">
+                                                    <label for="input-shipping-firstname" class="form-label">Họ
+                                                        tên</label> <input type="text" name="shipping_firstname"
+                                                                           autocomplete="off" value=""
+                                                                           placeholder="Họ tên"
+                                                                           id="input-shipping-firstname"
+                                                                           class="form-control"/>
+                                                    <div id="error-shipping-firstname" class="invalid-feedback"></div>
+                                                </div>
+
+
+                                                <div class="col col-md-12 mb-3 required order-3">
+                                                    <label for="input-shipping-address-1" class="form-label">Địa
+                                                        chỉ</label> <input type="text" name="shipping_address_1"
+                                                                           autocomplete="off" value=""
+                                                                           placeholder="Địa chỉ"
+                                                                           id="input-shipping-address-1"
+                                                                           class="form-control"/>
+                                                    <div id="error-shipping-address-1" class="invalid-feedback"></div>
+                                                </div>
+
+                                                <div class="col mb-3 required d-none">
+                                                    <label for="input-shipping-country" class="form-label">Quốc gia</label>
+                                                    <select name="shipping_country_id"
+                                                            id="input-shipping-country"
+                                                            class="form-select">
+                                                        <option value="">--- Vui lòng chọn ---</option>
+                                                        <option value="230" selected>Viet Nam</option>
+                                                    </select>
+                                                    <div id="error-shipping-country" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 required">
+                                                    <label for="input-shipping-zone" class="form-label">Tỉnh, thành phố</label>
+                                                    <select name="shipping_zone_id" id="input-shipping-zone" class="form-select">
+                                                        <option value="43" selected>TP.Hồ Chí Minh - Nội thành</option>
+                                                        <option value="44" >TP.Hồ Chí Minh - Ngoại thành</option>
+                                                        <option value="45" >Hà Nội - Khu vực trung tâm</option>
+                                                        <option value="46" >Hà Nội - Khu vực khác</option>
+                                                    </select>
+                                                    <div id="error-shipping-zone" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-29">
+                                                    <label for="input-shipping-custom-field-29" class="form-label">Điện thoại</label>
+                                                    <input type="text" autocomplete="off"
+                                                           name="shipping_custom_field[address][29]"
+                                                           value="" placeholder="Điện thoại"
+                                                           id="input-shipping-custom-field-29"
+                                                           class="form-control"/>
+                                                    <div id="error-shipping-custom-field-29" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-30">
+                                                    <label for="input-shipping-custom-field-30" class="form-label">Quận / Huyện</label>
+                                                    <select name="shipping_custom_field[address][30]"
+                                                            id="input-shipping-custom-field-30" class="form-select">
+                                                        <option value="47" selected>Quận 1</option>
+                                                        <option value="48">Quận 3</option>
+                                                        <option value="49">Quận 4</option>
+                                                        <option value="50">Quận 5</option>
+                                                        <option value="51">Quận 6</option>
+                                                        <option value="52">Quận 7</option>
+                                                        <option value="53">Quận 8</option>
+                                                        <option value="54">Quận 10</option>
+                                                        <option value="55">Quận 11</option>
+                                                        <option value="56">Quận 12</option>
+                                                        <option value="57">Quận Tân Bình</option>
+                                                        <option value="58">Quận Tân Phú</option>
+                                                        <option value="59">Quận Bình Thạnh</option>
+                                                        <option value="60">Quận Bình Tân</option>
+                                                        <option value="61">Quận Phú Nhuận</option>
+                                                        <option value="62">Quận Gò Vấp</option>
+                                                        <option value="63">TP Thủ Đức (Quận 2, 9, Thủ Đức)</option>
+                                                        <option value="64">Huyện Củ Chi</option>
+                                                        <option value="65">Huyện Bình Chánh</option>
+                                                        <option value="66">Huyện Nhà Bè</option>
+                                                        <option value="67">Huyện Cần Giờ</option>
+                                                        <option value="68">Huyện Hóc Môn</option>
+                                                        <option value="69">Quận Ba Đình</option>
+                                                        <option value="70">Quận Hoàn Kiếm</option>
+                                                        <option value="71">Quận Đống Đa</option>
+                                                        <option value="72">Quận Thanh Xuân</option>
+                                                        <option value="73">Quận Cầu Giấy</option>
+                                                        <option value="74">Quận Hai Bà Trưng</option>
+                                                        <option value="75">Quận Hà Đông</option>
+                                                        <option value="76">Quận Bắc Từ Liêm</option>
+                                                        <option value="77">Quận Hoàng Mai</option>
+                                                        <option value="78">Quận Long Biên</option>
+                                                        <option value="79">Quận Tây Hồ</option>
+                                                        <option value="80">Quận Nam Từ Liêm</option>
+                                                        <option value="81">Huyện Mê Linh</option>
+                                                        <option value="82">Huyện Đông Anh</option>
+                                                        <option value="83">Huyện Sóc Sơn</option>
+                                                        <option value="84">Huyện Gia Lâm</option>
+                                                        <option value="85">Huyện Thanh Trì</option>
+                                                        <option value="86">Huyện Phú Xuyên</option>
+                                                        <option value="87">Huyện Ba Vì</option>
+                                                        <option value="88">Huyện Đan Phượng</option>
+                                                        <option value="89">Huyện Hoài Đức</option>
+                                                        <option value="90">Huyện Mỹ Đức</option>
+                                                        <option value="91">Huyện Phúc Thọ</option>
+                                                        <option value="92">Huyện Thạch Thất</option>
+                                                        <option value="93">Huyện Thanh Oai</option>
+                                                        <option value="94">Huyện Ứng Hoà</option>
+                                                        <option value="95">Huyện Thường Tín</option>
+                                                        <option value="96">Huyện Chương Mỹ</option>
+                                                        <option value="97">Huyện Quốc Oai</option>
+                                                        <option value="98">Thị Xã Sơn Tây</option>
+                                                    </select>
+                                                    <div id="error-shipping-custom-field-30" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-31">
+                                                    <label for="input-shipping-custom-field-31" class="form-label">Ngày giao hàng</label>
+                                                    <div class="input-group">
+                                                        <input type="text" name="shipping_custom_field[address][31]"
+                                                               value="" placeholder="Ngày giao hàng"
+                                                               id="input-shipping-custom-field-31"
+                                                               class="form-control date"/>
+                                                        <div class="input-group-text">
+                                                            <i class="fa-regular fa-calendar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div id="error-shipping-custom-field-31" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-32">
+                                                    <label for="input-shipping-custom-field-32" class="form-label">Thời gian giao hàng</label>
+                                                    <select name="shipping_custom_field[address][32]"
+                                                            id="input-shipping-custom-field-32"
+                                                            class="form-select">
+                                                        <option value="105" selected>07:00</option>
+                                                        <option value="106">08:00</option>
+                                                        <option value="107">09:00</option>
+                                                        <option value="108">10:00</option>
+                                                        <option value="109">11:00</option>
+                                                        <option value="110">12:00</option>
+                                                        <option value="111">13:00</option>
+                                                        <option value="112">14:00</option>
+                                                        <option value="113">15:00</option>
+                                                        <option value="114">16:00</option>
+                                                        <option value="115">17:00</option>
+                                                        <option value="116">18:00</option>
+                                                        <option value="117">19:00</option>
+                                                        <option value="118">20:00</option>
+                                                        <option value="119">21:00</option>
+                                                        <option value="120">Từ 8:00 - 12:00</option>
+                                                        <option value="121">Từ 12:00 - 20:00</option>
+                                                        <option value="122">Từ 8:00 - 20:00</option>
+                                                    </select>
+                                                    <div id="error-shipping-custom-field-32"
+                                                         class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col col-md-12 mb-3 custom-field custom-field-33">
+                                                    <label for="input-shipping-custom-field-33" class="form-label">Lời nhắn [Cho người nhận]</label>
+                                                    <textarea name="shipping_custom_field[address][33]"
+                                                              rows="2"
+                                                              placeholder=""
+                                                              id="input-shipping-custom-field-33"
+                                                              class="form-control">
+                                                    </textarea>
+                                                    <div id="error-shipping-custom-field-33" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col col-md-12 mb-3 custom-field custom-field-34">
+                                                    <label for="input-shipping-custom-field-34" class="form-label">Yêu cầu, lưu ý [cho shop]</label>
+                                                    <textarea name="shipping_custom_field[address][34]"
+                                                              rows="2"
+                                                              placeholder=""
+                                                              id="input-shipping-custom-field-34"
+                                                              class="form-control">
+                                                    </textarea>
+                                                    <div id="error-shipping-custom-field-34" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-35">
+                                                    <label class="form-label">Ẩn thông tin</label>
+                                                    <div id="input-shipping-custom-field-35">
+                                                        <div class="form-check">
+                                                            <input type="checkbox"
+                                                                   name="shipping_custom_field[address][35][]"
+                                                                   value="102" id="input-shipping-custom-value-102"
+                                                                   class="form-check-input" checked/>
+                                                            <label for="input-shipping-custom-value-102" class="whole-disabledform-check-label">Giấu thông tin người gửi</label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="error-shipping-custom-field-35" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col mb-3 custom-field custom-field-36">
+                                                    <label class="form-label">Hoá đơn VAT</label>
+                                                    <div id="input-shipping-custom-field-36">
+                                                        <div class="form-check">
+                                                            <input type="checkbox"
+                                                                   name="shipping_custom_field[address][36][]"
+                                                                   value="104" id="input-shipping-custom-value-104"
+                                                                   class="form-check-input"/>
+                                                            <label for="input-shipping-custom-value-104" class="form-check-label">Yêu cầu hoá đơn VAT</label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="error-shipping-custom-field-36" class="invalid-feedback"></div>
+                                                </div>
+                                                
+
+
+                                                <div class="col mb-3 custom-field custom-field-42">
+                                                    <label for="input-shipping-custom-field-42" class="form-label">Mã nhân viên</label>
+                                                    <input type="text" autocomplete="off"
+                                                           name="shipping_custom_field[address][42]"
+                                                           value="" placeholder="Mã nhân viên"
+                                                           id="input-shipping-custom-field-42"
+                                                           class="form-control"/>
+                                                    <div id="error-shipping-custom-field-42" class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="text-end" id="confirm_details_div">
+                                                <button type="submit" id="button-shipping-address" class="btn btn-primary">Xác nhận và tiếp tục</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="text-end d-none" id="edit_details_div">
+                            <button type="button" id="edit_details" class="btn btn-dark">Chỉnh sửa thông tin</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </main>
 
 <footer class="footer">
