@@ -1,3 +1,47 @@
+body {
+    font-weight: 400;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%
+}
+
+h1 {
+    font-size: 26px
+}
+
+h2 {
+    font-size: 23px
+}
+
+h3 {
+    font-size: 21px
+}
+
+i, h4 {
+    font-size: 15px
+}
+
+#top, h5 {
+    font-size: 12px
+}
+
+h6 {
+    font-size: 10.2px
+}
+
+a {
+    color: #e91e63
+}
+
+body, footer h5 {
+    font-family: Montserrat, sans-serif
+}
+
+#content {
+    min-height: 600px
+}
+
 
 /* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
@@ -99,7 +143,38 @@
     display: none;
 }
 
+.dropdown-menu.show .mini-tbl-product .text-end, .dropdown-menu.show .mini-tbl-product .text-start * {
+    line-height: 56px
+}
 
+/*Định dạng lại kích thước cho màn hình nhỏ*/
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 200px;
+        width: 100%
+    }
+}
+
+@media (max-width: 767px) {
+
+    #menu div.dropdown-menu {
+        margin-left: 0 !important;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, .1)
+    }
+
+    #menu .dropdown-menu a:hover, #menu .dropdown-menu ul li a :hover {
+        background: rgba(0, 0, 0, .1)
+    }
+
+    #logo {
+        margin: 10px 0
+    }
+
+    #logo img {
+        max-width: 260px
+    }
+}
 
 /*Thông tin người nhận*/
 legend {
