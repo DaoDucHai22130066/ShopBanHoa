@@ -41,3 +41,56 @@ confirmOrderButton.addEventListener('click', () => {
 // Khởi tạo trạng thái của nút "Xác nhận đơn hàng" khi trang được tải
 updateConfirmButtonState();
 
+
+// Xử lý nút xác nhận và tiếp tục
+document.addEventListener("DOMContentLoaded", function () {
+    // Lấy các phần tử
+    const buttonShippingAddress = document.getElementById("button-shipping-address");
+    const editDetailsButton = document.getElementById("edit_details");
+    const shippingSection = document.getElementById("ckh_step_1");
+    const orderDetailsSection = document.getElementById("ckh_step_2");
+    const confirmDetailsDiv = document.getElementById("confirm_details_div");
+    const editDetailsDiv = document.getElementById("edit_details_div");
+
+    // Hàm để chuyển trạng thái
+    function toggleSections(enableShipping, enableOrderDetails) {
+        if (enableShipping) {
+            shippingSection.classList.remove("whole-disabled");
+            shippingSection.classList.add("whole-enabled");
+        } else {
+            shippingSection.classList.add("whole-disabled");
+            shippingSection.classList.remove("whole-enabled");
+        }
+
+        if (enableOrderDetails) {
+            orderDetailsSection.classList.remove("whole-disabled");
+            orderDetailsSection.classList.add("whole-enabled");
+        } else {
+            orderDetailsSection.classList.add("whole-disabled");
+            orderDetailsSection.classList.remove("whole-enabled");
+        }
+    }
+
+    // Mặc định: chỉ hiển thị phần thông tin người nhận
+    toggleSections(true, false);
+    editDetailsDiv.classList.add("d-none");
+
+    // Xử lý khi nhấn "Xác nhận và tiếp tục"
+    buttonShippingAddress.addEventListener("click", function (event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của form
+        toggleSections(false, true); // Bật phần chi tiết đơn hàng, tắt phần thông tin người nhận
+        confirmDetailsDiv.classList.add("d-none"); // Ẩn nút "Xác nhận và tiếp tục"
+        editDetailsDiv.classList.remove("d-none"); // Hiển thị nút "Chỉnh sửa thông tin"
+    });
+
+    // Xử lý khi nhấn "Chỉnh sửa thông tin"
+    editDetailsButton.addEventListener("click", function () {
+        toggleSections(true, false); // Bật phần thông tin người nhận, tắt phần chi tiết đơn hàng
+        editDetailsDiv.classList.add("d-none"); // Ẩn nút "Chỉnh sửa thông tin"
+        confirmDetailsDiv.classList.remove("d-none"); // Hiển thị nút "Xác nhận và tiếp tục"
+    });
+});
+
+
+
+
