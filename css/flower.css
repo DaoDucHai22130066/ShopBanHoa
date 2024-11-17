@@ -50,16 +50,17 @@
     border: 1px solid #ddd;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     min-width: 100%;
-    /* Phủ đầy chiều rộng */
     left: 0;
-    /* Đặt dropdown từ bên trái */
     overflow: hidden;
-    /* Ngăn ngừa tràn */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .main-header .icon-links .dropdown-menu a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin: 0;
     color: #333;
     font-size: 16px;
     text-decoration: none;
