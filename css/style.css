@@ -171,6 +171,15 @@
     font-weight: bold;
 }
 
+.product-card .product-name a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.product-card .product-name a:hover {
+    color: #e55350; 
+}
+
 .product-card .product-price {
     color: #ff6f61;
     font-weight: bold;
