@@ -209,6 +209,88 @@
     background-color: #e55350;
 }
 
+.feature-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.feature-box h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Phần logo thanh toán */
+.payment-logos img {
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.payment-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Danh mục hoa */
+.category-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6f61;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Biểu tượng nổi bên trái */
+.floating-icons {
+    position: fixed;
+    left: 10px;
+    bottom: 100px;
+    z-index: 1000;
+}
+
+.floating-icons a {
+    display: block;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.floating-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-icons a i {
+    font-size: 20px;
+    color: #ff6f61;
+}
 
 /*Footer*/
 .footer {
