@@ -16,6 +16,7 @@
     margin-right: 30px;
 }
 
+
 /* Phần chính của header */
 .main-header {
     padding: 20px 0;
@@ -27,7 +28,7 @@
 }
 
 .main-header .search-bar {
-    max-width: 700px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -36,46 +37,10 @@
     margin-left: 20px;
     font-size: 18px;
     text-decoration: none;
-    
 }
 
 .main-header .icon-links a:hover {
     text-decoration: none;
-}
-
-.main-header .icon-links .dropdown-menu {
-    background-color: #fff;
-    padding: 0;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    min-width: 100%;
-    left: 0;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.main-header .icon-links .dropdown-menu a {
-    display: block;
-    padding: 10px 20px;
-    margin: 0;
-    color: #333;
-    font-size: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-    width: 100%;
-    text-align: left;
-}
-.main-header .icon-links .dropdown-menu a:hover {
-    background-color: #f0f0f0;
-    color: #ff6f61;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
 }
 
 .main-header .cart {
@@ -85,58 +50,98 @@
 .main-header .cart .cart-count {
     position: absolute;
     top: -10px;
-    right: -15px;
+    right: -10px;
     background-color: #ff6f61;
     color: #fff;
     border-radius: 50%;
-    padding: 2px 8px;
+    padding: 2px 5px;
     font-size: 12px;
 }
 
-/* CSS cho phần menu */
+
+/* Thanh menu */
 .navbar {
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-}
-.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: none;
+    /* Thêm bóng nếu muốn */
 }
+
 .navbar-nav .nav-link {
     color: #3d3d3d;
     font-weight: bold;
     text-transform: uppercase;
 }
-.navbar-nav .nav-link:hover {
+
+.navbar-expand-lg .navbar-collapse {
+    flex-flow: column
+}
+
+.navbar-light .navbar-toggler {
+    font-size: 15px;
+    font-stretch: expanded;
+    color: #fff;
+    padding: 6px 12px;
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-repeat: repeat-x;
+    border-color: #e91e63
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
     color: #ff35a4;
 }
 
+/* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
+/* Ẩn dropdown mặc định */
 .dropdown-menu {
+    padding: 0;
     display: none;
 }
 
-.dropdown-item:hover {
-    background-color: #f0f0f0;
-    color: #ff6f61; 
+.dropdown-menu.show .mini-tbl-product .text-end,
+.dropdown-menu.show .mini-tbl-product .text-start * {
+    line-height: 56px
 }
 
-.dropdown-item:active {
-    background-color: #f0f0f0;
-    color: #ff6f61;
+/*Định dạng lại kích thước cho màn hình nhỏ*/
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 200px;
+        width: 100%
+    }
 }
 
-.dropdown-item {
-    transition: all 0.3s ease;
+@media (max-width: 767px) {
+
+    #menu div.dropdown-menu {
+        margin-left: 0 !important;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, .1)
+    }
+
+    #menu .dropdown-menu a:hover,
+    #menu .dropdown-menu ul li a :hover {
+        background: rgba(0, 0, 0, .1)
+    }
+
+    #logo {
+        margin: 10px 0
+    }
+
+    #logo img {
+        max-width: 260px
+    }
 }
 
 /* Main */
@@ -147,11 +152,16 @@
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #7d7d7d; /* Màu xám cho các dấu chấm không hoạt động */
-    width: 10px; /* Độ rộng dấu chấm */
-    height: 10px; /* Chiều cao dấu chấm */
-    border-radius: 50%; /* Làm cho các dấu chấm thành hình tròn */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt khi chuyển màu và kích thước */
+    background-color: #7d7d7d;
+    /* Màu xám cho các dấu chấm không hoạt động */
+    width: 10px;
+    /* Độ rộng dấu chấm */
+    height: 10px;
+    /* Chiều cao dấu chấm */
+    border-radius: 50%;
+    /* Làm cho các dấu chấm thành hình tròn */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Hiệu ứng mượt khi chuyển màu và kích thước */
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -159,7 +169,7 @@
 
 .carousel-indicators .active {
     background-color: #3f3f3f;
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .section-title {
@@ -187,12 +197,12 @@
 }
 
 .product-card .product-name a {
-    color: inherit; 
-    text-decoration: none; 
+    color: inherit;
+    text-decoration: none;
 }
 
 .product-card .product-name a:hover {
-    color: #e55350; 
+    color: #e55350;
 }
 
 .product-card .product-price {
@@ -263,7 +273,7 @@
 }
 
 .custom-text {
-    color: #ff6f61; 
+    color: #ff6f61;
     padding-bottom: 10px;
 }
 
@@ -349,13 +359,15 @@
     color: #ff6f61;
     text-decoration: none;
 }
+
 /*nút cuộn trở về đầu trang*/
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 30px;
     width: 50px;
-    display: none; /* Ẩn nút ban đầu */
+    display: none;
+    /* Ẩn nút ban đầu */
     background-color: #fd8ad9;
     color: white;
     border: 2px solid white;
@@ -368,5 +380,5 @@
 #scrollToTopBtn:hover {
     background-color: #fafafa00;
     color: #fd8ad9;
-    border:2px solid #fd8ad9;
+    border: 2px solid #fd8ad9;
 }
