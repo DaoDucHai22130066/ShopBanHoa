@@ -131,7 +131,19 @@
 .dropdown-menu {
     display: none;
 }
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61; 
+}
 
+.dropdown-item:active {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
 
  /*Main*/
  .product-detail {

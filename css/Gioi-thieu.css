@@ -132,6 +132,20 @@
     display: none;
 }
 
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61; 
+}
+
+.dropdown-item:active {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
 /* Các lớp CSS cơ bản */
 main {
     font-family: Arial, sans-serif;
@@ -139,12 +153,10 @@ main {
 
 main .section-title {
     font-size: 2.5rem;
-    /* Sử dụng size lớn cho tiêu đề chính trong phần giới thiệu */
     color: #333;
     margin-bottom: 1rem;
 }
 
-/* Tiêu đề của các phần nhỏ trong phần giới thiệu */
 main .section-title-small {
     font-size: 1.8rem;
     color: #555;
@@ -156,7 +168,6 @@ main .intro-text {
     color: #555;
 }
 
-/* Đảm bảo các thẻ ul không ảnh hưởng tới footer */
 main .intro-list {
     list-style-type: disc;
     padding-left: 20px;
@@ -170,47 +181,35 @@ main .intro-list li {
 main .quality-card {
     border: none;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    /* Sử dụng ease-in-out để có hiệu ứng mượt */
     cursor: pointer;
-    /* Thêm con trỏ khi hover vào card */
     will-change: transform, box-shadow;
-    /* Giúp trình duyệt tối ưu hiệu suất */
 }
 
-/* Hiệu ứng hover: phóng to và thêm bóng đổ */
 main .quality-card:hover {
     transform: scale(1.05);
-    /* Phóng to nhẹ */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    /* Bóng đổ mượt */
+
 }
 
-/* Cải thiện độ mượt cho hình ảnh */
 main .quality-card img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    /* Thêm hiệu ứng mượt cho hình ảnh */
 }
 
-/* Hiệu ứng zoom cho ảnh khi hover */
 main .quality-card:hover img {
     transform: scale(1.0);
-    /* Phóng to ảnh một chút khi hover */
 }
 
-/* Hiệu ứng cho các tiêu đề card */
 main .quality-card .card-title {
     transition: color 0.3s ease-in-out;
-    /* Thêm hiệu ứng mượt cho tiêu đề */
+   
 }
 
 main .quality-card:hover .card-title {
     color: #ff6f61;
-    /* Đổi màu tiêu đề khi hover */
 }
 
-/* Đảm bảo responsive cho các card */
 main .card-body {
     text-align: center;
 }
