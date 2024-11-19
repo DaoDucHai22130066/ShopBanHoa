@@ -594,14 +594,11 @@
 
         // Hàm xử lý hiệu ứng sticky cho thanh menu và hiển thị nút cuộn trở về đầu trang
         function handleScroll() {
-            // Sticky Navbar
             if (window.scrollY >= navbarOffsetTop) {
                 navbar.classList.add('sticky');
             } else {
                 navbar.classList.remove('sticky');
             }
-
-            // Hiển thị hoặc ẩn nút cuộn trở về đầu trang
             if (window.scrollY > 300) {
                 scrollToTopBtn.style.display = 'block';
             } else {
@@ -609,7 +606,6 @@
             }
         }
 
-        // Cuộn về đầu trang khi nhấn vào nút scroll-to-top
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -617,7 +613,6 @@
             });
         });
 
-        // Thêm sự kiện cuộn để gọi hàm handleScroll
         window.addEventListener('scroll', handleScroll);
     </script>
 
