@@ -247,7 +247,7 @@
 
 .floating-icons {
     position: fixed;
-    left: 10px;
+    left: 30px;
     bottom: 100px;
     z-index: 1000;
 }
