@@ -133,9 +133,162 @@ function showLogin() {
   document.getElementById("home-container").style.display = "none";
 }
 
-function showRegister() {
-  console.log("Switching to Register form");
-  document.getElementById("register-container").style.display = "block";
-  document.getElementById("login-container").style.display = "none";
-  document.getElementById("home-container").style.display = "none";
+function register() {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  let isValid = true;
+
+  // Kiểm tra tính hợp lệ của các trường
+  if (!name) {
+    document.getElementById("nameError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("nameError").style.display = "none";
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email || !emailPattern.test(email)) {
+    document.getElementById("emailError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("emailError").style.display = "none";
+  }
+
+  const phonePattern = /^\d{10,12}$/;
+  if (!phone || !phonePattern.test(phone)) {
+    document.getElementById("phoneError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("phoneError").style.display = "none";
+  }
+
+  if (password.length < 4 || password.length > 20) {
+    document.getElementById("passwordError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("passwordError").style.display = "none";
+  }
+
+  if (isValid) {
+    // Lấy danh sách người dùng từ LocalStorage
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Kiểm tra email đã tồn tại
+    const isEmailExist = users.some((user) => user.email === email);
+    if (isEmailExist) {
+      alert("Email đã được sử dụng. Vui lòng sử dụng email khác.");
+      return;
+    }
+
+    // Lưu người dùng mới vào danh sách
+    users.push({ name, email, phone, password });
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Đăng ký thành công!");
+    showLogin();
+  }
 }
+
+// Hiển thị form chỉnh sửa tài khoản
+function showEditAccount() {
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData) {
+    document.getElementById("editName").value = userData.name || "";
+    document.getElementById("editEmail").value = userData.email || "";
+    document.getElementById("editPhone").value = userData.phone || "";
+  }
+  document.getElementById("editAccountModal").style.display = "flex";
+}
+
+// Lưu thông tin tài khoản
+function saveAccountInfo() {
+  const name = document.getElementById("editName").value.trim();
+  const email = document.getElementById("editEmail").value.trim();
+  const phone = document.getElementById("editPhone").value.trim();
+
+  const userData = { name, email, phone };
+  localStorage.setItem("userData", JSON.stringify(userData));
+  alert("Cập nhật thành công!");
+  closeModal("editAccountModal");
+}
+
+// Hiển thị form đổi mật khẩu
+function showChangePassword() {
+  document.getElementById("changePasswordModal").style.display = "flex";
+}
+
+// Đổi mật khẩu
+function changePassword() {
+  const currentPassword = document.getElementById("currentPassword").value;
+  const newPassword = document.getElementById("newPassword").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const userData = JSON.parse(localStorage.getItem("userData"));
+
+  if (
+    userData &&
+    userData.password === currentPassword &&
+    newPassword === confirmPassword
+  ) {
+    userData.password = newPassword;
+    localStorage.setItem("userData", JSON.stringify(userData));
+    alert("Đổi mật khẩu thành công!");
+    closeModal("changePasswordModal");
+  } else {
+    alert("Mật khẩu không đúng hoặc mật khẩu mới không khớp!");
+  }
+}
+
+// Đóng modal
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+// Kiểm tra trạng thái đăng nhập khi tải trang
+window.onload = function () {
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData) {
+    document.getElementById("account-link").textContent =
+      "Xin chào, " + userData.name;
+    document.getElementById("accountDropdown").style.display = "block";
+  }
+  function login() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    // Lấy danh sách người dùng từ LocalStorage
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Kiểm tra thông tin đăng nhập
+    const user = users.find(
+      (user) => user.email === email && user.password === password
+    );
+
+    if (user) {
+      alert("Đăng nhập thành công!");
+      localStorage.setItem("currentUser", JSON.stringify(user)); // Lưu thông tin người dùng hiện tại
+      document.getElementById("account-link").textContent =
+        "Xin chào, " + user.name;
+      document.getElementById("logout-link").style.display = "inline-block";
+      toggleModal(); // Đóng modal đăng nhập
+    } else {
+      document.getElementById("loginError").style.display = "block";
+    }
+  }
+  window.onload = function () {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser) {
+      document.getElementById("account-link").textContent =
+        "Xin chào, " + currentUser.name;
+      document.getElementById("logout-link").style.display = "inline-block";
+    }
+  };
+  function logout() {
+    localStorage.removeItem("currentUser");
+    alert("Bạn đã đăng xuất thành công!");
+    window.location.reload(); // Tải lại trang
+  }
+  const hashedPassword = CryptoJS.SHA256(password).toString();
+};
