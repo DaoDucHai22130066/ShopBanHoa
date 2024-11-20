@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - Cửa Hàng Hoa Tươi</title>
+    <title>Bloom & Shine</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
@@ -11,6 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/chi-tiet-sp.css">
 </head>
+
 <body>
     <Header>
         <!-- Phần trên cùng: Hotline và mạng xã hội -->
@@ -26,7 +28,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Phần header chính: logo, tìm kiếm, tài khoản, giỏ hàng -->
         <header class="main-header">
             <div class="container d-flex justify-content-between align-items-center">
@@ -42,10 +44,20 @@
                         <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-    
-            <!-- Tài khoản, giỏ hàng, thanh toán -->
+
+                <!-- Tài khoản, giỏ hàng, thanh toán -->
                 <div class="icon-links d-flex align-items-center">
-                    <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
+                    <!-- Dropdown Tài Khoản -->
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-user"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                        </ul>
+                    </div>
                     <a href="#" class="cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
@@ -54,11 +66,14 @@
                 </div>
             </div>
         </header>
-    
-        <!-- Thanh menu -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    </Header>
+
+    <Main>
+         <!-- Thanh menu -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -68,7 +83,7 @@
                                 Hoa Sinh Nhật
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Cao Cấp</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a></li>
                                 <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Giá Rẻ</a></li>
                                 <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Mẹ</a></li>
                                 <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Người Yêu</a></li>
@@ -158,16 +173,14 @@
                 </div>
             </div>
         </nav>
-    </Header>
-
-    <Main>
+        
         <div class="product-detail container">
             <div class="row">
                 <!-- Phần ảnh sản phẩm -->
                 <div class="col-md-6">
                     <img src="kiss-me.jpg.webp" alt="Ảnh sản phẩm" class="product-image img-fluid">
                 </div>
-                
+
                 <!-- Phần thông tin sản phẩm -->
                 <div class="col-md-6">
                     <h2>Hẹn Hò</h2>
@@ -189,7 +202,7 @@
                         <a href="#"><i class="fab fa-zalo"></i></a>
                         <a href="#"><i class="fab fa-zalo"></i></a>
                     </p>
-        
+
                     <div class="shipping-options">
                         <label for="location">Vận chuyển:</label>
                         <select id="location">
@@ -202,36 +215,37 @@
                         </select>
                         <p>Phí giao hàng: <span>Miễn phí</span></p>
                     </div>
-        
+
                     <div class="delivery-warning">
                         <i class="fa fa-exclamation-circle"></i> Sản phẩm này không hỗ trợ giao vào ngày: 20-10-2024
                     </div>
-        
+
                     <div class="quantity-section">
                         <label for="quantity">Số Lượng</label>
                         <input type="number" id="quantity" min="1" value="1">
                         <button class="btn btn-primary">Đặt Hàng</button>
                         <button class="btn btn-warning">Đặt Nhanh</button>
                     </div>
-        
+
                     <div class="additional-info">
                         <p><i class="fa fa-truck"></i> Giao hoa NHANH trong 60 phút</p>
                         <p><i class="fa fa-gift"></i> Tặng miễn phí thiệp hoặc banner</p>
                     </div>
                 </div>
             </div>
-        
+
             <!-- Phần mô tả sản phẩm -->
             <div class="product-description">
                 <h3>Mô tả sản phẩm</h3>
-                <p>Hoa Hẹn Hò là lựa chọn hoàn hảo để gửi gắm tình cảm và sự chân thành, món quà ý nghĩa trong những dịp đặc biệt.</p>
+                <p>Hoa Hẹn Hò là lựa chọn hoàn hảo để gửi gắm tình cảm và sự chân thành, món quà ý nghĩa trong những dịp
+                    đặc biệt.</p>
                 <h4>Hoa bao gồm các loại hoa chính:</h4>
                 <ul>
                     <li>Hoa Hồng</li>
                     <li>Hoa Baby trắng</li>
                 </ul>
             </div>
-            
+
             <div class="related-products">
                 <h2 class="related-title">Sản phẩm liên quan</h2>
                 <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="false">
@@ -345,46 +359,45 @@
                                         <div class="product-price">840,000VNĐ</div>
                                         <a href="#" class="buy-btn">ĐẶT HÀNG</a>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev" id="prevBtn">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel"
+                        data-bs-slide="prev" id="prevBtn">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next" id="nextBtn">
+                    <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel"
+                        data-bs-slide="next" id="nextBtn">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-        </div>   
+        </div>
     </Main>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <!-- Cột 1: Logo và thông tin liên hệ -->
                 <div class="col-md-3 footer-logo">
-                    <img src="https://example.com/logo.png" alt="FlowerCorner Logo">
+                    <img src="https://example.com/logo.png" alt="Bloom&Shine Logo">
                     <div class="contact-info">
                         <span>Hotline: 1900 633 045 - 0865 160 360</span>
-                        <span>Email: sales@flowercorner.vn</span>
+                        <span><a href="https://mail.google.com/mail/u/2/#inbox">Email: Bloom&Shine@gmail.com</a></span>
                     </div>
                     <div class="app-download">
                         <img src="https://example.com/qrcode.png" alt="QR Code">
                         <span>Tải ứng dụng ngay!</span>
                         <div>
-                            <img src="https://example.com/appstore.png" alt="App Store">
-                            <img src="https://example.com/googleplay.png" alt="Google Play">
+                            <img src="img/appstore.png.webp" alt="App Store">
+                            <img src="img/gplay.png.webp" alt="Google Play">
                         </div>
                     </div>
-                    <div class="certification">
-                        <img src="https://example.com/dathongbao.png" alt="Đã Thông Báo Bộ Công Thương">
-                    </div>
                 </div>
-    
+
                 <!-- Cột 2: Chăm Sóc Khách Hàng -->
                 <div class="col-md-3">
                     <h4 class="footer-title">Chăm Sóc Khách Hàng</h4>
@@ -397,11 +410,11 @@
                         <li><a href="#">Bảo Mật Thông Tin</a></li>
                         <li><a href="#">Chính Sách Hoàn Tiền</a></li>
                         <li><a href="#">Xử Lý Khiếu Nại</a></li>
-                        <li><a href="#">Tại Sao Nên Chọn FlowerCorner.vn</a></li>
+                        <li><a href="#">Tại Sao Nên Chọn Bloom&Shine.vn</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Cột 3: Theo Dõi -->
                 <div class="col-md-3">
                     <h4 class="footer-title">Theo Dõi</h4>
@@ -413,10 +426,10 @@
                         <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Cột 4: Địa chỉ cửa hàng -->
                 <div class="col-md-3">
-                    <h4 class="footer-title">Shop Hoa Flowercorner</h4>
+                    <h4 class="footer-title">Shop Hoa Bloom&Shine</h4>
                     <ul class="list-unstyled">
                         <li>Cửa hàng chính: 142 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</li>
                         <li>Cửa Hàng TP.HCM: 225/3 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP.HCM</li>
@@ -437,18 +450,18 @@
         const prevBtn = document.querySelector('#prevBtn');
         const nextBtn = document.querySelector('#nextBtn');
 
-    // Ẩn nút Previous khi trang được tải
+        // Ẩn nút Previous khi trang được tải
         prevBtn.style.display = 'none';
 
         carousel.addEventListener('slide.bs.carousel', function (event) {
-        // Ẩn nút Previous khi ở đầu carousel
+            // Ẩn nút Previous khi ở đầu carousel
             if (event.to === 0) {
                 prevBtn.style.display = 'none';
             } else {
                 prevBtn.style.display = 'block';
             }
 
-        // Ẩn nút Next khi ở cuối carousel
+            // Ẩn nút Next khi ở cuối carousel
             const totalItems = document.querySelectorAll('.carousel-item').length;
             if (event.to === totalItems - 1) {
                 nextBtn.style.display = 'none';
@@ -457,6 +470,6 @@
             }
         });
     </script>
-    </body>
+</body>
+
 </html>
-    

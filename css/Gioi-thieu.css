@@ -157,145 +157,135 @@
         max-width: 260px
     }
 }
-/*main*/
-.banner {
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
+
+/* Các lớp CSS cơ bản */
+main {
+    font-family: Arial, sans-serif;
 }
 
-.section-title {
-    text-align: center;
-    margin: 30px 0;
-    font-weight: bold;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-
-
-/* Thanh sắp xếp sản phẩm */
-.sort-bar {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    font-size: 14px;
+main .section-title {
+    font-size: 2.5rem;
     color: #333;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f8f8f8;
+    margin-bottom: 1rem;
 }
 
-.sort-bar .view-options i {
-    font-size: 18px;
+main .section-title-small {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+main .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+main .intro-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main .intro-list li {
     color: #333;
-    margin-right: 15px;
-    cursor: pointer;
 }
 
-.sort-bar .view-options i:hover {
-    color: #ff6f61;
-}
-
-.sort-bar label {
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.sort-bar select {
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-    font-size: 14px;
-    margin-left: 10px;
-}
-
-.sort-bar select:focus {
-    outline: none;
-    border-color: #ff6f61;
-}
-
-/* Khoảng cách với sản phẩm */
-.product-section {
-    margin-top: 20px;
-}
-
-.product-card {
+/* Định kiểu cho các card */
+main .quality-card {
     border: none;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    will-change: transform, box-shadow;
+}
+
+main .quality-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+main .quality-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+main .quality-card:hover img {
+    transform: scale(1.0);
+}
+
+main .quality-card .card-title {
+    transition: color 0.3s ease-in-out;
+   
+}
+
+main .quality-card:hover .card-title {
+    color: #ff6f61;
+}
+
+main .card-body {
     text-align: center;
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
+/* Đảm bảo responsive cho các card */
+@media (max-width: 768px) {
+    .quality-card {
+        margin-bottom: 20px;
+    }
 }
 
-.product-card .product-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.product-card .product-price {
-    color: #ff6f61;
-    font-weight: bold;
-}
-
-.product-card .sale-badge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
+/* Định kiểu cho các nút mạng xã hội */
+#contact-info .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
     border-radius: 5px;
 }
 
-.btn-buy {
-    background-color: #ff6f61;
-    color: white;
+/* Nút mạng xã hội khi di chuột qua */
+#contact-info .btn:hover {
+    opacity: 0.8;
 }
 
-.btn-buy:hover {
-    background-color: #e55350;
+/* Định dạng địa chỉ và thông tin liên hệ */
+#contact-info ul.intro-list {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-/*icon liên lạc*/
-
-.floating-icons {
-    position: fixed;
-    left: 30px;
-    bottom: 100px;
-    z-index: 1000;
+#contact-info ul.intro-list li {
+    font-size: 1rem;
+    color: #333;
 }
 
-.floating-icons a {
-    display: block;
-    margin-bottom: 10px;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border: 1px solid rgb(255, 111, 109);
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    line-height: 50px;
-    transition: all 0.3s ease;
+/* Đảm bảo tính responsive */
+@media (max-width: 768px) {
+    #contact-info ul.intro-list {
+        padding-left: 15px;
+    }
+
+    #contact-info .list-inline {
+        text-align: center;
+    }
 }
 
-.floating-icons a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
-.floating-icons a i {
-    font-size: 20px;
-    color: #ff6f61;
+/* Cải thiện giao diện trên mobile */
+@media (max-width: 768px) {
+    .intro-list {
+        padding-left: 15px;
+        /* Điều chỉnh khi trên màn hình nhỏ */
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        /* Giảm font-size cho đoạn văn bản trên mobile */
+    }
+
+    .section-title,
+    .section-title-small {
+        text-align: center;
+        /* Căn giữa tiêu đề trên màn hình di động */
+    }
 }
 
 
@@ -350,6 +340,7 @@
     text-decoration: none;
 }
 
+/*nút cuộn trở về đầu trang*/
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -370,38 +361,4 @@
     background-color: #fafafa00;
     color: #fd8ad9;
     border: 2px solid #fd8ad9;
-}
-
-/* CSS cho phân trang */
-.pagination {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.pagination .page-btn {
-    color: #333;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin: 0 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.page-btn:hover {
-    background-color: #ff6666;
-    color: white;
-}
-
-.page-btn.active {
-    background-color: #ff6666;
-    color: white;
-    border: 1px solid #ff6666;
-}
-
-.pagination-info {
-    text-align: center;
-    color: #555;
-    font-size: 14px;
 }
