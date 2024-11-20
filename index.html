@@ -112,6 +112,18 @@
                 </div>
             </div>
         </div>
+        <div id="forgotPasswordForm" style="display: none;">
+            <h2>Quên Mật Khẩu</h2>
+            <div class="input-group">
+                <input type="email" id="forgotEmail" placeholder="Nhập email của bạn">
+                <p class="error-message" id="forgotEmailError">Email không hợp lệ!</p>
+            </div>
+            <div class="input-group">
+                <button onclick="forgotPassword()">Gửi mật khẩu</button>
+            </div>
+            <p class="signup" onclick="showLogin()">Quay lại Đăng nhập</p>
+        </div>
+        
 
         <script>
             
@@ -579,6 +591,12 @@
         document.getElementById("loginForm").style.display = "none";
         document.getElementById("registerForm").style.display = "block";
     }
+    function showForgotPassword() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("forgotPasswordForm").style.display = "block";
+}
+
+
 
     function showLogin() {
         document.getElementById("registerForm").style.display = "none";
@@ -586,13 +604,7 @@
     }
 
     // Kiểm tra trạng thái đăng nhập khi tải trang
-    window.onload = function() {
-        const userData = JSON.parse(localStorage.getItem("userData"));
-        if (userData && userData.email) {
-            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
-        }
-    };
-
+    
     window.onload = function() {
         const userData = JSON.parse(localStorage.getItem("userData"));
         if (userData && userData.email) {
@@ -606,10 +618,55 @@
 
     // Hàm đăng xuất
     function logout() {
-        localStorage.removeItem("userData"); // Xóa thông tin người dùng khỏi localStorage
-        alert("Bạn đã đăng xuất thành công!");
-        window.location.reload(); // Tải lại trang
+    // Xóa thông tin người dùng khỏi localStorage
+    localStorage.removeItem("currentUser");
+
+    // Hiển thị lại giao diện mặc định (ẩn nút Đăng xuất, hiển thị Tài khoản)
+    document.getElementById("account-link").textContent = "Tài khoản";
+    document.getElementById("account-link").style.pointerEvents = "auto"; // Cho phép click vào "Tài khoản"
+    document.getElementById("logout-link").style.display = "none";
+
+    alert("Bạn đã đăng xuất thành công!");
+}
+function forgotPassword() {
+    const email = document.getElementById("forgotEmail").value.trim();
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Kiểm tra email hợp lệ
+    if (!emailPattern.test(email)) {
+        document.getElementById("forgotEmailError").style.display = "block";
+        return;
+    } else {
+        document.getElementById("forgotEmailError").style.display = "none";
     }
+
+    // Kiểm tra email có tồn tại trong hệ thống
+    const user = users.find(user => user.email === email);
+
+    if (user) {
+        // Gửi email sử dụng EmailJS
+        const templateParams = {
+            to_email: email,
+            user_name: user.name,
+            password: user.password, // Gửi mật khẩu trực tiếp (không an toàn nếu lưu plaintext)
+        };
+
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+            .then(() => {
+                alert("Mật khẩu đã được gửi đến email của bạn!");
+                showLogin();
+            })
+            .catch(error => {
+                console.error("Lỗi gửi email:", error);
+                alert("Không thể gửi email. Vui lòng thử lại sau!");
+            });
+    } else {
+        alert("Email không tồn tại trong hệ thống!");
+    }
+}
+
+
 </script>
 >
     
