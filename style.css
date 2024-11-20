@@ -283,4 +283,13 @@
   color: red;
   font-size: 12px;
   display: none;
+  margin-top: 5px;
 }
+#logout-link {
+  display: none; /* Ẩn nút Đăng xuất mặc định */
+}
+
+#account-link {
+  cursor: pointer;
+}
+
