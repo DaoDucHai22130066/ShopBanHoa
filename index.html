@@ -597,6 +597,7 @@
         const userData = JSON.parse(localStorage.getItem("userData"));
         if (userData && userData.email) {
             document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
+            document.getElementById("account-link").style.pointerEvents = "none"; // Không cho click vào "Tài khoản"
             document.getElementById("logout-link").style.display = "inline-block"; // Hiển thị nút Đăng xuất
         } else {
             document.getElementById("logout-link").style.display = "none";
