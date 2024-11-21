@@ -51,6 +51,10 @@
                     <a href="#" id="account-link" onclick="checkLoginStatus(event)">
                         <i class="fas fa-user"></i> Tài khoản
                     </a>
+                    <a href="#" id="change-password-button" onclick="showChangePassword()" style="display: none;">
+                        Đổi mật khẩu
+                    </a>
+
                     
                     <a href="#" id="logout-link" onclick="logout()" style="display: none;">
                         <i class="fas fa-sign-out-alt"></i> Đăng xuất
@@ -123,6 +127,25 @@
             </div>
             <p class="signup" onclick="showLogin()">Quay lại Đăng nhập</p>
         </div>
+        <div id="changePasswordModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('changePasswordModal')">&times;</span>
+                <h2>Đổi mật khẩu</h2>
+                <div class="input-group">
+                    <input type="password" id="currentPassword" placeholder="Mật khẩu hiện tại">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="newPassword" placeholder="Mật khẩu mới">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu mới">
+                </div>
+                <div class="input-group">
+                    <button onclick="changePassword()">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+        
         
 
         <script>
@@ -572,19 +595,29 @@
 
     // Hàm đăng nhập
     function login() {
-        const email = document.getElementById("loginEmail").value.trim();
-        const password = document.getElementById("loginPassword").value.trim();
-        const userData = JSON.parse(localStorage.getItem("userData"));
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
 
-        if (userData && userData.email === email && userData.password === password) {
-            alert("Đăng nhập thành công!");
-            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
-            document.getElementById("logout-link").style.display = "inline-block";
-            window.location.href = "index.html"; // Chuyển về trang index
-        } else {
-            document.getElementById("loginError").style.display = "block";
-        }
+    // Lấy danh sách người dùng từ LocalStorage
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Kiểm tra thông tin đăng nhập
+    const user = users.find(
+        (user) => user.email === email && user.password === password
+    );
+
+    if (user) {
+        alert("Đăng nhập thành công!");
+        localStorage.setItem("currentUser", JSON.stringify(user)); // Lưu thông tin người dùng hiện tại
+        document.getElementById("account-link").textContent = "Xin chào, " + user.name;
+        document.getElementById("logout-link").style.display = "inline-block";
+        document.getElementById("change-password-button").style.display = "inline-block"; // Hiển thị nút "Đổi mật khẩu"
+        toggleModal(); // Đóng modal đăng nhập
+    } else {
+        alert("Email hoặc mật khẩu không đúng!");
     }
+}
+
 
     // Chuyển đổi giữa form đăng ký và đăng nhập
     function showRegister() {
@@ -603,31 +636,40 @@
         document.getElementById("loginForm").style.display = "block";
     }
 
-    // Kiểm tra trạng thái đăng nhập khi tải trang
     
-    window.onload = function() {
-        const userData = JSON.parse(localStorage.getItem("userData"));
-        if (userData && userData.email) {
-            document.getElementById("account-link").textContent = "Xin chào, " + userData.name;
-            document.getElementById("account-link").style.pointerEvents = "none"; // Không cho click vào "Tài khoản"
-            document.getElementById("logout-link").style.display = "inline-block"; // Hiển thị nút Đăng xuất
-        } else {
-            document.getElementById("logout-link").style.display = "none";
-        }
-    };
+    
+    window.onload = function () {
+    // Kiểm tra thông tin người dùng trong localStorage
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (currentUser) {
+        // Nếu đã đăng nhập
+        document.getElementById("account-link").textContent = "Xin chào, " + currentUser.name;
+        document.getElementById("logout-link").style.display = "inline-block";
+        document.getElementById("change-password-button").style.display = "inline-block";
+    } else {
+        // Nếu chưa đăng nhập (trạng thái mặc định)
+        document.getElementById("account-link").textContent = "Tài khoản";
+        document.getElementById("logout-link").style.display = "none";
+        document.getElementById("change-password-button").style.display = "none";
+    }
+};
+
 
     // Hàm đăng xuất
     function logout() {
-    // Xóa thông tin người dùng khỏi localStorage
+    // Xóa thông tin người dùng hiện tại
     localStorage.removeItem("currentUser");
-
-    // Hiển thị lại giao diện mặc định (ẩn nút Đăng xuất, hiển thị Tài khoản)
-    document.getElementById("account-link").textContent = "Tài khoản";
-    document.getElementById("account-link").style.pointerEvents = "auto"; // Cho phép click vào "Tài khoản"
-    document.getElementById("logout-link").style.display = "none";
-
     alert("Bạn đã đăng xuất thành công!");
+
+    // Đặt lại giao diện về trạng thái mặc định
+    document.getElementById("account-link").textContent = "Tài khoản";
+    document.getElementById("logout-link").style.display = "none";
+    document.getElementById("change-password-button").style.display = "none";
 }
+
+
+
 function forgotPassword() {
     const email = document.getElementById("forgotEmail").value.trim();
     const users = JSON.parse(localStorage.getItem("users")) || [];
@@ -665,6 +707,65 @@ function forgotPassword() {
         alert("Email không tồn tại trong hệ thống!");
     }
 }
+function changePassword() {
+    const currentPassword = document.getElementById("currentPassword").value.trim();
+    const newPassword = document.getElementById("newPassword").value.trim();
+    const confirmPassword = document.getElementById("confirmPassword").value.trim();
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    if (!currentUser) {
+        alert("Bạn cần đăng nhập trước!");
+        return;
+    }
+
+    if (currentUser.password !== currentPassword) {
+        alert("Mật khẩu hiện tại không đúng!");
+        return;
+    }
+
+    if (newPassword !== confirmPassword) {
+        alert("Mật khẩu mới và xác nhận không khớp!");
+        return;
+    }
+
+    if (newPassword.length < 4 || newPassword.length > 20) {
+        alert("Mật khẩu mới phải từ 4 đến 20 ký tự!");
+        return;
+    }
+
+    // Cập nhật mật khẩu trong danh sách người dùng
+    users = users.map((user) =>
+        user.email === currentUser.email ? { ...user, password: newPassword } : user
+    );
+    localStorage.setItem("users", JSON.stringify(users));
+
+    // Cập nhật mật khẩu cho người dùng hiện tại
+    currentUser.password = newPassword;
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+
+    alert("Đổi mật khẩu thành công!");
+    closeModal("changePasswordModal");
+}
+window.onload = function () {
+    // Kiểm tra thông tin người dùng trong localStorage
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (currentUser) {
+        // Nếu đã đăng nhập
+        document.getElementById("account-link").textContent = "Xin chào, " + currentUser.name;
+        document.getElementById("logout-link").style.display = "inline-block";
+        document.getElementById("change-password-button").style.display = "inline-block";
+    } else {
+        // Nếu chưa đăng nhập (trạng thái mặc định)
+        document.getElementById("account-link").textContent = "Tài khoản";
+        document.getElementById("logout-link").style.display = "none";
+        document.getElementById("change-password-button").style.display = "none";
+    }
+};
+
+
+
 
 
 </script>
