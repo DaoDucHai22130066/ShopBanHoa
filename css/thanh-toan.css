@@ -42,6 +42,10 @@ body, footer h5 {
     min-height: 600px
 }
 
+#top .btn-link, #top a, .breadcrumb>li.breadcrumb-item>a, .list-unstyled a, .product-thumb .button-group button:hover, a, a:hover {
+    text-decoration: none;
+}
+
 
 /* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
