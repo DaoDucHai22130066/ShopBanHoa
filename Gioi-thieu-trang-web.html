@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Shine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Gioi-thieu.css">
+</head>
+<body>
+    <Header>
+        <!-- Phần trên cùng: Hotline và mạng xã hội -->
+        <div class="top-bar text-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="hotline">
+                    <span>HOTLINE: 1900 633 045 | 0865 160 360</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/Mr.Lebail/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần header chính: logo, tìm kiếm, tài khoản, giỏ hàng -->
+        <header class="main-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="https://example.com/logo.png" alt="Flower Shop Logo"></a>
+                </div>
+
+                <!-- Thanh tìm kiếm -->
+                <div class="search-bar">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Tài khoản, giỏ hàng, thanh toán -->
+                <div class="icon-links d-flex align-items-center">
+                    <!-- Dropdown Tài Khoản -->
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-user"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
+                </div>
+            </div>
+        </header>
+    </Header>
+
+
+    <!--Main-->
+    <Main>
+        <!-- Thanh menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                                Hoa Sinh Nhật
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Giá Rẻ</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Mẹ</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Người Yêu</a></li>
+                                <li><a class="dropdown-item" href="#">Lẵng Hoa Sinh Nhật</a></li>
+                                <li><a class="dropdown-item" href="#">Giỏ Hoa Sinh Nhật</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="hoa-khai-truong.html" id="navbarDropdown" role="button">
+                                Hoa Khai Trương
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Lẵng Hoa Khai Trương 2 Tầng</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Để Bàn</a></li>
+                                <li><a class="dropdown-item" href="#">Kệ Hoa Khai Trương</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Cao Cấp</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Giá Rẻ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="lan-ho-diep.html" id="navbarDropdown" role="button">
+                                Lan Hồ Điệp
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Nhỏ</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Vàng</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Trắng</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Tím</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Sọc</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Đốm</a></li>
+                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 3 cành</a></li>
+                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 5 cành</a></li>
+                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 10 cành</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="Chu-De.html" id="navbarDropdown" role="button">
+                                Chủ Đề
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Hoa Chúc Mừng</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Cưới</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Chia Buồn</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Valentine</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Kỷ Niệm</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa 8/3</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa 20/10</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa 20/11 - Ngày Nhà Giáo</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Tốt Nghiệp</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="thiet-ke.html" id="navbarDropdown" role="button">
+                                Thiết Kế
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Lẵng Hoa</a></li>
+                                <li><a class="dropdown-item" href="#">Giỏ Hoa</a></li>
+                                <li><a class="dropdown-item" href="#">Kệ Hoa</a></li>
+                                <li><a class="dropdown-item" href="#">Bình Hoa</a></li>
+                                <li><a class="dropdown-item" href="#">Bó Hoa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="Hoa-tuoi.html" id="navbarDropdown" role="button">
+                                Hoa Tươi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Hoa Hồng</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Hướng Dương</a></li>
+                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Mẫu Đơn</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Tulip</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Sen</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Đồng Tiền</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Cẩm Chướng</a></li>
+                                <li><a class="dropdown-item" href="#">Cẩm Tú Cầu</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa Ly</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hoa Tươi Giảm 30%</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <!-- Tiêu đề trang -->
+            <section class="text-center mb-5">
+                <h1 class="section-title">Giới thiệu về Flower Corner</h1>
+                <p class="lead intro-text">Chúng tôi mang đến những sản phẩm hoa tươi chất lượng và dịch vụ hoàn hảo.</p>
+            </section>
+    
+            <!-- Phần Giới thiệu -->
+            <section class="row mb-5">
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500x300" alt="Flower Shop" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title-small">Chúng tôi là ai?</h2>
+                    <p class="intro-text">Flower Corner là cửa hàng hoa tươi uy tín, chuyên cung cấp các loại hoa tươi đẹp
+                        và độc đáo cho mọi dịp. Chúng tôi cam kết mang đến những sản phẩm hoa chất lượng với giá cả hợp lý
+                        và dịch vụ tận tâm. Với kinh nghiệm lâu năm trong ngành hoa tươi, Flower Corner là sự lựa chọn hoàn
+                        hảo cho bạn.</p>
+                    <ul class="intro-list">
+                        <li>Hoa tươi chất lượng cao</li>
+                        <li>Giao hàng nhanh chóng và đúng hẹn</li>
+                        <li>Hỗ trợ tư vấn miễn phí cho các sự kiện</li>
+                        <li>Dịch vụ chăm sóc khách hàng tuyệt vời</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Lịch sử cửa hàng -->
+            <section class="mb-5">
+                <h2 class="section-title-small text-center mb-3">Lịch sử hình thành</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="intro-text">Flower Corner được thành lập từ năm 2010 với sứ mệnh mang đến cho khách hàng
+                            những bông hoa tươi thắm nhất. Được yêu mến bởi chất lượng sản phẩm vượt trội và dịch vụ giao
+                            hàng nhanh chóng, chúng tôi đã mở rộng hệ thống cửa hàng trên toàn quốc.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/500x300" alt="History" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Cam kết chất lượng -->
+            <section>
+                <h2 class="section-title-small text-center mb-3">Cam kết chất lượng</h2>
+                <p class="intro-text text-center">Chúng tôi cam kết cung cấp hoa tươi với chất lượng cao nhất, được chọn lọc
+                    kỹ lưỡng từ các nông trại uy tín. Mỗi bông hoa đều được chăm sóc cẩn thận, đảm bảo mang lại cho bạn
+                    những trải nghiệm tuyệt vời nhất.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card quality-card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hoa tươi lâu dài</h5>
+                                <p class="card-text">Chúng tôi đảm bảo hoa của bạn sẽ tươi lâu, giữ được vẻ đẹp tự nhiên lâu
+                                    hơn so với các loại hoa thông thường.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card quality-card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Chăm sóc tận tình</h5>
+                                <p class="card-text">Dịch vụ chăm sóc khách hàng của chúng tôi luôn sẵn sàng tư vấn và hỗ
+                                    trợ bạn mọi lúc mọi nơi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card quality-card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Giao hàng đúng hẹn</h5>
+                                <p class="card-text">Chúng tôi cam kết giao hàng nhanh chóng, đúng giờ đến tay bạn với sự
+                                    hài lòng tuyệt đối.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Thông tin liên hệ -->
+            <section id="contact-info" class="mb-5">
+                <h2 class="section-title-small text-center mb-3">Thông tin liên hệ</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Chúng tôi có mặt tại:</h4>
+                        <ul class="intro-list">
+                            <li><strong>Địa chỉ:</strong> 123 Flower Street, Hà Nội</li>
+                            <li><strong>Giờ mở cửa:</strong> 8:00 AM - 6:00 PM (Thứ 2 - Thứ 7)</li>
+                            <li><strong>Điện thoại:</strong> 0901 234 567</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Liên kết mạng xã hội:</h4>
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/yourpage" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fab fa-facebook"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://zalo.me/yournumber" target="_blank" class="btn btn-outline-success">
+                                    <i class="fab fa-zalo"></i> Zalo
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://m.me/yourpage" target="_blank" class="btn btn-outline-info">
+                                    <i class="fab fa-facebook-messenger"></i> Messenger
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/yourchannel" target="_blank"
+                                    class="btn btn-outline-danger">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="btn btn-outline-dark">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:your@email.com" class="btn btn-outline-secondary">
+                                    <i class="fas fa-envelope"></i> Email
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.yourwebsite.com" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-globe"></i> Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </Main>
+
+    
+
+    <!--Footer, Giới thiệu trang web, chăm sóc khách hàng, theo dõi, chi nhánh của cửa hàng (2 đến 3 chi nhánh)-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Cột 1: Logo và thông tin liên hệ -->
+                <div class="col-md-3 footer-logo">
+                    <img src="https://example.com/logo.png" alt="Bloom&Shine Logo">
+                    <div class="contact-info">
+                        <span>Hotline: 1900 633 045 - 0865 160 360</span>
+                        <span><a href="https://mail.google.com/mail/u/2/#inbox">Email: Bloom&Shine@gmail.com</a></span>
+                    </div>
+                    <div class="app-download">
+                        <img src="https://example.com/qrcode.png" alt="QR Code">
+                        <span>Tải ứng dụng ngay!</span>
+                        <div>
+                            <img src="img/appstore.png.webp" alt="App Store">
+                            <img src="img/gplay.png.webp" alt="Google Play">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Chăm Sóc Khách Hàng -->
+                <div class="col-md-3">
+                    <h4 class="footer-title">Chăm Sóc Khách Hàng</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="#">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="#">Hình Thức Thanh Toán</a></li>
+                        <li><a href="#">Bảo Mật Thông Tin</a></li>
+                        <li><a href="#">Chính Sách Hoàn Tiền</a></li>
+                        <li><a href="#">Xử Lý Khiếu Nại</a></li>
+                        <li><a href="#">Tại Sao Nên Chọn Bloom&Shine.vn</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Theo Dõi -->
+                <div class="col-md-3">
+                    <h4 class="footer-title">Theo Dõi</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Địa chỉ cửa hàng -->
+                <div class="col-md-3">
+                    <h4 class="footer-title">Shop Hoa Bloom&Shine</h4>
+                    <ul class="list-unstyled">
+                        <li>Cửa hàng chính: 142 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</li>
+                        <li>Cửa Hàng TP.HCM: 225/3 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP.HCM</li>
+                        <li>Chi nhánh Hà Nội: 65 Trần Phú, Ba Đình, Hà Nội</li>
+                        <li>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ZAS</li>
+                        <li>Mã số thuế: 031630426</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" title="Cuộn lên đầu trang">↑</button>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        // Lấy phần tử nút cuộn lên đầu trang
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        // Theo dõi sự kiện cuộn để hiển thị/ẩn nút
+        function handleScrollToTopBtn() {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        }
+
+        // Xử lý sự kiện click vào nút cuộn lên
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', handleScrollToTopBtn);
+
+        // Ví dụ: Hiệu ứng hover cho các card
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
