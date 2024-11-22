@@ -1,0 +1,188 @@
+/* Phần hotline và mạng xã hội, (Header) */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.top-bar .hotline {
+    margin-right: 30px;
+}
+
+/* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo img {
+    height: 80px;
+}
+
+.main-header .search-bar {
+    max-width: 400px;
+    margin: auto;
+}
+
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+.main-header .cart {
+    position: relative;
+}
+
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+/* Thanh menu */
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff35a4;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    display: none;
+}
+
+
+/* Main */
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.product-card {
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card .product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card .product-price {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.product-card .sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn-buy {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.btn-buy:hover {
+    background-color: #e55350;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 60px;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.footer .contact-info span,
+.footer .contact-info a {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer .certification img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff6f61;
+    text-decoration: none;
+}

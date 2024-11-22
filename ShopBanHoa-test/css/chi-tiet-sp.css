@@ -1,0 +1,257 @@
+/* Phần hotline và mạng xã hội, (Header) */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.top-bar .hotline {
+    margin-right: 30px;
+}
+
+/* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo img {
+    height: 80px;
+}
+
+.main-header .search-bar {
+    max-width: 400px;
+    margin: auto;
+}
+
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+.main-header .cart {
+    position: relative;
+}
+
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+/* Thanh menu */
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff35a4;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    display: none;
+}
+
+ /*Main*/
+ .product-detail {
+    margin-top: 20px;
+}
+
+.product-image {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-price {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #e55350;
+    font-weight: bold;
+}
+
+.discount-badge {
+    background-color: #e55350;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.product-promotions .badge {
+    margin-right: 5px;
+}
+
+.contact-info {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.phone-number {
+    color: #e55350;
+}
+
+.chat-options a {
+    color: #333;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.shipping-options {
+    margin-top: 15px;
+}
+
+.shipping-options label {
+    font-weight: bold;
+}
+
+.delivery-warning {
+    background-color: #fff5f5;
+    color: #e55350;
+    padding: 10px;
+    border: 1px solid #e55350;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.quantity-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-section label {
+    margin-right: 10px;
+}
+
+.quantity-section input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+
+.additional-info p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.additional-info i {
+    color: #ff6f61;
+    margin-right: 10px;
+}
+
+.product-description {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.product-description h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-description ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 60px;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.footer .contact-info span,
+.footer .contact-info a {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer .certification img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff6f61;
+    text-decoration: none;
+}
