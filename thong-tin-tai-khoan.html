@@ -163,95 +163,65 @@
             </div>
         </div>
     </nav>
-    <div class="acc_ctrl m_r12">
-        <h2>
-            Tài khoản</h2>
-        <div class="list_ctrl">
-            <ul>
-                <li class="first">
-                    <a id="ctl00_ctl00_cphContent_ucAccountCtrl_hplProfile" title="Thông tin tài khoản"
-                       href="/account/profile.aspx?lang=vn">Thông tin tài khoản</a>
-                </li>
-                <li>
-                    <a id="ctl00_ctl00_cphContent_ucAccountCtrl_hplChangePassword" title="Đổi mật khẩu"
-                       href="/account/ChangePassword.aspx?lang=vn">Đổi mật khẩu</a>
-                </li>
-                <li>
-                    <a id="ctl00_ctl00_cphContent_ucAccountCtrl_hplOrder" title="Xem lại đơn hàng"
-                       href="/account/orders.aspx?lang=vn">Xem lại đơn hàng</a>
-                </li>
-                <li>
-                    <a id="ctl00_ctl00_cphContent_ucAccountCtrl_btnLogout" title="Đăng xuất"
-                       href="javascript:__doPostBack(&#39;ctl00$ctl00$cphContent$ucAccountCtrl$btnLogout&#39;,&#39;&#39;)">Đăng
-                        xuất</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="col_1_1">
-
-        <div id="ctl00_ctl00_cphContent_cphProfile_ucProfile_pnlLogin" class="frm_content"
-             onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_ctl00_cphContent_cphProfile_ucProfile_btnSave&#39;)">
-
-            <h2>
-                Cập nhật thông tin tài khoản
-            </h2>
-
-            <div>
-                <label>
-                    <span class="req">*</span>Email của bạn:
-                </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h4>TÀI KHOẢN</h4>
+                    <a href="#">Thông tin tài khoản</a>
+                    <a href="#">Đổi mật khẩu</a>
+                    <a href="#">Xem lại đơn hàng</a>
+                    <a href="#">Đăng xuất</a>
+                </div>
             </div>
-            <div>
-                <label for="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtFirstName">
-                    <span class="req">*</span>Tên:</label>
-                <input name="ctl00$ctl00$cphContent$cphProfile$ucProfile$txtFirstName" type="text" value=""
-                       maxlength="150" id="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtFirstName"/>
+            <div class="col-md-9">
+                <div class="content">
+                    <h4>CẬP NHẬT THÔNG TIN TÀI KHOẢN</h4>
+                    <form>
+                        <div class="form-group">
+                            <label>* Email của bạn:</label>
+                            <span>22130306@st.hcmuaf.edu.vn</span>
+                        </div>
+                        <div class="form-group">
+                            <label>* Tên:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Họ:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>* Điện thoại:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Quốc gia:</label>
+                            <select class="form-control">
+                                <option>Việt Nam</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tỉnh/Thành phố:</label>
+                            <select class="form-control">
+                                <option>-- please choose --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Quận/Huyện:</label>
+                            <select class="form-control">
+                                <option>-- please choose --</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-save">
+                            <i class="fas fa-save"></i> Lưu
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtLastName">
-                    <span class="req">*</span>Họ:</label>
-                <input name="ctl00$ctl00$cphContent$cphProfile$ucProfile$txtLastName" type="text" value=""
-                       maxlength="150" id="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtLastName"/>
-            </div>
-            <div>
-                <label for="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtPhoneNumber">
-                    <span class="req">*</span>Điện thoại:</label>
-                <input name="ctl00$ctl00$cphContent$cphProfile$ucProfile$txtPhoneNumber" type="text" maxlength="25"
-                       id="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtPhoneNumber"/>
-            </div>
-            <div>
-                <label for="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtAddress">
-                    Địa chỉ:</label>
-                <input name="ctl00$ctl00$cphContent$cphProfile$ucProfile$txtAddress" type="text" maxlength="250"
-                       id="ctl00_ctl00_cphContent_cphProfile_ucProfile_txtAddress"/>
-            </div>
-
-            <div>
-                <label>
-                    Tỉnh/Thành phố:</label>
-                <select name="ctl00$ctl00$cphContent$cphProfile$ucProfile$ddlState"
-                        onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$cphContent$cphProfile$ucProfile$ddlState\&#39;,\&#39;\&#39;)&#39;, 0)"
-                        id="ctl00_ctl00_cphContent_cphProfile_ucProfile_ddlState">
-                    <option selected="selected" value="0">-- please choose --</option>
-
-                </select>
-            </div>
-            <div>
-                <label>
-                    Quận/Huyện:</label>
-                <select name="ctl00$ctl00$cphContent$cphProfile$ucProfile$ddlCity"
-                        id="ctl00_ctl00_cphContent_cphProfile_ucProfile_ddlCity">
-                    <option selected="selected" value="0">-- please choose --</option>
-
-                </select>
-            </div>
-            <div class="button">
-                <input type="submit" name="ctl00$ctl00$cphContent$cphProfile$ucProfile$btnSave" value="Lưu"
-                       id="ctl00_ctl00_cphContent_cphProfile_ucProfile_btnSave" class="save"/>
-            </div>
-
         </div>
     </div>
 </main>
