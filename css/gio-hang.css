@@ -1,51 +1,3 @@
-body {
-    font-weight: 400;
-    color: #3d3d3d;
-    font-size: 14px;
-    line-height: 20px;
-    width: 100%
-}
-
-h1 {
-    font-size: 26px
-}
-
-h2 {
-    font-size: 23px
-}
-
-h3 {
-    font-size: 21px
-}
-
-i, h4 {
-    font-size: 15px
-}
-
-#top, h5 {
-    font-size: 12px
-}
-
-h6 {
-    font-size: 10.2px
-}
-
-a {
-    color: #e91e63
-}
-
-body, footer h5 {
-    font-family: Montserrat, sans-serif
-}
-
-#content {
-    min-height: 600px
-}
-
-#top .btn-link, #top a, .breadcrumb>li.breadcrumb-item>a, .list-unstyled a, .product-thumb .button-group button:hover, a, a:hover {
-    text-decoration: none;
-}
-
 /* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
     background-color: #f8f8f8;
@@ -53,15 +5,179 @@ body, footer h5 {
     font-size: 14px;
     color: #333;
 }
+
 .top-bar .social-icons i {
     font-size: 18px;
     color: #555;
     margin-right: 10px;
 }
+
 .top-bar .hotline {
     margin-right: 30px;
 }
 
+
+/* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo img {
+    height: 80px;
+}
+
+.main-header .search-bar {
+    max-width: 400px;
+    margin: auto;
+}
+
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+.main-header .cart {
+    position: relative;
+}
+
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -13px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.main-header .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+    background-color: #fff ;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .dropdown-menu .dropdown-item {
+    text-align: left; 
+    padding: 8px 16px; 
+    margin: 0;
+}
+
+.main-header .dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+
+/* Thanh menu */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng nếu muốn */
+}
+
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-flow: column
+}
+
+.navbar-light .navbar-toggler {
+    font-size: 15px;
+    font-stretch: expanded;
+    color: #fff;
+    padding: 6px 12px;
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-repeat: repeat-x;
+    border-color: #e91e63
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f61;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+.dropdown-item:active {
+    background-color: #ff6f61;
+    color: #f0f0f0;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    padding: 0;
+    display: none;
+}
+
+.dropdown-menu.show .mini-tbl-product .text-end,
+.dropdown-menu.show .mini-tbl-product .text-start * {
+    line-height: 56px
+}
+
+/*Định dạng lại kích thước cho màn hình nhỏ*/
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 200px;
+        width: 100%
+    }
+}
+
+@media (max-width: 767px) {
+
+    #menu div.dropdown-menu {
+        margin-left: 0 !important;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, .1)
+    }
+
+    #menu .dropdown-menu a:hover,
+    #menu .dropdown-menu ul li a :hover {
+        background: rgba(0, 0, 0, .1)
+    }
+
+    #logo {
+        margin: 10px 0
+    }
+
+    #logo img {
+        max-width: 260px
+    }
+}
 
 /* Phần chính của header */
 .main-header {
@@ -393,28 +509,29 @@ b, strong {
     border: none;
 }
 
-/*Footer*/
-footer {
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: #fcfcfc;
-    border-top: 1px solid #ddd
+/*Footer*/.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
 }
 
 .footer .footer-logo img {
     height: 60px;
 }
+
 .footer .footer-title {
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 .footer .social-icons i {
     font-size: 18px;
     color: #555;
     margin-right: 10px;
 }
+
 .footer .contact-info span,
 .footer .contact-info a {
     display: block;
@@ -432,20 +549,16 @@ footer {
     margin-top: 10px;
 }
 
-.footer, footer a, footer h5 {
-    color: #3d3d3d;
+.footer a {
+    color: #333;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #e91e63;
+    color: #ff6f61;
     text-decoration: none;
 }
 
-.footer p {
-    margin-bottom: .75rem
-}
-
-.footer .col-md-3 {
-    padding: 0 20px
+.footer a {
+    transition: all 0.3s ease;
 }
