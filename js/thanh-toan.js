@@ -92,5 +92,76 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const districtSelect = document.getElementById('input-shipping-custom-field-30'); // Select Quận/Huyện
+    const allOptions = Array.from(districtSelect.options); // Lưu tất cả option vào mảng
+
+
+    // Thêm tùy chọn mặc định vào đầu danh sách
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Vui lòng chọn Quận / Huyện';
+    defaultOption.selected = true;
+    defaultOption.disabled = true;
+    districtSelect.insertBefore(defaultOption, districtSelect.firstChild);
+    
+    // Ẩn tất cả các tùy chọn khi trang được tải
+    allOptions.forEach(option => option.style.display = 'none');
+
+    // Lắng nghe sự kiện thay đổi trên Tỉnh/Thành phố
+    document.getElementById('input-shipping-zone').addEventListener('change', function () {
+        const zoneValue = this.value; // Lấy giá trị của option được chọn
+
+        // Ẩn tất cả các tùy chọn trước khi hiển thị lại
+        allOptions.forEach(option => option.style.display = 'none');
+
+        // Hiển thị các option tương ứng với giá trị được chọn
+        if (zoneValue === '43') {
+            // Hiển thị các option từ value 47 đến 61
+            allOptions.forEach(option => {
+                const value = parseInt(option.value);
+                if (value >= 47 && value <= 61) {
+                    option.style.display = 'block';
+                }
+            });
+        }
+
+        if (zoneValue === '44') {
+            // Hiển thị các option từ value 62 đến 68
+            allOptions.forEach(option => {
+                const value = parseInt(option.value);
+                if (value >= 62 && value <= 68) {
+                    option.style.display = 'block';
+                }
+            });
+        }
+
+        if (zoneValue === '45') {
+            // Hiển thị các option từ value 62 đến 68
+            allOptions.forEach(option => {
+                const value = parseInt(option.value);
+                if (value >= 69 && value <= 74) {
+                    option.style.display = 'block';
+                }
+            });
+        }
+
+        if (zoneValue === '46') {
+            // Hiển thị các option từ value 62 đến 68
+            allOptions.forEach(option => {
+                const value = parseInt(option.value);
+                if (value >= 75 && value <= 98) {
+                    option.style.display = 'block';
+                }
+            });
+        }
+
+        // Đặt lại giá trị mặc định cho select Quận/Huyện
+        districtSelect.value = '';
+    });
+});
+
+
+
 
 
