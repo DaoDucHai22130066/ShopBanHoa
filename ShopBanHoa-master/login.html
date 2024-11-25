@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="modal-content">
+      <h2>Đăng Nhập</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="loginEmail" placeholder="E-mail" />
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" placeholder="Mật khẩu" />
+        </div>
+        <button type="submit">Đăng Nhập</button>
+        <span id="loginError" class="error-message"></span>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("loginForm").onsubmit = function (event) {
+        event.preventDefault();
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+        const userData = JSON.parse(localStorage.getItem("userData"));
+
+        if (
+          userData &&
+          userData.email === email &&
+          userData.password === password
+        ) {
+          window.location.href = "index.html"; // Chuyển về trang chính khi đăng nhập thành công
+        } else {
+          document.getElementById("loginError").innerText =
+            "E-mail hoặc mật khẩu không đúng!";
+        }
+      };
+    </script>
+  </body>
+</html>
