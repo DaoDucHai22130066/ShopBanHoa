@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Script loaded successfully"); // Kiểm tra file đã được tải
+  // Lấy form đăng ký
+  const registerForm = document.getElementById("registerForm");
 
-  document.querySelector("form").addEventListener("submit", function (e) {
+  // Kiểm tra nếu form không tồn tại
+  if (!registerForm) {
+    console.error("Form đăng ký không được tìm thấy!");
+    return;
+  }
+
+  // Gắn sự kiện submit vào form
+  registerForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Ngăn form tự động submit
-    console.log("Form submitted"); // Xác nhận sự kiện submit được kích hoạt
 
     // Lấy giá trị từ các trường
     const fullName = document.getElementById("fullName").value.trim();
@@ -11,14 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const phone = document.getElementById("phone").value.trim();
     const password = document.getElementById("password").value.trim();
     const termsChecked = document.getElementById("terms").checked;
-
-    console.log("Data received:", {
-      fullName,
-      email,
-      phone,
-      password,
-      termsChecked,
-    });
 
     // Xóa thông báo lỗi cũ
     document.querySelectorAll(".error-message").forEach((el) => el.remove());
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Kiểm tra từng trường
     if (fullName === "") {
       isValid = false;
-      console.log("Validation failed: Họ tên không được để trống.");
       const error = document.createElement("div");
       error.className = "error-message";
       error.textContent = "Họ tên không được để trống.";
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!validateEmail(email)) {
       isValid = false;
-      console.log("Validation failed: Email không hợp lệ.");
       const error = document.createElement("div");
       error.className = "error-message";
       error.textContent = "Email không hợp lệ.";
@@ -51,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (phone === "" || !/^\d{10,12}$/.test(phone)) {
       isValid = false;
-      console.log("Validation failed: Số điện thoại không hợp lệ.");
       const error = document.createElement("div");
       error.className = "error-message";
       error.textContent = "Số điện thoại không hợp lệ.";
@@ -61,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (password.length < 6) {
       isValid = false;
-      console.log("Validation failed: Mật khẩu phải có ít nhất 6 ký tự.");
       const error = document.createElement("div");
       error.className = "error-message";
       error.textContent = "Mật khẩu phải có ít nhất 6 ký tự.";
@@ -71,26 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!termsChecked) {
       isValid = false;
-      console.log("Validation failed: Điều khoản không được đồng ý.");
       alert("Bạn cần đồng ý với Điều khoản & Điều kiện.");
     }
 
     // Nếu hợp lệ, hiển thị thông báo thành công
     if (isValid) {
-      console.log("All validations passed. Displaying success message.");
       const successMessage = document.createElement("div");
       successMessage.className = "success-message";
       successMessage.textContent = "Đăng ký thành công!";
-
       document.querySelector(".card-body").appendChild(successMessage);
 
-      // Lưu dữ liệu vào localStorage (tuỳ chọn)
+      // Lưu dữ liệu vào localStorage
       const userData = { fullName, email, phone, password };
       localStorage.setItem("user", JSON.stringify(userData));
-      console.log("User data saved to localStorage:", userData);
 
       // Reset form
-      document.querySelector("form").reset();
+      registerForm.reset();
     }
   });
 

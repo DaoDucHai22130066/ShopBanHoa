@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .card {
@@ -21,34 +21,12 @@ h1 {
   background-color: #c0392b;
 }
 
-footer {
-  background-color: #fff;
-  padding: 10px 0;
-  font-size: 14px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #e74c3c;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-/* Highlight lỗi */
 .input-error {
   border: 2px solid #e74c3c;
 }
 
 .error-message {
   color: #e74c3c;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-top: 5px;
-}
-
-.success-message {
-  color: #2ecc71;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 20px;
 }
