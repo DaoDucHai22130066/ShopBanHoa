@@ -65,29 +65,29 @@
                     </div>
 
 
-                <!-- Tài khoản, giỏ hàng, thanh toán -->
-                <div class="icon-links">
-                    <a href="#" id="account-link" onclick="checkLoginStatus(event)">
-                        <i class="fas fa-user"></i> Tài khoản
-                    </a>
-                    <a href="#" id="change-password-button" onclick="showChangePassword()" style="display: none;">
-                        Đổi mật khẩu
-                    </a>
-                    <a href="#" id="edit-account-button" onclick="showEditAccount()" style="display: none;">
-                        Chỉnh sửa tài khoản
-                    </a>
+                    <!-- Tài khoản, giỏ hàng, thanh toán -->
+                    <div class="icon-links">
+                        <a href="#" id="account-link" onclick="checkLoginStatus(event)">
+                            <i class="fas fa-user"></i> Tài khoản
+                        </a>
+                        <a href="#" id="change-password-button" onclick="showChangePassword()" style="display: none;">
+                            Đổi mật khẩu
+                        </a>
+                        <a href="#" id="edit-account-button" onclick="showEditAccount()" style="display: none;">
+                            Chỉnh sửa tài khoản
+                        </a>
 
-                    <a href="#" id="logout-link" onclick="logout()" style="display: none;">
-                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
-                    </a>
-                    <a href="giohang.html" class="cart">
+                        <a href="#" id="logout-link" onclick="logout()" style="display: none;">
+                            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                        </a>
+                        <a href="giohang.html" class="cart">
 
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
+                    </div>
                 </div>
-            </div>
         </header>
     </Header>
 
@@ -217,118 +217,119 @@
                 .addEventListener("click", toggleModal);
         </script>
 
-    <Main>
-        <!-- Thanh menu -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+        <Main>
+            <!-- Thanh menu -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
-                                Hoa Sinh Nhật
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                                    Hoa Sinh Nhật
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a>
-                                </li>
+                                    <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao
+                                            Cấp</a>
+                                    </li>
 
-                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Giá Rẻ</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Mẹ</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Người Yêu</a></li>
-                                <li><a class="dropdown-item" href="#">Lẵng Hoa Sinh Nhật</a></li>
-                                <li><a class="dropdown-item" href="#">Giỏ Hoa Sinh Nhật</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="hoa-khai-truong.html" id="navbarDropdown" role="button">
-                                Hoa Khai Trương
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Lẵng Hoa Khai Trương 2 Tầng</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Để Bàn</a></li>
-                                <li><a class="dropdown-item" href="#">Kệ Hoa Khai Trương</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Cao Cấp</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Khai Trương Giá Rẻ</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="lan-ho-diep.html" id="navbarDropdown" role="button">
-                                Lan Hồ Điệp
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Nhỏ</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Vàng</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Trắng</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Tím</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Sọc</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp Đốm</a></li>
-                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 3 cành</a></li>
-                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 5 cành</a></li>
-                                <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 10 cành</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="Chu-De.html" id="navbarDropdown" role="button">
-                                Chủ Đề
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Hoa Chúc Mừng</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Cưới</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Chia Buồn</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Valentine</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Kỷ Niệm</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa 8/3</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa 20/10</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa 20/11 - Ngày Nhà Giáo</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Tốt Nghiệp</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="thiet-ke.html" id="navbarDropdown" role="button">
-                                Thiết Kế
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Lẵng Hoa</a></li>
-                                <li><a class="dropdown-item" href="#">Giỏ Hoa</a></li>
-                                <li><a class="dropdown-item" href="#">Kệ Hoa</a></li>
-                                <li><a class="dropdown-item" href="#">Bình Hoa</a></li>
-                                <li><a class="dropdown-item" href="#">Bó Hoa</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="Hoa-tuoi.html" id="navbarDropdown" role="button">
-                                Hoa Tươi
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Hoa Hồng</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Hướng Dương</a></li>
-                                <li><a class="dropdown-item" href="#">Lan Hồ Điệp</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Mẫu Đơn</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Tulip</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Sen</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Đồng Tiền</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Cẩm Chướng</a></li>
-                                <li><a class="dropdown-item" href="#">Cẩm Tú Cầu</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa Ly</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hoa Tươi Giảm 30%</a>
-                        </li>
-                    </ul>
+                                    <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Giá Rẻ</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Mẹ</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Sinh Nhật Tặng Người Yêu</a></li>
+                                    <li><a class="dropdown-item" href="#">Lẵng Hoa Sinh Nhật</a></li>
+                                    <li><a class="dropdown-item" href="#">Giỏ Hoa Sinh Nhật</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="hoa-khai-truong.html" id="navbarDropdown" role="button">
+                                    Hoa Khai Trương
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lẵng Hoa Khai Trương 2 Tầng</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Khai Trương Để Bàn</a></li>
+                                    <li><a class="dropdown-item" href="#">Kệ Hoa Khai Trương</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Khai Trương Cao Cấp</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Khai Trương Giá Rẻ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="lan-ho-diep.html" id="navbarDropdown" role="button">
+                                    Lan Hồ Điệp
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Nhỏ</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Vàng</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Trắng</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Tím</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Sọc</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp Đốm</a></li>
+                                    <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 3 cành</a></li>
+                                    <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 5 cành</a></li>
+                                    <li><a class="dropdown-item" href="#">Chậu Lan Hồ Điệp 10 cành</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="Chu-De.html" id="navbarDropdown" role="button">
+                                    Chủ Đề
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Hoa Chúc Mừng</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Cưới</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Chia Buồn</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Valentine</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Kỷ Niệm</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa 8/3</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa 20/10</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa 20/11 - Ngày Nhà Giáo</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Tốt Nghiệp</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Tặng Mẹ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="thiet-ke.html" id="navbarDropdown" role="button">
+                                    Thiết Kế
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lẵng Hoa</a></li>
+                                    <li><a class="dropdown-item" href="#">Giỏ Hoa</a></li>
+                                    <li><a class="dropdown-item" href="#">Kệ Hoa</a></li>
+                                    <li><a class="dropdown-item" href="#">Bình Hoa</a></li>
+                                    <li><a class="dropdown-item" href="#">Bó Hoa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="Hoa-tuoi.html" id="navbarDropdown" role="button">
+                                    Hoa Tươi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Hoa Hồng</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Hướng Dương</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Hồ Điệp</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Mẫu Đơn</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Tulip</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Sen</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Đồng Tiền</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Cẩm Chướng</a></li>
+                                    <li><a class="dropdown-item" href="#">Cẩm Tú Cầu</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoa Ly</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hoa Tươi Giảm 30%</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Carousel quảng cáo -->
-    </Main>
+            </nav>
+            <!-- Carousel quảng cáo -->
+        </Main>
 
         <div class="container mt-5">
             <div class="text-center mb-4">
@@ -445,7 +446,7 @@
             </div>
         </div>
     </footer>
-    
+
     <button id="scrollToTopBtn" title="Cuộn lên đầu trang">↑</button>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
@@ -484,279 +485,7 @@
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-<script>
-    // Hàm đăng ký tài khoản
-    function register() {
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const password = document.getElementById("password").value.trim();
-
-        let isValid = true;
-
-        // Kiểm tra tính hợp lệ của các trường
-        if (!name) document.getElementById("nameError").style.display = "block";
-        else document.getElementById("nameError").style.display = "none";
-
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!email || !emailPattern.test(email)) document.getElementById("emailError").style.display = "block";
-        else document.getElementById("emailError").style.display = "none";
-
-        const phonePattern = /^\d{10,12}$/;
-        if (!phone || !phonePattern.test(phone)) document.getElementById("phoneError").style.display = "block";
-        else document.getElementById("phoneError").style.display = "none";
-
-        if (password.length < 4 || password.length > 20) document.getElementById("passwordError").style.display = "block";
-        else document.getElementById("passwordError").style.display = "none";
-
-        isValid = name && email && emailPattern.test(email) && phonePattern.test(phone) && (password.length >= 4 && password.length <= 20);
-
-        if (isValid) {
-            const users = JSON.parse(localStorage.getItem("users")) || [];
-            const newUser = { name, email, phone, password };
-
-            // Kiểm tra nếu email đã tồn tại
-            if (users.find(user => user.email === email)) {
-                alert("Email đã được đăng ký!");
-                return;
-            }
-
-            users.push(newUser); // Thêm người dùng mới vào danh sách
-            localStorage.setItem("users", JSON.stringify(users)); // Lưu danh sách người dùng
-            alert("Đăng ký thành công!");
-            showLogin();
-        }
-    }
-
-
-    // Hàm đăng nhập
-    function login() {
-        const email = document.getElementById("loginEmail").value.trim();
-        const password = document.getElementById("loginPassword").value.trim();
-
-        const users = JSON.parse(localStorage.getItem("users")) || [];
-        const user = users.find(user => user.email === email && user.password === password);
-
-        if (user) {
-            alert("Đăng nhập thành công!");
-            localStorage.setItem("currentUser", JSON.stringify(user)); // Lưu thông tin người dùng hiện tại
-            document.getElementById("account-link").textContent = "Xin chào, " + user.name;
-            document.getElementById("logout-link").style.display = "inline-block";
-            document.getElementById("edit-account-button").style.display = "inline-block"; // Hiển thị nút chỉnh sửa tài khoản
-            document.getElementById("change-password-button").style.display = "inline-block"; // Hiển thị nút đổi mật khẩu
-            closeModal("account-modal"); // Đóng modal đăng nhập
-        } else {
-            alert("Email hoặc mật khẩu không đúng!");
-        }
-    }
-
-
-    // Chuyển đổi giữa form đăng ký và đăng nhập
-    function showRegister() {
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("registerForm").style.display = "block";
-    }
-    function showForgotPassword() {
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("forgotPasswordForm").style.display = "block";
-    }
-
-
-
-    function showLogin() {
-        document.getElementById("registerForm").style.display = "none";
-        document.getElementById("loginForm").style.display = "block";
-    }
-
-
-
-    window.onload = function () {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-        if (currentUser) {
-            // Nếu đã đăng nhập
-            document.getElementById("account-link").textContent = "Xin chào, " + currentUser.name;
-            document.getElementById("logout-link").style.display = "inline-block";
-            document.getElementById("change-password-button").style.display = "inline-block";
-            document.getElementById("edit-account-button").style.display = "inline-block"; // Hiển thị nút Chỉnh sửa tài khoản
-        } else {
-            // Nếu chưa đăng nhập
-            document.getElementById("account-link").textContent = "Tài khoản";
-            document.getElementById("logout-link").style.display = "none";
-            document.getElementById("change-password-button").style.display = "none";
-            document.getElementById("edit-account-button").style.display = "none"; // Ẩn nút Chỉnh sửa tài khoản
-        }
-    };
-
-
-    // Hàm đăng xuất
-    function logout() {
-        // Xóa thông tin người dùng khỏi localStorage
-        localStorage.removeItem("currentUser");
-
-        // Cập nhật giao diện về trạng thái mặc định
-        alert("Bạn đã đăng xuất thành công!");
-        document.getElementById("account-link").textContent = "Tài khoản";
-        document.getElementById("logout-link").style.display = "none";
-        document.getElementById("change-password-button").style.display = "none";
-        document.getElementById("edit-account-button").style.display = "none"; // Ẩn nút Chỉnh sửa tài khoản
-    }
-
-    function toggleModal(modalId) {
-        const modal = document.getElementById(modalId);
-        modal.style.display = modal.style.display === "flex" ? "none" : "flex";
-    }
-
-
-
-
-    function showChangePassword() {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        if (!currentUser) {
-            alert("Bạn cần đăng nhập trước!");
-            return;
-        }
-        document.getElementById("changePasswordModal").style.display = "flex";
-    }
-
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-    }
-
-
-
-    function changePassword() {
-        const currentPassword = document.getElementById("currentPassword").value.trim();
-        const newPassword = document.getElementById("newPassword").value.trim();
-        const confirmPassword = document.getElementById("confirmPassword").value.trim();
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        let users = JSON.parse(localStorage.getItem("users")) || [];
-
-        if (!currentUser) {
-            alert("Bạn cần đăng nhập trước!");
-            return;
-        }
-
-        // Kiểm tra mật khẩu hiện tại
-        if (currentUser.password !== currentPassword) {
-            alert("Mật khẩu hiện tại không đúng!");
-            return;
-        }
-
-        // Kiểm tra khớp mật khẩu mới
-        if (newPassword !== confirmPassword) {
-            alert("Mật khẩu mới và xác nhận không khớp!");
-            return;
-        }
-
-        // Kiểm tra độ dài mật khẩu mới
-        if (newPassword.length < 4 || newPassword.length > 20) {
-            alert("Mật khẩu mới phải từ 4 đến 20 ký tự!");
-            return;
-        }
-
-        // Cập nhật mật khẩu trong danh sách người dùng
-        users = users.map(user =>
-            user.email === currentUser.email ? { ...user, password: newPassword } : user
-        );
-        localStorage.setItem("users", JSON.stringify(users));
-
-        // Cập nhật mật khẩu của người dùng hiện tại
-        currentUser.password = newPassword;
-        localStorage.setItem("currentUser", JSON.stringify(currentUser));
-
-        alert("Đổi mật khẩu thành công!");
-        closeModal("changePasswordModal"); // Đóng modal đổi mật khẩu
-    }
-
-    window.onload = function () {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-        if (currentUser) {
-            // Nếu đã đăng nhập
-            document.getElementById("account-link").textContent = "Xin chào, " + currentUser.name;
-            document.getElementById("logout-link").style.display = "inline-block";
-            document.getElementById("change-password-button").style.display = "inline-block";
-            document.getElementById("edit-account-button").style.display = "inline-block"; // Hiển thị nút Chỉnh sửa tài khoản
-        } else {
-            // Nếu chưa đăng nhập
-            document.getElementById("account-link").textContent = "Tài khoản";
-            document.getElementById("logout-link").style.display = "none";
-            document.getElementById("change-password-button").style.display = "none";
-            document.getElementById("edit-account-button").style.display = "none"; // Ẩn nút Chỉnh sửa tài khoản
-        }
-    };
-
-
-    function toggleModal() {
-        document.getElementById("account-modal").classList.toggle("show-modal");
-    }
-    function showEditAccount() {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        if (currentUser) {
-            // Điền thông tin hiện tại của người dùng vào các trường
-            document.getElementById("editName").value = currentUser.name || "";
-            document.getElementById("editEmail").value = currentUser.email || "";
-            document.getElementById("editPhone").value = currentUser.phone || "";
-            toggleModal("editAccountModal");
-        } else {
-            alert("Bạn cần đăng nhập trước!");
-        }
-    }
-
-    function saveAccountInfo() {
-        const name = document.getElementById("editName").value.trim();
-        const email = document.getElementById("editEmail").value.trim();
-        const phone = document.getElementById("editPhone").value.trim();
-
-        if (!name || !email || !phone) {
-            alert("Vui lòng nhập đầy đủ thông tin!");
-            return;
-        }
-
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        let users = JSON.parse(localStorage.getItem("users")) || [];
-
-        if (currentUser) {
-            // Cập nhật thông tin người dùng hiện tại
-            currentUser.name = name;
-            currentUser.email = email;
-            currentUser.phone = phone;
-
-            // Cập nhật danh sách người dùng
-            users = users.map(user =>
-                user.email === currentUser.email ? { ...user, name, email, phone } : user
-            );
-            localStorage.setItem("users", JSON.stringify(users));
-            localStorage.setItem("currentUser", JSON.stringify(currentUser)); // Cập nhật localStorage
-            alert("Cập nhật thông tin tài khoản thành công!");
-
-            // Cập nhật giao diện
-            document.getElementById("account-link").textContent = "Xin chào, " + currentUser.name;
-
-            // Đóng modal
-            closeModal("editAccountModal");
-        } else {
-            alert("Có lỗi xảy ra. Vui lòng thử lại!");
-        }
-    }
-
-    function toggleModal(modalId) {
-        const modal = document.getElementById(modalId);
-        modal.style.display = modal.style.display === "flex" ? "none" : "flex";
-    }
-
-
-
-
-
-    src = "index.js"
-</script>
-
-
+<script src="js/dangki.js"></script>
 
 </body>
 
