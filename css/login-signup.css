@@ -1,3 +1,4 @@
+/* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
   background-color: #f8f8f8;
   padding: 10px 0;
@@ -145,6 +146,53 @@
   line-height: 56px;
 }
 
+/*Định dạng lại kích thước cho màn hình nhỏ*/
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: 200px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu div.dropdown-menu {
+    margin-left: 0 !important;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  #menu .dropdown-menu a:hover,
+  #menu .dropdown-menu ul li a :hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  #logo {
+    margin: 10px 0;
+  }
+
+  #logo img {
+    max-width: 260px;
+  }
+}
+
+
+.card {
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-danger {
+  background-color: #e74c3c;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
 /*Footer*/
 .footer {
   background-color: #f8f8f8;
@@ -196,29 +244,20 @@
   text-decoration: none;
 }
 
-.footer a {
-  transition: all 0.3s ease;
+/* Highlight lỗi */
+.input-error {
+  border: 2px solid #e74c3c;
 }
 
-/*nút cuộn trở về đầu trang*/
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  width: 50px;
-  display: none;
-  /* Ẩn nút ban đầu */
-  background-color: #fd8ad9;
-  color: white;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
-#scrollToTopBtn:hover {
-  background-color: #fafafa00;
-  color: #fd8ad9;
-  border: 2px solid #fd8ad9;
+.success-message {
+  color: #2ecc71;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
 }
