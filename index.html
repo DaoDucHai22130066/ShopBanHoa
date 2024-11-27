@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Phần header chính: logo, tìm kiếm, tài khoản, giỏ hàng -->
         <header class="main-header">
             <div class="container d-flex justify-content-between align-items-center">
@@ -47,7 +48,7 @@
                     </form>
                 </div>
 
-            <!-- Tài khoản, giỏ hàng, thanh toán -->
+                <!-- Tài khoản, giỏ hàng, thanh toán -->
                 <div class="icon-links d-flex align-items-center">
                     <!-- Dropdown Tài Khoản -->
                     <div class="dropdown">
@@ -61,166 +62,20 @@
                         </ul>
                     </div>
 
-
-                <!-- Tài khoản, giỏ hàng, thanh toán -->
-                <div class="icon-links">
-                    <a href="#" id="account-link" onclick="checkLoginStatus(event)">
-                        <i class="fas fa-user"></i> Tài khoản
-                    </a>
-                    <a href="#" id="change-password-button" onclick="showChangePassword()" style="display: none;">
-                        Đổi mật khẩu
-                    </a>
-                    <a href="#" id="edit-account-button" onclick="showEditAccount()" style="display: none;">
-                        Chỉnh sửa tài khoản
-                    </a>
-
-
-
-                    <a href="#" id="logout-link" onclick="logout()" style="display: none;">
-                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
-                    </a>
-
-                    <a href="#" class="cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
+                    <!-- Tài khoản, giỏ hàng, thanh toán -->
+                        <a href="#" class="cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
+                    </div>
                 </div>
-            </div>
         </header>
     </Header>
 
 
     <!--Main-->
     <Main>
-
-
-        </header>
-
-        <!-- Modal đăng nhập/đăng ký -->
-        <div id="account-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="toggleModal()">&times;</span>
-                <div class="login-form" id="loginForm">
-                    <h2>Đăng nhập</h2>
-                    <div class="input-group">
-                        <input type="email" id="loginEmail" placeholder="Email">
-                        <p class="error-message" id="loginEmailError">Vui lòng nhập email</p>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" id="loginPassword" placeholder="Mật khẩu">
-                        <p class="error-message" id="loginPasswordError">Vui lòng nhập mật khẩu</p>
-                    </div>
-                    <div class="input-group">
-                        <button onclick="login()">Đăng nhập</button>
-                    </div>
-                    <p class="signup" onclick="showRegister()">Đăng ký</p>
-                    <p class="error-message" id="loginError">Email hoặc mật khẩu không đúng!</p>
-                </div>
-
-
-            </div>
-            <div class="register-form" style="display: none" id="registerForm">
-                <h2>Đăng ký tài khoản</h2>
-                <div class="input-group">
-                    <input type="text" id="name" placeholder="Họ tên">
-                    <p class="error-message" id="nameError">Vui lòng nhập họ tên</p>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="E-mail">
-                    <p class="error-message" id="emailError">Vui lòng nhập email hợp lệ</p>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="phone" placeholder="Điện thoại">
-                    <p class="error-message" id="phoneError">Số điện thoại phải có từ 10 đến 12 số</p>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="password" placeholder="Mật khẩu">
-                    <p class="error-message" id="passwordError">Mật khẩu phải có từ 4 đến 20 ký tự</p>
-                </div>
-                <div class="input-group">
-                    <button onclick="register()">Đăng ký</button>
-                </div>
-                <p class="signup" onclick="showLogin()">Đăng nhập</p>
-            </div>
-        </div>
-        </div>
-        <div id="forgotPasswordForm" style="display: none;">
-            <h2>Quên Mật Khẩu</h2>
-            <div class="input-group">
-                <input type="email" id="forgotEmail" placeholder="Nhập email của bạn">
-                <p class="error-message" id="forgotEmailError">Email không hợp lệ!</p>
-            </div>
-            <div class="input-group">
-                <button onclick="forgotPassword()">Gửi mật khẩu</button>
-            </div>
-            <p class="signup" onclick="showLogin()">Quay lại Đăng nhập</p>
-        </div>
-        <div id="changePasswordModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('changePasswordModal')">&times;</span>
-                <h2>Đổi mật khẩu</h2>
-                <div class="input-group">
-                    <input type="password" id="currentPassword" placeholder="Mật khẩu hiện tại">
-                </div>
-                <div class="input-group">
-                    <input type="password" id="newPassword" placeholder="Mật khẩu mới">
-                </div>
-                <div class="input-group">
-                    <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu mới">
-                </div>
-                <div class="input-group">
-                    <button onclick="changePassword()">Xác nhận</button>
-                </div>
-            </div>
-        </div>
-        <div id="editAccountModal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('editAccountModal')">&times;</span>
-                <h2>Chỉnh sửa tài khoản</h2>
-                <div class="input-group">
-                    <label for="editName">Họ tên</label>
-                    <input type="text" id="editName" placeholder="Họ tên">
-                </div>
-                <div class="input-group">
-                    <label for="editEmail">Email</label>
-                    <input type="email" id="editEmail" placeholder="Email">
-                </div>
-                <div class="input-group">
-                    <label for="editPhone">Số điện thoại</label>
-                    <input type="text" id="editPhone" placeholder="Số điện thoại">
-                </div>
-                <div class="input-group">
-                    <button onclick="saveAccountInfo()">Lưu</button>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <script>
-
-            function toggleModal() {
-                document.getElementById("account-modal").classList.toggle("show-modal");
-            }
-
-            function showRegister() {
-                document.querySelector(".login-form").style.display = "none";
-                document.querySelector(".register-form").style.display = "block";
-            }
-
-            function showLogin() {
-                document.querySelector(".login-form").style.display = "block";
-                document.querySelector(".register-form").style.display = "none";
-            }
-
-            document
-                .getElementById("account-link")
-                .addEventListener("click", toggleModal);
-        </script>
-
         <!-- Thanh menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -427,7 +282,8 @@
                             <a href="#" class="btn btn-buy">Đặt Hàng</a>
                         </div>
                     </div>
-                </div><div class="col-md-3">
+                </div>
+                <div class="col-md-3">
                     <div class="card product-card">
 
                         <img src="images/san-pham.webp" class="card-img-top" alt="Hoa 2">
