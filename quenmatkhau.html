@@ -12,6 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/quenmatkhau.css" />
   </head>
+  <body>
   <header>
     <!-- Phần trên cùng: Hotline và mạng xã hội -->
     <div class="top-bar text-center">
@@ -45,7 +46,18 @@
 
             <!-- Tài khoản, giỏ hàng, thanh toán -->
             <div class="icon-links d-flex align-items-center">
-                <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
+                <!-- Dropdown Tài Khoản -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <a href="dangnhap.html" class="button">Đăng Nhập</a>
+                        <a href="dangki.html" class="button">Đăng Ký</a>
+                        
+                    </ul>
+                </div>
                 <a href="#" class="cart">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -54,7 +66,7 @@
             </div>
         </div>
     </header>
-</header>
+</Header>
 
 <main>
     <!-- Thanh menu -->
@@ -161,7 +173,7 @@
             </div>
         </div>
     </nav>
-  <body>
+  
     <div class="container mt-5">
       <div class="text-center mb-4">
         <h1 class="fw-bold text-danger">Bloom & Shine</h1>
