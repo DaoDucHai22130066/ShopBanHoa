@@ -58,6 +58,7 @@
     font-size: 12px;
 }
 
+
 .main-header .dropdown-menu {
     position: absolute;
     z-index: 1050;
@@ -125,7 +126,7 @@
 
 .dropdown-item:hover {
     background-color: #f0f0f0;
-    color: #ff6f61;
+    color: #ff6f61; 
 }
 
 .dropdown-item:active {
@@ -179,9 +180,10 @@
     }
 }
 
-
 /*main*/
-
+.cart {
+    margin-top: 20px;
+}
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -303,7 +305,8 @@ input, button, select, optgroup, textarea {
 }
 
 a {
-    color: #e91e63;
+    color: #ff6f61;
+    text-decoration: none;
 }
 
 .table .img-thumbnail {
@@ -378,7 +381,7 @@ b, strong {
 }
 
 #menu .see-all:focus, #menu .see-all:hover, .btn-primary {
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
 }
 
