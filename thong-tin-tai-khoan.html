@@ -179,19 +179,19 @@
                     <h4>CẬP NHẬT THÔNG TIN TÀI KHOẢN</h4>
                     <form>
                         <div class="form-group">
-                            <label>* Email của bạn:</label>
+                            <label class="label-email">Email của bạn:</label>
                             <span>22130306@st.hcmuaf.edu.vn</span>
                         </div>
                         <div class="form-group">
-                            <label>* Tên:</label>
+                            <label class="label-firstname">Tên:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Họ:</label>
+                            <label class="label-lastname">Họ:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>* Điện thoại:</label>
+                            <label class="label-phone">Điện thoại:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
@@ -205,18 +205,74 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Tỉnh/Thành phố:</label>
-                            <select class="form-control">
-                                <option>-- please choose --</option>
+                            <label for="input-shipping-zone" class="form-label">Tỉnh / thành phố</label>
+                            <select name="shipping_zone_id" id="input-shipping-zone" class="form-select">
+                                <option selected>Vui lòng chọn Tỉnh / thành phố</option>
+                                <option value="43" >TP.Hồ Chí Minh - Nội thành</option>
+                                <option value="44" >TP.Hồ Chí Minh - Ngoại thành</option>
+                                <option value="45" >Hà Nội - Khu vực trung tâm</option>
+                                <option value="46" >Hà Nội - Khu vực khác</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Quận/Huyện:</label>
-                            <select class="form-control">
-                                <option>-- please choose --</option>
+                            <label for="input-shipping-custom-field-30" class="form-label">Quận / Huyện</label>
+                            <select name="shipping_custom_field[address][30]"
+                                    id="input-shipping-custom-field-30" class="form-select">
+                                <option value="47" >Quận 1</option>
+                                <option value="48">Quận 3</option>
+                                <option value="49">Quận 4</option>
+                                <option value="50">Quận 5</option>
+                                <option value="51">Quận 6</option>
+                                <option value="52">Quận 7</option>
+                                <option value="53">Quận 8</option>
+                                <option value="54">Quận 10</option>
+                                <option value="55">Quận 11</option>
+                                <option value="56">Quận 12</option>
+                                <option value="57">Quận Tân Bình</option>
+                                <option value="58">Quận Tân Phú</option>
+                                <option value="59">Quận Bình Thạnh</option>
+                                <option value="60">Quận Bình Tân</option>
+                                <option value="61">Quận Phú Nhuận</option>
+                                <option value="62">Quận Gò Vấp</option>
+                                <option value="63">TP Thủ Đức (Quận 2, 9, Thủ Đức)</option>
+                                <option value="64">Huyện Củ Chi</option>
+                                <option value="65">Huyện Bình Chánh</option>
+                                <option value="66">Huyện Nhà Bè</option>
+                                <option value="67">Huyện Cần Giờ</option>
+                                <option value="68">Huyện Hóc Môn</option>
+                                <option value="69">Quận Ba Đình</option>
+                                <option value="70">Quận Hoàn Kiếm</option>
+                                <option value="71">Quận Đống Đa</option>
+                                <option value="72">Quận Thanh Xuân</option>
+                                <option value="73">Quận Cầu Giấy</option>
+                                <option value="74">Quận Hai Bà Trưng</option>
+                                <option value="75">Quận Hà Đông</option>
+                                <option value="76">Quận Bắc Từ Liêm</option>
+                                <option value="77">Quận Hoàng Mai</option>
+                                <option value="78">Quận Long Biên</option>
+                                <option value="79">Quận Tây Hồ</option>
+                                <option value="80">Quận Nam Từ Liêm</option>
+                                <option value="81">Huyện Mê Linh</option>
+                                <option value="82">Huyện Đông Anh</option>
+                                <option value="83">Huyện Sóc Sơn</option>
+                                <option value="84">Huyện Gia Lâm</option>
+                                <option value="85">Huyện Thanh Trì</option>
+                                <option value="86">Huyện Phú Xuyên</option>
+                                <option value="87">Huyện Ba Vì</option>
+                                <option value="88">Huyện Đan Phượng</option>
+                                <option value="89">Huyện Hoài Đức</option>
+                                <option value="90">Huyện Mỹ Đức</option>
+                                <option value="91">Huyện Phúc Thọ</option>
+                                <option value="92">Huyện Thạch Thất</option>
+                                <option value="93">Huyện Thanh Oai</option>
+                                <option value="94">Huyện Ứng Hoà</option>
+                                <option value="95">Huyện Thường Tín</option>
+                                <option value="96">Huyện Chương Mỹ</option>
+                                <option value="97">Huyện Quốc Oai</option>
+                                <option value="98">Thị Xã Sơn Tây</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-save">
+                        <button id="save-btn" type="submit" class="btn btn-save">
                             <i class="fas fa-save"></i> Lưu
                         </button>
                     </form>
@@ -291,5 +347,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/thong-tin-tai-khoan.js"></script>
 </body>
 </html>
