@@ -1,16 +1,3 @@
-.card {
-  border-radius: 10px;
-  border: none;
-}
-
-.btn-danger {
-  background-color: #e74c3c;
-  border: none;
-}
-
-.btn-danger:hover {
-  background-color: #c0392b;
-}
 .top-bar {
   background-color: #f8f8f8;
   padding: 10px 0;
@@ -158,31 +145,80 @@
   line-height: 56px;
 }
 
-/*Định dạng lại kích thước cho màn hình nhỏ*/
-@media (max-width: 768px) {
-  .dropdown-menu {
-    min-width: 200px;
-    width: 100%;
-  }
+/*Footer*/
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  color: #333;
+  font-size: 14px;
 }
 
-@media (max-width: 767px) {
-  #menu div.dropdown-menu {
-    margin-left: 0 !important;
-    padding-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+.footer .footer-logo img {
+  height: 60px;
+}
 
-  #menu .dropdown-menu a:hover,
-  #menu .dropdown-menu ul li a :hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
+.footer .footer-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
-  #logo {
-    margin: 10px 0;
-  }
+.footer .social-icons i {
+  font-size: 18px;
+  color: #555;
+  margin-right: 10px;
+}
 
-  #logo img {
-    max-width: 260px;
-  }
+.footer .contact-info span,
+.footer .contact-info a {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.footer .app-download img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer .certification img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+.footer a {
+  transition: all 0.3s ease;
+}
+
+/*nút cuộn trở về đầu trang*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  display: none;
+  /* Ẩn nút ban đầu */
+  background-color: #fd8ad9;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #fafafa00;
+  color: #fd8ad9;
+  border: 2px solid #fd8ad9;
 }
