@@ -8,4 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Xử lý thông báo cho nút Lưu
+document.addEventListener('DOMContentLoaded', function () {
+    // Lấy phần tử nút "Lưu"
+    const saveButton = document.getElementById('save-btn');
+
+    // Thêm sự kiện click vào nút "Lưu"
+    saveButton.addEventListener('click', function () {
+        // Hiển thị thông báo bằng alert
+        alert('Cập nhật thông tin tài khoản thành công!');
+    });
+});
 

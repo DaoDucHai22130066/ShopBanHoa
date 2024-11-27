@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// Xử lý chọn option tỉnh / thành phố quận / huyện
 document.addEventListener('DOMContentLoaded', function () {
     const districtSelect = document.getElementById('input-shipping-custom-field-30'); // Select Quận/Huyện
     const allOptions = Array.from(districtSelect.options); // Lưu tất cả option vào mảng
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     defaultOption.selected = true;
     defaultOption.disabled = true;
     districtSelect.insertBefore(defaultOption, districtSelect.firstChild);
-    
+
     // Ẩn tất cả các tùy chọn khi trang được tải
     allOptions.forEach(option => option.style.display = 'none');
 
