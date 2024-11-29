@@ -69,7 +69,7 @@
             <!-- Dropdown Tài Khoản -->
             <div class="dropdown">
               <a
-                href="giohang.html"
+                href="#"
                 class="dropdown-toggle"
                 id="accountDropdown"
                 data-bs-toggle="dropdown"
@@ -79,12 +79,41 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="accountDropdown">
                 <li>
-                  <a class="dropdown-item" href="dangnhap.html">Đăng nhập</a>
+                  <!-- Các button ban đầu -->
                 </li>
-                <li><a class="dropdown-item" href="dangki.html">Đăng ký</a></li>
+
+                <li>
+                  <a class="dropdown-item" href="dangnhap.html" id="loginBtn"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="dangki.html" id="signupBtn"
+                    >Đăng ký</a
+                  >
+                </li>
+                <!-- Các button sau khi đăng nhập -->
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="thong-tin-tai-khoan.html"
+                    id="accountBtn"
+                    style="display: none"
+                    >Xem tài khoản</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    id="logoutBtn"
+                    style="display: none"
+                    >Đăng xuất</a
+                  >
+                </li>
               </ul>
             </div>
-            <a href="#" class="cart">
+            <a href="giohang.html" class="cart">
               <i class="fas fa-shopping-cart"></i>
               <span class="cart-count">0</span>
             </a>
