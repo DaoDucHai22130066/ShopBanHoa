@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Lấy tên người dùng từ localStorage
-  const username = localStorage.getItem("username");
+  const user = JSON.parse(localStorage.getItem("user"));
 
   // Lấy các phần tử cần thay đổi giao diện
   const accountDropdown = document.getElementById("accountDropdown");
@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const accountBtn = document.getElementById("accountBtn");
   const logoutBtn = document.getElementById("logoutBtn");
 
-  // Nếu có tên người dùng trong localStorage (đã đăng nhập)
-  if (username) {
-    // Hiển thị lời chào "Xin chào, [Tên người dùng]"
-    accountDropdown.innerHTML = `Xin chào, ${username}!`;
+  // Kiểm tra xem người dùng đã đăng nhập chưa
+  if (user) {
+    // Hiển thị lời chào "Xin chào, [Họ tên]"
+    accountDropdown.innerHTML = `Xin chào, ${user.fullName}!`;
 
     // Ẩn "Đăng nhập" và "Đăng ký"
     if (loginBtn) loginBtn.style.display = "none";
@@ -32,17 +32,63 @@ document.addEventListener("DOMContentLoaded", function () {
   // Đăng xuất với xác nhận
   if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
-      // Hiển thị hộp thoại xác nhận
       const confirmLogout = confirm("Bạn có chắc chắn muốn đăng xuất không?");
-
-      // Nếu người dùng nhấn "OK", tiến hành đăng xuất
       if (confirmLogout) {
-        localStorage.removeItem("username"); // Xóa tên người dùng khỏi localStorage
+        localStorage.removeItem("user"); // Xóa dữ liệu người dùng khỏi localStorage
         window.location.href = "index.html"; // Điều hướng lại trang chủ
-      } else {
-        // Nếu người dùng nhấn "Cancel", không làm gì cả
-        console.log("Đăng xuất bị hủy.");
       }
     });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.getElementById("loginForm");
+
+  if (!loginForm) {
+    console.error("Form đăng nhập không được tìm thấy!");
+    return;
+  }
+
+  // Gắn sự kiện submit vào form đăng nhập
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Ngăn form tự động submit
+
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    // Lấy thông tin tài khoản đã đăng ký từ localStorage
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    // Kiểm tra thông tin đăng nhập
+    if (!user) {
+      alert("Không tìm thấy tài khoản nào trong hệ thống!");
+    } else if (user.email === email && user.password === password) {
+      alert("Đăng nhập thành công!");
+
+      // Lưu tên người dùng vào localStorage
+      localStorage.setItem("username", user.fullName); // Lưu fullName thay vì username
+
+      // Điều hướng về trang chủ (index.html)
+      window.location.href = "index.html";
+    } else {
+      alert("Email hoặc mật khẩu không đúng!");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy thông tin người dùng từ localStorage
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  // Kiểm tra xem có thông tin người dùng trong localStorage không
+  if (user) {
+    // Hiển thị thông tin người dùng trên trang
+    document.getElementById("fullNameDisplay").textContent = user.fullName;
+    document.getElementById("emailDisplay").textContent = user.email;
+    document.getElementById("phoneDisplay").textContent = user.phone;
+  } else {
+    // Nếu không có dữ liệu người dùng, hiển thị thông báo hoặc chuyển hướng
+    alert("Không tìm thấy thông tin tài khoản.");
+    window.location.href = "dangnhap.html"; // Điều hướng về trang đăng nhập
   }
 });

@@ -91,3 +91,27 @@ document.addEventListener("DOMContentLoaded", function () {
     return emailPattern.test(email);
   }
 });
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault(); // Ngăn form tự động submit
+
+    // Lấy dữ liệu từ các trường
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    // Lưu thông tin vào localStorage
+    const user = {
+      fullName: fullName,
+      email: email,
+      phone: phone,
+    };
+
+    // Lưu đối tượng user vào localStorage
+    localStorage.setItem("user", JSON.stringify(user));
+
+    // Thông báo và chuyển hướng (nếu cần)
+    alert("Đăng ký thành công!");
+    window.location.href = "dangnhap.html"; // Điều hướng đến trang đăng nhập
+  });
