@@ -92,73 +92,74 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Xử lý chọn option tỉnh / thành phố quận / huyện
-document.addEventListener('DOMContentLoaded', function () {
-    const districtSelect = document.getElementById('input-shipping-custom-field-30'); // Select Quận/Huyện
-    const allOptions = Array.from(districtSelect.options); // Lưu tất cả option vào mảng
+// Định nghĩa danh sách quận/huyện theo từng tỉnh/thành phố
+const districts = {
+    43: [
+        {value: 47, text: "Quận 1"},
+        {value: 48, text: "Quận 3"},
+        {value: 49, text: "Quận 4"},
+        {value: 50, text: "Quận 5"},
+        {value: 51, text: "Quận 6"},
+        {value: 52, text: "Quận 7"},
+        {value: 53, text: "Quận 8"},
+        {value: 54, text: "Quận 10"},
+        {value: 55, text: "Quận 11"},
+        {value: 56, text: "Quận 12"},
+        {value: 57, text: "Quận Tân Bình"},
+        {value: 58, text: "Quận Tân Phú"},
+        {value: 59, text: "Quận Bình Thạnh"},
+        {value: 60, text: "Quận Bình Tân"},
+        {value: 61, text: "Quận Phú Nhuận"}
+    ],
+    44: [
+        {value: 62, text: "Quận Gò Vấp"},
+        {value: 63, text: "TP Thủ Đức (Quận 2, 9, Thủ Đức)"},
+        {value: 64, text: "Huyện Củ Chi"},
+        {value: 65, text: "Huyện Bình Chánh"},
+        {value: 66, text: "Huyện Nhà Bè"},
+        {value: 67, text: "Huyện Cần Giờ"},
+        {value: 68, text: "Huyện Hóc Môn"}
+    ],
+    45: [
+        {value: 69, text: "Quận Ba Đình"},
+        {value: 70, text: "Quận Hoàn Kiếm"},
+        {value: 71, text: "Quận Đống Đa"},
+        {value: 72, text: "Quận Thanh Xuân"},
+        {value: 73, text: "Quận Cầu Giấy"},
+        {value: 74, text: "Quận Hai Bà Trưng"},
+    ],
+    46: [
+        {value: 75, text: "Quận Hà Đông"},
+        {value: 76, text: "Quận Bắc Từ Liêm"},
+        {value: 77, text: "Quận Hoàng Mai"},
+        {value: 78, text: "Quận Long Biên"},
+        {value: 79, text: "Quận Tây Hồ"},
+        {value: 80, text: "Quận Nam Từ Liêm"},
+        {value: 81, text: "Huyện Mê Linh"},
+        {value: 82, text: "Huyện Đông Anh"}
+    ]
+};
 
+// Lấy tham chiếu đến các trường select
+const citySelect = document.getElementById("input-shipping-zone");
+const districtSelect = document.getElementById("input-shipping-custom-field-30");
 
-    // Thêm tùy chọn mặc định vào đầu danh sách
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.textContent = 'Vui lòng chọn Quận / Huyện';
-    defaultOption.selected = true;
-    defaultOption.disabled = true;
-    districtSelect.insertBefore(defaultOption, districtSelect.firstChild);
+// Xử lý sự kiện thay đổi tỉnh/thành phố
+citySelect.addEventListener("change", function () {
+    const selectedValue = parseInt(this.value);
 
-    // Ẩn tất cả các tùy chọn khi trang được tải
-    allOptions.forEach(option => option.style.display = 'none');
+    // Xóa các tùy chọn quận/huyện hiện tại
+    districtSelect.innerHTML = '<option value="0">Vui lòng chọn quận/huyện</option>';
 
-    // Lắng nghe sự kiện thay đổi trên Tỉnh/Thành phố
-    document.getElementById('input-shipping-zone').addEventListener('change', function () {
-        const zoneValue = this.value; // Lấy giá trị của option được chọn
-
-        // Ẩn tất cả các tùy chọn trước khi hiển thị lại
-        allOptions.forEach(option => option.style.display = 'none');
-
-        // Hiển thị các option tương ứng với giá trị được chọn
-        if (zoneValue === '43') {
-            // Hiển thị các option từ value 47 đến 61
-            allOptions.forEach(option => {
-                const value = parseInt(option.value);
-                if (value >= 47 && value <= 61) {
-                    option.style.display = 'block';
-                }
-            });
-        }
-
-        if (zoneValue === '44') {
-            // Hiển thị các option từ value 62 đến 68
-            allOptions.forEach(option => {
-                const value = parseInt(option.value);
-                if (value >= 62 && value <= 68) {
-                    option.style.display = 'block';
-                }
-            });
-        }
-
-        if (zoneValue === '45') {
-            // Hiển thị các option từ value 62 đến 68
-            allOptions.forEach(option => {
-                const value = parseInt(option.value);
-                if (value >= 69 && value <= 74) {
-                    option.style.display = 'block';
-                }
-            });
-        }
-
-        if (zoneValue === '46') {
-            // Hiển thị các option từ value 62 đến 68
-            allOptions.forEach(option => {
-                const value = parseInt(option.value);
-                if (value >= 75 && value <= 98) {
-                    option.style.display = 'block';
-                }
-            });
-        }
-
-        // Đặt lại giá trị mặc định cho select Quận/Huyện
-        districtSelect.value = '';
-    });
+    // Nếu có danh sách quận/huyện tương ứng, thêm các tùy chọn
+    if (districts[selectedValue]) {
+        districts[selectedValue].forEach(district => {
+            const option = document.createElement("option");
+            option.value = district.value;
+            option.textContent = district.text;
+            districtSelect.appendChild(option);
+        });
+    }
 });
 
 
