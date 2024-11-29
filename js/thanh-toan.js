@@ -163,6 +163,30 @@ citySelect.addEventListener("change", function () {
 });
 
 
+// Xử lý JS cho các trường ở mục Hóa đơn VAT
+document.addEventListener('DOMContentLoaded', function () {
+    const vatCheckbox = document.getElementById('input-shipping-custom-value-104'); // Checkbox "Yêu cầu hóa đơn VAT"
+    const vatFields = document.querySelectorAll(
+        '.section-shipping-address .col.custom-field-37, ' +
+        '.section-shipping-address .col.custom-field-38, ' +
+        '.section-shipping-address .col.custom-field-39, ' +
+        '.section-shipping-address .col.custom-field-40, ' +
+        '.section-shipping-address .col.custom-field-41'
+    );
+
+    // Thêm sự kiện `change` vào checkbox
+    vatCheckbox.addEventListener('change', function () {
+        if (vatCheckbox.checked) {
+            vatFields.forEach(field => field.style.display = 'block'); // Hiện các thông tin hóa đơn VAT
+        } else {
+            vatFields.forEach(field => field.style.display = 'none'); // Ẩn các thông tin hóa đơn VAT
+        }
+    });
+});
+
+
+
+
 
 
 
