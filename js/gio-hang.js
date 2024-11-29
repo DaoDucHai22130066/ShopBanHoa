@@ -29,11 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoutBtn) logoutBtn.style.display = "none";
   }
 
-  // Đăng xuất
+  // Đăng xuất với xác nhận
   if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("username"); // Xóa tên người dùng khỏi localStorage
-      window.location.href = "index.html"; // Điều hướng lại trang chủ
+      // Hiển thị hộp thoại xác nhận
+      const confirmLogout = confirm("Bạn có chắc chắn muốn đăng xuất không?");
+
+      // Nếu người dùng nhấn "OK", tiến hành đăng xuất
+      if (confirmLogout) {
+        localStorage.removeItem("username"); // Xóa tên người dùng khỏi localStorage
+        window.location.href = "index.html"; // Điều hướng lại trang chủ
+      } else {
+        // Nếu người dùng nhấn "Cancel", không làm gì cả
+        console.log("Đăng xuất bị hủy.");
+      }
     });
   }
 });
