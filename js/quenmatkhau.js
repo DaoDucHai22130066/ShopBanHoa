@@ -1,18 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Tìm form bằng id để tránh nhầm lẫn
+document.addEventListener("DOMContentLoaded", () => {
   const forgotPasswordForm = document.getElementById("forgotPasswordForm");
-  forgotPasswordForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Ngăn form tự động submit
 
-    // Lấy email từ input
-    const email = document.getElementById("forgotEmail").value.trim();
-    const user = JSON.parse(localStorage.getItem("user")); // Lấy dữ liệu từ localStorage
+  if (forgotPasswordForm) {
+      forgotPasswordForm.addEventListener("submit", (e) => {
+          e.preventDefault();
 
-    // Kiểm tra email
-    if (user && email === user.email) {
-      alert("Mật khẩu của bạn là: " + user.password); // Hiển thị mật khẩu đã lưu
-    } else {
-      alert("Không tìm thấy tài khoản với email này!");
-    }
-  });
+          // Lấy email từ input
+          const forgotEmail = document.getElementById("forgotEmail").value.trim();
+
+          // Lấy dữ liệu người dùng từ localStorage
+          const storedUserData = JSON.parse(localStorage.getItem("userData"));
+
+          if (storedUserData && storedUserData.email === forgotEmail) {
+              // Hiển thị mật khẩu nếu email hợp lệ
+              alert(`Mật khẩu của bạn là: ${storedUserData.password}`);
+          } else {
+              // Hiển thị thông báo lỗi nếu email không tìm thấy
+              alert("Email không tồn tại. Vui lòng kiểm tra lại.");
+          }
+      });
+  }
 });
