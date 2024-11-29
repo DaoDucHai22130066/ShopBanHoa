@@ -184,6 +184,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Xử lý UI cho khung lịch ở trường ngày giao hàng
+$(document).ready(function() {
+    $("#input-shipping-custom-field-31").datepicker({
+        dateFormat: "dd/mm/yy",
+        minDate: 0, // Không cho chọn ngày quá khứ
+        maxDate: "+1M" // Giới hạn trong 1 tháng
+    });
+});
 
 
 
