@@ -12,6 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/Gioi-thieu.css">
 </head>
+
 <body>
     <Header>
         <!-- Phần trên cùng: Hotline và mạng xã hội -->
@@ -50,14 +51,19 @@
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <i class="fas fa-user"></i> Tài khoản
+                            <i class="fas fa-user"></i> <span id="accountText">Tài khoản</span>
+                            <!-- Đây là phần sẽ thay đổi -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="accountDropdown">
-                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                            <li><a class="dropdown-item" href="dangnhap.html" id="loginBtn">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="dangki.html" id="signupBtn">Đăng ký</a></li>
+                            <li><a class="dropdown-item" href="thong-tin-tai-khoan.html" id="accountBtn"
+                                    style="display: none">Xem tài khoản</a></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn" style="display: none">Đăng xuất</a>
+                            </li>
                         </ul>
                     </div>
-                    <a href="#" class="cart">
+                    <a href="giohang.html" class="cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </a>
@@ -180,9 +186,10 @@
             <!-- Tiêu đề trang -->
             <section class="text-center mb-5">
                 <h1 class="section-title">Giới thiệu về Flower Corner</h1>
-                <p class="lead intro-text">Chúng tôi mang đến những sản phẩm hoa tươi chất lượng và dịch vụ hoàn hảo.</p>
+                <p class="lead intro-text">Chúng tôi mang đến những sản phẩm hoa tươi chất lượng và dịch vụ hoàn hảo.
+                </p>
             </section>
-    
+
             <!-- Phần Giới thiệu -->
             <section class="row mb-5">
                 <div class="col-lg-6">
@@ -190,9 +197,12 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="section-title-small">Chúng tôi là ai?</h2>
-                    <p class="intro-text">Flower Corner là cửa hàng hoa tươi uy tín, chuyên cung cấp các loại hoa tươi đẹp
-                        và độc đáo cho mọi dịp. Chúng tôi cam kết mang đến những sản phẩm hoa chất lượng với giá cả hợp lý
-                        và dịch vụ tận tâm. Với kinh nghiệm lâu năm trong ngành hoa tươi, Flower Corner là sự lựa chọn hoàn
+                    <p class="intro-text">Flower Corner là cửa hàng hoa tươi uy tín, chuyên cung cấp các loại hoa tươi
+                        đẹp
+                        và độc đáo cho mọi dịp. Chúng tôi cam kết mang đến những sản phẩm hoa chất lượng với giá cả hợp
+                        lý
+                        và dịch vụ tận tâm. Với kinh nghiệm lâu năm trong ngành hoa tươi, Flower Corner là sự lựa chọn
+                        hoàn
                         hảo cho bạn.</p>
                     <ul class="intro-list">
                         <li>Hoa tươi chất lượng cao</li>
@@ -202,14 +212,16 @@
                     </ul>
                 </div>
             </section>
-    
+
             <!-- Lịch sử cửa hàng -->
             <section class="mb-5">
                 <h2 class="section-title-small text-center mb-3">Lịch sử hình thành</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="intro-text">Flower Corner được thành lập từ năm 2010 với sứ mệnh mang đến cho khách hàng
-                            những bông hoa tươi thắm nhất. Được yêu mến bởi chất lượng sản phẩm vượt trội và dịch vụ giao
+                        <p class="intro-text">Flower Corner được thành lập từ năm 2010 với sứ mệnh mang đến cho khách
+                            hàng
+                            những bông hoa tươi thắm nhất. Được yêu mến bởi chất lượng sản phẩm vượt trội và dịch vụ
+                            giao
                             hàng nhanh chóng, chúng tôi đã mở rộng hệ thống cửa hàng trên toàn quốc.</p>
                     </div>
                     <div class="col-md-6">
@@ -217,11 +229,12 @@
                     </div>
                 </div>
             </section>
-    
+
             <!-- Cam kết chất lượng -->
             <section>
                 <h2 class="section-title-small text-center mb-3">Cam kết chất lượng</h2>
-                <p class="intro-text text-center">Chúng tôi cam kết cung cấp hoa tươi với chất lượng cao nhất, được chọn lọc
+                <p class="intro-text text-center">Chúng tôi cam kết cung cấp hoa tươi với chất lượng cao nhất, được chọn
+                    lọc
                     kỹ lưỡng từ các nông trại uy tín. Mỗi bông hoa đều được chăm sóc cẩn thận, đảm bảo mang lại cho bạn
                     những trải nghiệm tuyệt vời nhất.</p>
                 <div class="row">
@@ -230,7 +243,8 @@
                             <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 1">
                             <div class="card-body">
                                 <h5 class="card-title">Hoa tươi lâu dài</h5>
-                                <p class="card-text">Chúng tôi đảm bảo hoa của bạn sẽ tươi lâu, giữ được vẻ đẹp tự nhiên lâu
+                                <p class="card-text">Chúng tôi đảm bảo hoa của bạn sẽ tươi lâu, giữ được vẻ đẹp tự nhiên
+                                    lâu
                                     hơn so với các loại hoa thông thường.</p>
                             </div>
                         </div>
@@ -240,7 +254,8 @@
                             <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 2">
                             <div class="card-body">
                                 <h5 class="card-title">Chăm sóc tận tình</h5>
-                                <p class="card-text">Dịch vụ chăm sóc khách hàng của chúng tôi luôn sẵn sàng tư vấn và hỗ
+                                <p class="card-text">Dịch vụ chăm sóc khách hàng của chúng tôi luôn sẵn sàng tư vấn và
+                                    hỗ
                                     trợ bạn mọi lúc mọi nơi.</p>
                             </div>
                         </div>
@@ -250,14 +265,15 @@
                             <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quality 3">
                             <div class="card-body">
                                 <h5 class="card-title">Giao hàng đúng hẹn</h5>
-                                <p class="card-text">Chúng tôi cam kết giao hàng nhanh chóng, đúng giờ đến tay bạn với sự
+                                <p class="card-text">Chúng tôi cam kết giao hàng nhanh chóng, đúng giờ đến tay bạn với
+                                    sự
                                     hài lòng tuyệt đối.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-    
+
             <!-- Thông tin liên hệ -->
             <section id="contact-info" class="mb-5">
                 <h2 class="section-title-small text-center mb-3">Thông tin liên hệ</h2>
@@ -274,7 +290,8 @@
                         <h4>Liên kết mạng xã hội:</h4>
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/yourpage" target="_blank" class="btn btn-outline-primary">
+                                <a href="https://www.facebook.com/yourpage" target="_blank"
+                                    class="btn btn-outline-primary">
                                     <i class="fab fa-facebook"></i> Facebook
                                 </a>
                             </li>
@@ -295,7 +312,8 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="btn btn-outline-dark">
+                                <a href="https://www.tiktok.com/@yourhandle" target="_blank"
+                                    class="btn btn-outline-dark">
                                     <i class="fab fa-tiktok"></i> TikTok
                                 </a>
                             </li>
@@ -316,7 +334,7 @@
         </div>
     </Main>
 
-    
+
 
     <!--Footer, Giới thiệu trang web, chăm sóc khách hàng, theo dõi, chi nhánh của cửa hàng (2 đến 3 chi nhánh)-->
     <footer class="footer">
@@ -386,7 +404,7 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        
+
         // Lấy phần tử nút cuộn lên đầu trang
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 

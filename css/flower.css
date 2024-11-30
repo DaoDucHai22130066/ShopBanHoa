@@ -179,6 +179,7 @@
         max-width: 260px
     }
 }
+
 /*main*/
 .banner {
     width: 100%;
@@ -320,9 +321,7 @@
     color: #ff6f61;
 }
 
-
-/*Footer*/
-.footer {
+/*Footer*/.footer {
     background-color: #f8f8f8;
     padding: 40px 0;
     color: #333;
@@ -371,6 +370,11 @@
     color: #ff6f61;
     text-decoration: none;
 }
+
+.footer a {
+    transition: all 0.3s ease;
+}
+
 
 #scrollToTopBtn {
     position: fixed;

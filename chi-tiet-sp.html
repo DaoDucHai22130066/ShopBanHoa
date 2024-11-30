@@ -49,13 +49,14 @@
                 <div class="icon-links d-flex align-items-center">
                     <!-- Dropdown Tài Khoản -->
                     <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fas fa-user"></i> Tài khoản
+                        <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i> <span id="accountText">Tài khoản</span>  <!-- Đây là phần sẽ thay đổi -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="accountDropdown">
-                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                            <li><a class="dropdown-item" href="dangnhap.html" id="loginBtn">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="dangki.html" id="signupBtn">Đăng ký</a></li>
+                            <li><a class="dropdown-item" href="thong-tin-tai-khoan.html" id="accountBtn" style="display: none">Xem tài khoản</a></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn" style="display: none">Đăng xuất</a></li>
                         </ul>
                     </div>
                     <a href="#" class="cart">
@@ -178,7 +179,7 @@
             <div class="row">
                 <!-- Phần ảnh sản phẩm -->
                 <div class="col-md-6">
-                    <img src="kiss-me.jpg.webp" alt="Ảnh sản phẩm" class="product-image img-fluid">
+                    <img src="images/san-pham.webp" alt="Ảnh sản phẩm" class="product-image img-fluid">
                 </div>
 
                 <!-- Phần thông tin sản phẩm -->
@@ -329,7 +330,7 @@
                                 <div class="col-md-3">
                                     <div class="product-card">
                                         <div class="product-image">
-                                            <img src="kiss-me.jpg.webp" alt="Summer Delight">
+                                            <img src="images/san-pham.webp" alt="Summer Delight">
                                         </div>
                                         <div class="product-name">Summer Delight</div>
                                         <div class="product-price">660,000VNĐ</div>
@@ -343,7 +344,7 @@
                                 <div class="col-md-3">
                                     <div class="product-card">
                                         <div class="product-image">
-                                            <img src="kiss-me.jpg.webp" alt="Hoa Tươi">
+                                            <img src="images/san-pham.webp" alt="Hoa Tươi">
                                         </div>
                                         <div class="product-name">Hoa Tươi</div>
                                         <div class="product-price">750,000VNĐ</div>
@@ -353,7 +354,7 @@
                                 <div class="col-md-3">
                                     <div class="product-card">
                                         <div class="product-image">
-                                            <img src="kiss-me.jpg.webp" alt="Hương Đêm">
+                                            <img src="images/san-pham.webp" alt="Hương Đêm">
                                         </div>
                                         <div class="product-name">Hương Đêm</div>
                                         <div class="product-price">840,000VNĐ</div>
