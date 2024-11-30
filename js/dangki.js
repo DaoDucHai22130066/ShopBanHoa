@@ -1,93 +1,123 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Lấy form đăng ký
-  const registerForm = document.getElementById("registerForm");
+document.addEventListener("DOMContentLoaded", () => {
+    // Lấy các phần tử trong dropdown
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const accountBtn = document.getElementById("accountBtn");
+    const accountText = document.getElementById("accountText");  // Lấy phần tử chứa tên tài khoản
+    const logoutBtn = document.getElementById("logoutBtn");
 
-  // Kiểm tra nếu form không tồn tại
-  if (!registerForm) {
-    console.error("Form đăng ký không được tìm thấy!");
-    return;
-  }
+    // Kiểm tra trạng thái đăng nhập từ localStorage
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const userData = JSON.parse(localStorage.getItem("userData"));
 
-  // Gắn sự kiện submit vào form
-  registerForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Ngăn form tự động submit
+    // Hàm cập nhật giao diện dropdown
+    function updateDropdown() {
+        if (isLoggedIn && userData) {
+            loginBtn.style.display = "none";
+            signupBtn.style.display = "none";
+            accountBtn.style.display = "block";
+            logoutBtn.style.display = "block";
+            // Cập nhật nội dung tài khoản với tên người dùng
+            accountText.textContent = `Xin chào, ${userData.firstName}`;
+        } else {
+            loginBtn.style.display = "block";
+            signupBtn.style.display = "block";
+            accountBtn.style.display = "none";
+            logoutBtn.style.display = "none";
+            accountText.textContent = "Tài khoản";  // Nếu chưa đăng nhập, hiển thị "Tài khoản"
+        }
+    }
+    // Gọi hàm cập nhật giao diện khi tải trang
+    updateDropdown();
 
-    // Lấy giá trị từ các trường
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const termsChecked = document.getElementById("terms").checked;
+    // Xử lý đăng ký
+    const registerForm = document.getElementById("registerForm");
+    if (registerForm) {
+        registerForm.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-    // Xóa thông báo lỗi cũ
-    document.querySelectorAll(".error-message").forEach((el) => el.remove());
-    document
-      .querySelectorAll(".form-control")
-      .forEach((el) => el.classList.remove("input-error"));
+            // Lấy thông tin người dùng từ form
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const password = document.getElementById("password").value;
 
-    let isValid = true;
+            // Lưu thông tin vào localStorage
+            const userData = { firstName, lastName, email, phone, password };
+            localStorage.setItem("userData", JSON.stringify(userData));
+            localStorage.setItem("isLoggedIn", "true");
 
-    // Kiểm tra từng trường
-    if (fullName === "") {
-      isValid = false;
-      const error = document.createElement("div");
-      error.className = "error-message";
-      error.textContent = "Họ tên không được để trống.";
-      document.getElementById("fullName").classList.add("input-error");
-      document.getElementById("fullName").after(error);
+            // Thông báo và chuyển hướng
+            alert("Đăng ký thành công!");
+            window.location.href = "index.html";
+        });
     }
 
-    if (!validateEmail(email)) {
-      isValid = false;
-      const error = document.createElement("div");
-      error.className = "error-message";
-      error.textContent = "Email không hợp lệ.";
-      document.getElementById("email").classList.add("input-error");
-      document.getElementById("email").after(error);
+    // Xử lý đăng nhập
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Lấy thông tin người dùng từ form
+            const email = document.getElementById("loginEmail").value;
+            const password = document.getElementById("loginPassword").value;
+
+            // Kiểm tra thông tin đăng nhập
+            const storedUserData = JSON.parse(localStorage.getItem("userData"));
+            if (
+                storedUserData &&
+                storedUserData.email === email &&
+                storedUserData.password === password
+            ) {
+                localStorage.setItem("isLoggedIn", "true");
+                alert("Đăng nhập thành công!");
+                window.location.href = "index.html";
+            } else {
+                alert("Email hoặc mật khẩu không đúng!");
+            }
+        });
     }
 
-    if (phone === "" || !/^\d{10,12}$/.test(phone)) {
-      isValid = false;
-      const error = document.createElement("div");
-      error.className = "error-message";
-      error.textContent = "Số điện thoại không hợp lệ.";
-      document.getElementById("phone").classList.add("input-error");
-      document.getElementById("phone").after(error);
+    // Xử lý đăng xuất
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            // Xóa trạng thái đăng nhập
+            localStorage.setItem("isLoggedIn", "false");
+            alert("Đăng xuất thành công!");
+            updateDropdown();
+            window.location.href = "index.html";
+        });
     }
 
-    if (password.length < 6) {
-      isValid = false;
-      const error = document.createElement("div");
-      error.className = "error-message";
-      error.textContent = "Mật khẩu phải có ít nhất 6 ký tự.";
-      document.getElementById("password").classList.add("input-error");
-      document.getElementById("password").after(error);
+    // Hiển thị thông tin người dùng trong trang "Xem tài khoản"
+    const accountInfoForm = document.getElementById("accountInfoForm");
+    if (accountInfoForm && userData) {
+        // Hiển thị email (dùng span để chỉ hiển thị, không chỉnh sửa)
+        const emailElement = document.getElementById("emailInput");
+        if (emailElement) {
+            emailElement.textContent = userData.email || "";
+        }
+
+        // Hiển thị tên (chỉnh sửa được)
+        const firstNameInput = document.getElementById("firstNameInput");
+        if (firstNameInput) {
+            firstNameInput.value = userData.firstName || "";
+        }
+
+        // Hiển thị họ (chỉnh sửa được)
+        const lastNameInput = document.getElementById("lastNameInput");
+        if (lastNameInput) {
+            lastNameInput.value = userData.lastName || "";
+        }
+
+        // Hiển thị số điện thoại (chỉnh sửa được)
+        const phoneInput = document.getElementById("phoneInput");
+        if (phoneInput) {
+            phoneInput.value = userData.phone || "";
+        }
     }
-
-    if (!termsChecked) {
-      isValid = false;
-      alert("Bạn cần đồng ý với Điều khoản & Điều kiện.");
-    }
-
-    // Nếu hợp lệ, hiển thị thông báo thành công
-    if (isValid) {
-      const successMessage = document.createElement("div");
-      successMessage.className = "success-message";
-      successMessage.textContent = "Đăng ký thành công!";
-      document.querySelector(".card-body").appendChild(successMessage);
-
-      // Lưu dữ liệu vào localStorage
-      const userData = { fullName, email, phone, password };
-      localStorage.setItem("user", JSON.stringify(userData));
-
-      // Reset form
-      registerForm.reset();
-    }
-  });
-
-  // Hàm kiểm tra email hợp lệ
-  function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-  }
 });
