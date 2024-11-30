@@ -155,9 +155,9 @@ body, footer h5 {
     color: #fff;
     padding: 6px 12px;
     background-color: #229ac8;
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
-    border-color: #e91e63
+    border-color: #ff6f61
 }
 
 .navbar-toggler:focus {
@@ -284,14 +284,6 @@ body, footer h5 {
 
 
 /*Footer*/
-/*footer {*/
-/*    margin-top: 30px;*/
-/*    padding-top: 30px;*/
-/*    padding-bottom: 50px;*/
-/*    background-color: #fcfcfc;*/
-/*    border-top: 1px solid #ddd*/
-/*}*/
-
 .footer {
     background-color: #f8f8f8;
     padding: 40px 0;

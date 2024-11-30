@@ -31,7 +31,7 @@ h6 {
 }
 
 a {
-    color: #e91e63
+    color: white;
 }
 
 ul,li {
@@ -92,14 +92,34 @@ body, footer h5 {
 .main-header .cart .cart-count {
     position: absolute;
     top: -10px;
-    right: -10px;
+    right: -13px;
     background-color: #ff6f61;
     color: #fff;
     border-radius: 50%;
-    padding: 2px 5px;
+    padding: 2px 8px;
     font-size: 12px;
 }
 
+.main-header .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+    background-color: #fff ;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .dropdown-menu .dropdown-item {
+    text-align: left;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+.main-header .dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
 
 /* Thanh menu */
 .navbar {
@@ -125,9 +145,9 @@ body, footer h5 {
     color: #fff;
     padding: 6px 12px;
     background-color: #229ac8;
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
-    border-color: #e91e63
+    border-color: #ff6f61
 }
 
 .navbar-toggler:focus {
@@ -135,7 +155,7 @@ body, footer h5 {
 }
 
 .navbar-nav .nav-link:hover, .dropdown-menu .dropdown-item:hover {
-    color: #ff35a4;
+    color: #ff6f61;
 }
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
@@ -202,7 +222,7 @@ td{
 }
 
 .table th {
-    background-color: #e91e63; /* Màu nền cho tiêu đề cột */
+    background-color: #ff6f61; /* Màu nền cho tiêu đề cột */
     color: white; /* Màu chữ tiêu đề cột */
     font-size: 1.1rem; /* Kích thước chữ tiêu đề */
 }
@@ -237,7 +257,7 @@ td{
 }
 
 .btn-primary {
-    background-color: #e91e63; /* Màu nền nút "Mua lại" */
+    background-color: #ff6f61; /* Màu nền nút "Mua lại" */
     color: white; /* Màu chữ */
 }
 
@@ -246,7 +266,7 @@ td{
 }
 
 .btn-primary {
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
     color: #fff;
     border-color: #e91e63
@@ -260,7 +280,7 @@ td{
 }
 
 .btn-primary:focus, .form-check-input:focus, .form-control:focus, .form-select:focus, .input-group-text:focus {
-    border-color: #ff87b0;
+    color: #ff6f61;
     box-shadow: 0 0 0 .25rem rgb(255 232 240)
 }
 
@@ -331,7 +351,7 @@ footer {
 }
 
 .footer a:hover {
-    color: #e91e63;
+    color: #ff6f61;
     text-decoration: none;
 }
 

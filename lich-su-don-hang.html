@@ -46,8 +46,22 @@
 
             <!-- Tài khoản, giỏ hàng, thanh toán -->
             <div class="icon-links d-flex align-items-center">
-                <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
-                <a href="#" class="cart">
+                <!-- Dropdown Tài Khoản -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <i class="fas fa-user"></i> <span id="accountText">Tài khoản</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="dangnhap.html" id="loginBtn">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="dangki.html" id="signupBtn">Đăng ký</a></li>
+                        <li><a class="dropdown-item" href="thong-tin-tai-khoan.html" id="accountBtn"
+                               style="display: none">Xem tài khoản</a></li>
+                        <li><a class="dropdown-item" href="#" id="logoutBtn" style="display: none">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="giohang.html" class="cart">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
                 </a>
@@ -162,7 +176,6 @@
         </div>
     </nav>
 
-
     <div class="container mt-5">
         <h1 class="text-center mb-4">Lịch sử đơn hàng</h1>
         <div class="row">
@@ -185,7 +198,7 @@
                         <td>1</td>
                         <td>100.000đ</td>
                         <td>
-                            <button class="btn btn-primary">Mua lại</button>
+                            <button class="btn btn-primary"><a href="">Mua lại</a></button>
                         </td>
                         <td>
                             <button class="btn btn-secondary">Liên hệ shop</button>
