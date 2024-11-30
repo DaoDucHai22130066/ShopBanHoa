@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
-  // Kiểm tra nếu người dùng đã đăng nhập (kiểm tra từ localStorage)
+  // Lấy thông tin người dùng từ localStorage
+  const user = JSON.parse(localStorage.getItem("user"));
   const username = localStorage.getItem("username");
 
   // Lấy các phần tử cần thay đổi giao diện
@@ -10,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const accountBtn = document.getElementById("accountBtn");
   const logoutBtn = document.getElementById("logoutBtn");
 
-  // Nếu có tên người dùng trong localStorage (đã đăng nhập)
-  if (username) {
-    // Hiển thị lời chào "Xin chào, [Tên người dùng]"
+  // Kiểm tra xem người dùng đã đăng nhập chưa
+  if (username && user) {
+    // Hiển thị lời chào "Xin chào, [Họ tên]"
     accountDropdown.innerHTML = `Xin chào, ${username}!`;
 
     // Ẩn "Đăng nhập" và "Đăng ký"
@@ -30,14 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoutBtn) logoutBtn.style.display = "none";
   }
 
-  // Đăng xuất
+  // Đăng xuất với xác nhận
   if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("username"); // Xóa tên người dùng khỏi localStorage
-      window.location.href = "index.html"; // Điều hướng lại trang chủ
+      const confirmLogout = confirm("Bạn có chắc chắn muốn đăng xuất không?");
+      if (confirmLogout) {
+        // Chỉ xóa username, giữ lại các thông tin còn lại
+        window.location.href = "index.html"; // Điều hướng lại trang chủ
+      }
     });
   }
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
 =======
@@ -59,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Ngăn form tự động submit
 
-    // Lấy dữ liệu từ các trường
     const email = document.getElementById("loginEmail").value.trim();
     const password = document.getElementById("loginPassword").value.trim();
 
@@ -73,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Đăng nhập thành công!");
 
       // Lưu tên người dùng vào localStorage
-      localStorage.setItem("username", user.username);
+      localStorage.setItem("username", user.fullName); // Lưu fullName vào localStorage
 
       // Điều hướng về trang chủ (index.html)
       window.location.href = "index.html";
