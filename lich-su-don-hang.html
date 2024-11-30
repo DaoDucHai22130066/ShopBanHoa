@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin tài khoản</title>
+    <title>Lịch sử đơn hàng</title>
     <!--    Shortcut Icon-->
     <!--    <link rel="shortcut icon" type="image/jpg" href="/image/catalog/1_dienhoa/app/Logo-icon.png"/>-->
     <!-- Bootstrap CSS -->
@@ -11,7 +10,7 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/thong-tin-tai-khoan.css">
+    <link rel="stylesheet" href="css/lich-su-don-hang.css">
 </head>
 <body>
 <header>
@@ -48,7 +47,7 @@
             <!-- Tài khoản, giỏ hàng, thanh toán -->
             <div class="icon-links d-flex align-items-center">
                 <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
-                <a href="giohang.html" class="cart">
+                <a href="#" class="cart">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
                 </a>
@@ -57,7 +56,6 @@
         </div>
     </header>
 </header>
-
 <main>
     <!-- Thanh menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -163,73 +161,45 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Lịch sử đơn hàng</h1>
         <div class="row">
-            <div class="col-md-3">
-                <div class="sidebar">
-                    <h4>TÀI KHOẢN</h4>
-                    <a href="#">Thông tin tài khoản</a>
-                    <a href="#">Đổi mật khẩu</a>
-                    <a href="lich-su-don-hang.html">Xem lịch sử đơn hàng</a>
-                    <a href="#">Đăng xuất</a>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="content">
-                    <h4>CẬP NHẬT THÔNG TIN TÀI KHOẢN</h4>
-                    <form>
-                        <div class="form-group">
-                            <label class="label-email">Email của bạn:</label>
-                            <span>22130306@st.hcmuaf.edu.vn</span>
-                        </div>
-                        <div class="form-group">
-                            <label class="label-firstname">Tên:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-lastname">Họ:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-phone">Điện thoại:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Địa chỉ:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Quốc gia:</label>
-                            <select class="form-control">
-                                <option>Việt Nam</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-shipping-zone" class="form-label">Tỉnh / thành phố</label>
-                            <select name="shipping_zone_id" id="input-shipping-zone" class="form-select">
-                                <option value="0">Vui lòng chọn tỉnh/thành phố</option>
-                                <option value="43" >TP.Hồ Chí Minh - Nội thành</option>
-                                <option value="44" >TP.Hồ Chí Minh - Ngoại thành</option>
-                                <option value="45" >Hà Nội - Khu vực trung tâm</option>
-                                <option value="46" >Hà Nội - Khu vực khác</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-shipping-custom-field-30" class="form-label">Quận / Huyện</label>
-                            <select name="shipping_custom_field[address][30]"
-                                    id="input-shipping-custom-field-30" class="form-select">
-                                <option value="0">Vui lòng chọn quận/huyện</option>
-                            </select>
-                        </div>
-                        <button id="save-btn" type="submit" class="btn btn-save">
-                            <i class="fas fa-save"></i> Lưu
-                        </button>
-                    </form>
-                </div>
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Ảnh sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Mua lại</th>
+                        <th>Liên hệ shop</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img src="images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto" class="img-fluid"></td>
+                        <td>Thanh tú</td>
+                        <td>1</td>
+                        <td>100.000đ</td>
+                        <td>
+                            <button class="btn btn-primary">Mua lại</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-secondary">Liên hệ shop</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+
+
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -296,7 +266,5 @@
         </div>
     </div>
 </footer>
-
-<script src="js/thong-tin-tai-khoan.js"></script>
 </body>
 </html>
