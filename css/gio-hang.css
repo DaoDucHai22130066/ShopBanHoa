@@ -71,10 +71,6 @@ body, footer h5 {
     border-bottom: 1px solid #ddd;
 }
 
-.main-header .logo img {
-    height: 80px;
-}
-
 .main-header .search-bar {
     max-width: 400px;
     margin: auto;
@@ -128,6 +124,81 @@ body, footer h5 {
     color: #ff6f61;
 }
 
+/*ẩn icon đường dẫn*/
+.breadcrumb {
+    display: none;
+}
+
+/*Xử lý reponsive header*/
+.main-header {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Tạo viền phân cách */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.icon-links a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-links .cart .cart-count {
+    background-color: #ff6347;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+/* Responsive cho thiết bị vừa (tablet) */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none; /* Ẩn thanh tìm kiếm trên tablet */
+    }
+
+    .icon-links a {
+        font-size: 14px; /* Thu nhỏ icon */
+    }
+}
+
+/* Responsive cho thiết bị nhỏ (mobile) */
+@media (max-width: 576px) {
+    .container {
+        flex-wrap: wrap; /* Chia các phần thành các dòng */
+    }
+
+    .logo {
+        flex-basis: 100%; /* Logo chiếm 100% chiều rộng */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-links {
+        flex-basis: 100%; /* Icon chuyển xuống dòng mới */
+        justify-content: center;
+    }
+
+    .icon-links a {
+        margin: 10px; /* Tạo khoảng cách giữa các icon */
+    }
+
+    .dropdown .dropdown-menu {
+        font-size: 14px; /* Thu nhỏ chữ trong menu */
+    }
+}
 
 /* Thanh menu */
 .navbar {
@@ -166,6 +237,7 @@ body, footer h5 {
 .navbar-nav .nav-link:hover {
     color: #ff6f61;
 }
+
 
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
@@ -230,7 +302,7 @@ body, footer h5 {
 
 /*main*/
 .cart {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .row {
     --bs-gutter-x: 1.5rem;
@@ -441,15 +513,13 @@ b, strong {
     border: none;
 }
 
-/*Footer*/.footer {
+/*Footer*/
+.footer {
+    margin-top: 30px;
     background-color: #f8f8f8;
     padding: 40px 0;
     color: #333;
     font-size: 14px;
-}
-
-.footer .footer-logo img {
-    height: 60px;
 }
 
 .footer .footer-title {
