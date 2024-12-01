@@ -357,6 +357,15 @@ a {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.form-control.quantity-input {
+    width: 60px;
+    /* Giảm chiều rộng của ô nhập số lượng */
+    padding: .35rem .75rem;
+    /* Điều chỉnh padding cho ô nhập số lượng */
+    font-size: 1rem;
+    /* Giảm font size nếu cần */
+}
+
 .btn-danger.active, .btn-danger.disabled, .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger[disabled], .btn-success.active, .btn-success.disabled, .btn-success:active, .btn-success:focus, .btn-success:hover, .btn-success[disabled], .btn-warning.active, .btn-warning.disabled, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .btn-warning[disabled] {
     box-shadow: inset 0 1000px 0 rgba(0, 0, 0, .1);
 }

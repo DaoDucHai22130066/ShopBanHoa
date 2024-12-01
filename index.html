@@ -64,7 +64,7 @@
           </div>
           <a href="giohang.html" class="cart">
             <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count">0</span>
+            <span class="cart-count" id="cart-icon-span">0</span>
           </a>
           <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
         </div>
@@ -271,7 +271,9 @@
                 <a href="chi-tiet-sp.html">Kiss Me</a>
               </h5>
               <p class="product-price">300,000đ</p>
-              <a href="#" class="btn btn-buy">Thêm Giỏ</a>
+              <a href="#" class="btn btn-buy" data-product-name="Kiss Me"
+              data-product-price="350000" data-product-img="images/san-pham.webp"
+              data-product-id="BOUQUET-10001">Thêm Giỏ</a>
               <a href="chi-tiet-sp.html" class="btn btn-buy">Đặt Nhanh</a>
             </div>
           </div>
@@ -285,7 +287,9 @@
               <div class="sale-badge">Giảm 30%</div>
               <h5 class="product-name">Infallible</h5>
               <p class="product-price">350,000đ</p>
-              <a href="#" class="btn btn-buy">Thêm Giỏ</a>
+              <a href="#" class="btn btn-buy" data-product-name="Infallible"
+              data-product-price="350000" data-product-img="images/san-pham.webp"
+              data-product-id="BOUQUET-10002">Thêm Giỏ</a>
               <a href="#" class="btn btn-buy">Đặt Nhanh</a>
             </div>
           </div>
@@ -691,8 +695,8 @@
 
     window.addEventListener("scroll", handleScrollToTopBtn);
   </script>
-
   <script src="js/index.js"></script>
+  <script src="js/themgio.js"></script>
 </body>
 
 </html>
