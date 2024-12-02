@@ -182,14 +182,6 @@
         </nav>
 
         <div id="checkout-checkout" class="container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=common/home"><i
-                            class="fas fa-home"> </i></a></li>
-                <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=checkout/cart">Giỏ hàng</a></li>
-                <li class="breadcrumb-item"><a href="https://www.flowercorner.vn?route=checkout/checkout">Thanh toán</a>
-                </li>
-            </ul>
-
             <div class="row">
                 <div id="content" class="col mt-5">
                     <div class="row">
@@ -506,14 +498,14 @@
                                     <table class="table table-bordered table-hover">
                                         <thead>
                                             <tr>
-                                                <td class="text-start" style="min-width:80px">#</td>
+                                                <td class="text-start" style="min-width:80px">Ảnh sản phẩm</td>
                                                 <td class="text-start">Tên sản phẩm</td>
                                                 <td class="text-end">Tổng cộng</td>
                                                 <td class="text-end"></td>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <input type="hidden" class="cart-total" value="330000" />
+                                        <tbody id="orderDetailsBody">
+                                            <!-- <input type="hidden" class="cart-total" value="330000" />
                                             <tr>
                                                 <input type="hidden" class="cart-product-id" value="7312" />
                                                 <input type="hidden" class="cart-item-price" value="330,000VND" />
@@ -538,16 +530,12 @@
                                                         </button>
                                                     </form>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <td colspan="2" class="text-end"><strong>Tổng phụ</strong></td>
-                                                <td class="text-end" colspan="2">330,000VND</td>
-                                            </tr>
-                                            <tr>
                                                 <td colspan="2" class="text-end"><strong>Tổng cộng</strong></td>
-                                                <td class="text-end" colspan="2">330,000VND</td>
+                                                <td class="text-end" colspan="2" id="totalAmount">0 VND</td>
                                             </tr>
                                         </tfoot>
                                     </table>

@@ -123,3 +123,42 @@ function updateCartIcon() {
 
 // Khởi chạy khi tải trang
 window.addEventListener("load", updateCart);
+
+
+// Xử lý sự kiện khi nhấn nút Thanh toán
+const checkoutButton = document.querySelector(".btn-primary");
+
+checkoutButton.addEventListener("click", function () {
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    const selectedItems = [];
+
+    // Lọc các sản phẩm đã được chọn (checked)
+    const selectedCheckboxes = document.querySelectorAll(".select-product:checked");
+
+    selectedCheckboxes.forEach(checkbox => {
+        const productId = checkbox.dataset.productId;
+        const item = cartItems.find(item => item.productId === productId);
+
+        if (item) {
+            // Thêm sản phẩm đã chọn vào danh sách selectedItems
+            selectedItems.push(item);
+        }
+    });
+
+    // Lưu các sản phẩm đã chọn vào sessionStorage
+    sessionStorage.setItem("selectedItems", JSON.stringify(selectedItems));
+
+    // Loại bỏ các sản phẩm đã chọn khỏi giỏ hàng
+    const updatedCartItems = cartItems.filter(item => {
+        return !selectedItems.some(selected => selected.productId === item.productId);
+    });
+
+    // Lưu lại giỏ hàng sau khi cập nhật
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+
+    updateCart();
+
+    // Điều hướng đến trang thanh toán
+    window.location.href = "thanh-toan.html";  // Điều hướng tới trang thanh toán
+});
+

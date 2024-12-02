@@ -105,9 +105,9 @@
     color: #fff;
     padding: 6px 12px;
     background-color: #229ac8;
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
-    border-color: #e91e63
+    border-color: #ff6f61
 }
 
 .navbar-toggler:focus {
@@ -195,10 +195,10 @@ div.required .col-form-label:before, div.required .form-label:before {
 }
 
 .btn-primary {
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
     color: #fff;
-    border-color: #e91e63
+    border-color: #ff6f61
 }
 
 .btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -300,8 +300,8 @@ legend {
 }
 
 .form-check-input:checked {
-    background-color: #e91e63;
-    border-color: #e91e63
+    background-color: #ff6f61;
+    border-color: #ff6f61
 }
 
 .form-check .form-check-input.input-payment-method {
