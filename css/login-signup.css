@@ -23,7 +23,8 @@
 }
 
 .main-header .logo img {
-  height: 80px;
+  height: 150px;
+  width: auto;
 }
 
 .main-header .search-bar {
@@ -202,7 +203,8 @@
 }
 
 .footer .footer-logo img {
-  height: 60px;
+  height: 100px;
+  width: auto;
 }
 
 .footer .footer-title {

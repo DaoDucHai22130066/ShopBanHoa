@@ -59,11 +59,10 @@
     font-size: 12px;
 }
 
-
 .main-header .dropdown-menu {
     position: absolute;
     z-index: 1050;
-    background-color: #fff;
+    background-color: #fff ;
     border: 1px solid #ddd;
     padding: 0;
     margin: 0;
@@ -71,8 +70,8 @@
 }
 
 .main-header .dropdown-menu .dropdown-item {
-    text-align: left;
-    padding: 8px 16px;
+    text-align: left; 
+    padding: 8px 16px; 
     margin: 0;
 }
 
@@ -182,57 +181,145 @@
 }
 
 /*main*/
-/* Wrapper chính */
-.row {
-    padding: 20px;
+
+td{
+    vertical-align: middle;
 }
 
-.sidebar {
-    background-color: #ff6f61;
-    color: white;
-    padding: 15px;
-    border-radius: 3px;
+/* Tạo khoảng cách và đường viền cho bảng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Màu nền cho bảng */
 }
 
-.sidebar a {
-    color: white;
+.table th, .table td {
+    border: 1px solid #ddd; /* Viền nhẹ cho các ô */
+    padding: 10px; /* Khoảng cách giữa nội dung và viền */
+    text-align: center; /* Căn giữa nội dung trong các ô */
+}
+
+.table th {
+    background-color: #ff6f61; /* Màu nền cho tiêu đề cột */
+    color: white; /* Màu chữ tiêu đề cột */
+    font-size: 1.1rem; /* Kích thước chữ tiêu đề */
+}
+
+.table td {
+    background-color: #ffffff; /* Màu nền cho các ô dữ liệu */
+    font-size: 1rem; /* Kích thước chữ dữ liệu */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Đổi màu nền cho các hàng lẻ */
+}
+
+/* Thêm hiệu ứng hover cho hàng */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+/* Cải thiện hình ảnh sản phẩm */
+.table img {
+    max-width: 50px; /* Giới hạn chiều rộng */
+    height: auto; /* Đảm bảo tỉ lệ hình ảnh */
+    border-radius: 5px; /* Bo góc hình ảnh */
+}
+
+/* Thiết kế các nút */
+.btn {
+    border-radius: 5px; /* Bo góc nút */
+    font-size: 0.9rem; /* Kích thước chữ nút */
+    padding: 8px 12px; /* Khoảng cách bên trong nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Màu nền nút "Mua lại" */
+    color: white; /* Màu chữ */
+}
+.btn-primary a {
     text-decoration: none;
+    color: white; /* Màu chữ */
+}
+
+.btn-primary:hover {
+    background-color: #e91e63; /* Màu khi hover */
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #e91e63
+}
+
+.btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-position: 0;
+    color: #fff;
+    border-color: #ff87b0;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-primary:focus, .form-check-input:focus, .form-control:focus, .form-select:focus, .input-group-text:focus {
+    color: #ff6f61;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Màu nền nút "Liên hệ shop" */
+    color: white; /* Màu chữ */
+}
+
+.btn-secondary:hover {
+    background-color: #495057; /* Màu khi hover */
+}
+
+/* Thêm khoảng cách cho tiêu đề */
+h1.text-center {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
+}
+
+/* Đảm bảo không gian giữa các nút */
+td button {
+    margin: 5px; /* Khoảng cách giữa các nút */
+}
+
+
+
+/* Biểu tượng nổi bên trái */
+.floating-icons {
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    z-index: 1000;
+}
+
+.floating-icons a {
     display: block;
-    padding: 5px 0;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(255, 111, 109);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
 }
 
-.sidebar a:hover {
-    background-color: #ff6f61;
+.floating-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.content {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 3px
+.floating-icons a i {
+    font-size: 20px;
+    color: #ff6f61;
 }
-
-.content h4 {
-    margin-bottom: 20px;
-}
-
-.container h4 {
-    font-weight: bolder;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.btn-save {
-    background-color: #d4edda;
-    color: green;
-    border: 1px solid green;
-}
-
-.btn-save i {
-    margin-right: 5px;
-}
-
 
 /*Footer*/
 .footer {
@@ -289,3 +376,4 @@
 .footer a {
     transition: all 0.3s ease;
 }
+

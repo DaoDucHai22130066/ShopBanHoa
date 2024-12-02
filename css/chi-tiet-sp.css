@@ -24,7 +24,8 @@
 }
 
 .main-header .logo img {
-    height: 80px;
+    height: 150px;
+    width: auto;
 }
 
 .main-header .search-bar {
@@ -62,7 +63,7 @@
 .main-header .dropdown-menu {
     position: absolute;
     z-index: 1050;
-    background-color: #fff ;
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 0;
     margin: 0;
@@ -70,8 +71,8 @@
 }
 
 .main-header .dropdown-menu .dropdown-item {
-    text-align: left; 
-    padding: 8px 16px; 
+    text-align: left;
+    padding: 8px 16px;
     margin: 0;
 }
 
@@ -126,7 +127,7 @@
 
 .dropdown-item:hover {
     background-color: #f0f0f0;
-    color: #ff6f61; 
+    color: #ff6f61;
 }
 
 .dropdown-item:active {
@@ -181,8 +182,8 @@
 }
 
 
- /*Main*/
- .product-detail {
+/*Main*/
+.product-detail {
     margin-top: 20px;
 }
 
@@ -371,44 +372,44 @@
 /* CSS cho màu mũi tên */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none; /* Loại bỏ ảnh nền mặc định */
-    background-color: #f62fc88e; /* Màu hồng đỏ cho nút */
-    border-radius: 50%; /* Làm tròn nền nút */
+    background-image: none;
+    background-color: #ff6f61;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff; /* Màu trắng cho mũi tên */
-    font-size: 24px; /* Kích thước mũi tên */
-    width: 30px; /* Kích thước vòng tròn */
+    color: #fff;
+    font-size: 24px;
+    width: 30px;
     height: 30px;
 }
 
 .carousel-control-prev-icon::before {
-    content: '\f053'; /* Mã Unicode của mũi tên trái */
+    content: '\f053';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
 .carousel-control-next-icon::before {
-    content: '\f054'; /* Mã Unicode của mũi tên phải */
+    content: '\f054';
+    /* Mã Unicode của mũi tên phải */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Đặt chiều rộng nút */
-    opacity: 0.5; /* Đảm bảo nút không trong suốt */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu */
+    width: 5%;
+    opacity: 0.5;
+    transition: background-color 0.3s;
 }
 
-/* Đưa nút ra xa khỏi sản phẩm */
 .carousel-control-prev {
-    left: -50px; /* Di chuyển nút Previous ra ngoài */
+    left: -50px;
 }
 
 .carousel-control-next {
-    right: -80px; /* Di chuyển nút Next ra ngoài */
+    right: -80px;
 }
 
 
@@ -421,7 +422,8 @@
 }
 
 .footer .footer-logo img {
-    height: 60px;
+    height: 100px;
+    width: auto;
 }
 
 .footer .footer-title {
