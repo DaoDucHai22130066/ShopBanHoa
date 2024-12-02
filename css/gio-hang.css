@@ -102,7 +102,6 @@ body, footer h5 {
     font-size: 12px;
 }
 
-
 .main-header .dropdown-menu {
     position: absolute;
     z-index: 1050;
@@ -238,7 +237,6 @@ body, footer h5 {
     color: #ff6f61;
 }
 
-
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -246,7 +244,7 @@ body, footer h5 {
 
 .dropdown-item:hover {
     background-color: #f0f0f0;
-    color: #ff6f61; 
+    color: #ff6f61;
 }
 
 .dropdown-item:active {
@@ -301,8 +299,8 @@ body, footer h5 {
 }
 
 /*main*/
-.cart {
-    margin-top: 5px;
+main .cart {
+    margin-top: 20px;
 }
 .row {
     --bs-gutter-x: 1.5rem;
@@ -475,6 +473,15 @@ a {
     appearance: none;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control.quantity-input {
+    width: 60px;
+    /* Giảm chiều rộng của ô nhập số lượng */
+    padding: .35rem .75rem;
+    /* Điều chỉnh padding cho ô nhập số lượng */
+    font-size: 1rem;
+    /* Giảm font size nếu cần */
 }
 
 .btn-danger.active, .btn-danger.disabled, .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger[disabled], .btn-success.active, .btn-success.disabled, .btn-success:active, .btn-success:focus, .btn-success:hover, .btn-success[disabled], .btn-warning.active, .btn-warning.disabled, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .btn-warning[disabled] {

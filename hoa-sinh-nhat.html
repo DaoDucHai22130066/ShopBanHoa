@@ -66,7 +66,7 @@
           </div>
           <a href="giohang.html" class="cart">
             <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count">0</span>
+            <span class="cart-count" id="cart-icon-span">0</span>
           </a>
           <a href="#"><i class="fas fa-external-link-alt"></i> Thanh toán</a>
         </div>
@@ -357,66 +357,77 @@
 
     const products = [
       {
+        id:"BOUQUET-10010",
         name: "Kiss Me",
         price: "300,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 30%",
       },
       {
+        id:"BOUQUET-10011",
         name: "Rose",
         price: "250,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 20%",
       },
       {
+        id:"BOUQUET-10012",
         name: "Lily",
         price: "180,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 10%",
       },
       {
+        id:"BOUQUET-10013",
         name: "Tulip",
         price: "220,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 15%",
       },
       {
+        id:"BOUQUET-10014",
         name: "Sunflower",
         price: "350,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 25%",
       },
       {
+        id:"BOUQUET-10015",
         name: "Daisy",
         price: "200,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 30%",
       },
       {
+        id:"BOUQUET-10016",
         name: "Orchid",
         price: "270,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 5%",
       },
       {
+        id:"BOUQUET-10017",
         name: "Peony",
         price: "320,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 15%",
       },
       {
+        id:"BOUQUET-10018",
         name: "Lotus",
         price: "400,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 20%",
       },
       {
+        id:"BOUQUET-10019",
         name: "Tulip 2",
         price: "280,000đ",
         image: "images/san-pham.webp",
         sale: "Giảm 10%",
       },
       {
+        id:"BOUQUET-10020",
         name: "Chrysanthemum",
         price: "230,000đ",
         image: "images/san-pham.webp",
@@ -557,7 +568,11 @@
                     <div class="sale-badge">${product.sale}</div>
                     <h5 class="product-name">${product.name}</h5>
                     <p class="product-price">${product.price}</p>
-                    <a href="#" class="btn btn-buy">Thêm giỏ</a>
+                    <a href="#" class="btn btn-buy add-to-cart" 
+   data-product-id="${product.id}"
+   data-product-name="${product.name}"
+   data-product-price="${product.price.replace(',', '').replace('đ', '')}" 
+   data-product-img="${product.image}">Thêm Giỏ</a>
                     <a href="#" class="btn btn-buy">Đặt nhanh</a>
                 </div>
             </div>
@@ -571,6 +586,8 @@
     // Khởi tạo trang đầu tiên khi tải trang
     changePage(1);
   </script>
+  <script src="js/themgio.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
