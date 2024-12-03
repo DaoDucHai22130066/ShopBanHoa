@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+
+
+
 // Xử lý sự kiện cho nút xác nhận đơn hàng
 // Lấy các phần tử cần thiết
 const paymentMethods = document.querySelectorAll('input[name="payment_method"]');
@@ -40,6 +45,11 @@ confirmOrderButton.addEventListener('click', () => {
 
 // Khởi tạo trạng thái của nút "Xác nhận đơn hàng" khi trang được tải
 updateConfirmButtonState();
+
+
+
+
+
 
 
 // Xử lý chọn option tỉnh / thành phố quận / huyện
@@ -114,6 +124,12 @@ citySelect.addEventListener("change", function () {
 });
 
 
+
+
+
+
+
+
 // Xử lý JS cho các trường ở mục Hóa đơn VAT
 document.addEventListener('DOMContentLoaded', function () {
     const vatCheckbox = document.getElementById('input-shipping-custom-value-104'); // Checkbox "Yêu cầu hóa đơn VAT"
@@ -135,6 +151,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+
+
+
 // Xử lý UI cho khung lịch ở trường ngày giao hàng
 $(document).ready(function() {
     $("#input-shipping-custom-field-31").datepicker({
@@ -143,6 +164,11 @@ $(document).ready(function() {
         maxDate: "+1M" // Giới hạn trong 1 tháng
     });
 });
+
+
+
+
+
 
 
 // Xử lý phần nút xác nhận thông tin - Chỉnh sửa thông tin
@@ -225,6 +251,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+//Xử lý lấy thông tin phần chi tiết đơn hàng
 window.addEventListener("load", function () {
     // Lấy dữ liệu sản phẩm đã chọn từ sessionStorage
     const selectedItems = JSON.parse(sessionStorage.getItem("selectedItems")) || [];
@@ -280,9 +310,6 @@ window.addEventListener("load", function () {
         totalAmountElement.textContent = "Tổng số tiền: 0 VND";
     }
 });
-
-
-
 
 
 

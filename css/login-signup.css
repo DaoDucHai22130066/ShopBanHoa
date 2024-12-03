@@ -22,6 +22,11 @@
   border-bottom: 1px solid #ddd;
 }
 
+.main-header .logo img {
+  height: 150px;
+  width: auto;
+}
+
 .main-header .search-bar {
   max-width: 400px;
   margin: auto;
@@ -266,6 +271,11 @@
   padding: 40px 0;
   color: #333;
   font-size: 14px;
+}
+
+.footer .footer-logo img {
+  height: 100px;
+  width: auto;
 }
 
 .footer .footer-title {

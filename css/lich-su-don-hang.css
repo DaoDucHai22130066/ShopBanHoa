@@ -54,11 +54,13 @@ body, footer h5 {
     font-size: 14px;
     color: #333;
 }
+
 .top-bar .social-icons i {
     font-size: 18px;
     color: #555;
     margin-right: 10px;
 }
+
 .top-bar .hotline {
     margin-right: 30px;
 }
@@ -70,16 +72,23 @@ body, footer h5 {
     border-bottom: 1px solid #ddd;
 }
 
+.main-header .logo img {
+    height: 150px;
+    width: auto;
+}
+
 .main-header .search-bar {
     max-width: 400px;
     margin: auto;
 }
+
 .main-header .icon-links a {
     color: #333;
     margin-left: 20px;
     font-size: 18px;
     text-decoration: none;
 }
+
 .main-header .icon-links a:hover {
     text-decoration: none;
 }
@@ -87,6 +96,7 @@ body, footer h5 {
 .main-header .cart {
     position: relative;
 }
+
 .main-header .cart .cart-count {
     position: absolute;
     top: -10px;
@@ -195,7 +205,8 @@ body, footer h5 {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng nếu muốn */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng nếu muốn */
 }
 
 .navbar-nav .nav-link {
@@ -226,10 +237,27 @@ body, footer h5 {
 .navbar-nav .nav-link:hover, .dropdown-menu .dropdown-item:hover {
     color: #ff6f61;
 }
+
 /* Hiện dropdown khi hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+.dropdown-item:active {
+    background-color: #ff6f61;
+    color: #f0f0f0;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
+
 /* Ẩn dropdown mặc định */
 .dropdown-menu {
     padding: 0;
@@ -256,7 +284,8 @@ body, footer h5 {
         background-color: rgba(0, 0, 0, .1)
     }
 
-    #menu .dropdown-menu a:hover, #menu .dropdown-menu ul li a :hover {
+    #menu .dropdown-menu a:hover,
+    #menu .dropdown-menu ul li a :hover {
         background: rgba(0, 0, 0, .1)
     }
 
@@ -329,6 +358,10 @@ td{
     background-color: #ff6f61; /* Màu nền nút "Mua lại" */
     color: white; /* Màu chữ */
 }
+.btn-primary a {
+    text-decoration: none;
+    color: white; /* Màu chữ */
+}
 
 .btn-primary:hover {
     background-color: #e91e63; /* Màu khi hover */
@@ -375,6 +408,38 @@ td button {
 
 
 
+/* Biểu tượng nổi bên trái */
+.floating-icons {
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    z-index: 1000;
+}
+
+.floating-icons a {
+    display: block;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(255, 111, 109);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.floating-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-icons a i {
+    font-size: 20px;
+    color: #ff6f61;
+}
+
 /*Footer*/
 footer {
     margin-top: 30px;
@@ -383,17 +448,30 @@ footer {
     background-color: #fcfcfc;
     border-top: 1px solid #ddd
 }
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 100px;
+    width: auto;
+}
 
 .footer .footer-title {
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 .footer .social-icons i {
     font-size: 18px;
     color: #555;
     margin-right: 10px;
 }
+
 .footer .contact-info span,
 .footer .contact-info a {
     display: block;

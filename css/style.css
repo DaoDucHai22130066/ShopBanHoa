@@ -23,6 +23,11 @@
     border-bottom: 1px solid #ddd;
 }
 
+.main-header .logo img {
+    height: 150px;
+    width: auto;
+}
+
 .main-header .search-bar {
     max-width: 400px;
     margin: auto;
@@ -419,6 +424,11 @@
     font-size: 14px;
 }
 
+.footer .footer-logo img {
+    height: 100px;
+    width: auto;
+}
+
 .footer .footer-title {
     font-weight: bold;
     margin-bottom: 20px;
@@ -470,7 +480,7 @@
     width: 50px;
     display: none;
     /* Ẩn nút ban đầu */
-    background-color: #fd8ad9;
+    background-color: #ff6f61;
     color: white;
     border: 2px solid white;
     border-radius: 5px;
@@ -481,6 +491,6 @@
 
 #scrollToTopBtn:hover {
     background-color: #fafafa00;
-    color: #fd8ad9;
-    border: 2px solid #fd8ad9;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
 }

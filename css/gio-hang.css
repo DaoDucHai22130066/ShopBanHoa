@@ -71,6 +71,11 @@ body, footer h5 {
     border-bottom: 1px solid #ddd;
 }
 
+.main-header .logo img {
+    height: 150px;
+    width: auto;
+}
+
 .main-header .search-bar {
     max-width: 400px;
     margin: auto;
@@ -105,7 +110,7 @@ body, footer h5 {
 .main-header .dropdown-menu {
     position: absolute;
     z-index: 1050;
-    background-color: #fff ;
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 0;
     margin: 0;
@@ -113,8 +118,8 @@ body, footer h5 {
 }
 
 .main-header .dropdown-menu .dropdown-item {
-    text-align: left; 
-    padding: 8px 16px; 
+    text-align: left;
+    padding: 8px 16px;
     margin: 0;
 }
 
@@ -302,6 +307,7 @@ body, footer h5 {
 main .cart {
     margin-top: 20px;
 }
+
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -311,15 +317,19 @@ main .cart {
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
 }
+
 #content {
     min-height: 300px;
 }
+
 .mt-5 {
     margin-top: 3rem !important;
 }
+
 .col {
     flex: 1 0 0;
 }
+
 .table-responsive {
     overflow-x: auto;
 }
@@ -452,7 +462,8 @@ a {
     width: 100%;
 }
 
-.input-group>.form-control, .input-group>.form-select {
+.input-group>.form-control,
+.input-group>.form-select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
@@ -484,7 +495,24 @@ a {
     /* Giảm font size nếu cần */
 }
 
-.btn-danger.active, .btn-danger.disabled, .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger[disabled], .btn-success.active, .btn-success.disabled, .btn-success:active, .btn-success:focus, .btn-success:hover, .btn-success[disabled], .btn-warning.active, .btn-warning.disabled, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .btn-warning[disabled] {
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:hover,
+.btn-danger[disabled],
+.btn-success.active,
+.btn-success.disabled,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.btn-success[disabled],
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning:active,
+.btn-warning:focus,
+.btn-warning:hover,
+.btn-warning[disabled] {
     box-shadow: inset 0 1000px 0 rgba(0, 0, 0, .1);
 }
 
@@ -507,16 +535,23 @@ b, strong {
     border-color: #e7e7e7;
 }
 
-#menu .see-all:focus, #menu .see-all:hover, .btn-primary {
+#menu .see-all:focus,
+#menu .see-all:hover,
+.btn-primary {
     background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
 }
 
-.btn-danger, .btn-info, .btn-inverse, .btn-primary, .btn-success, .btn-warning {
+.btn-danger,
+.btn-info,
+.btn-inverse,
+.btn-primary,
+.btn-success,
+.btn-warning {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
 }
 
-.btn-primary{
+.btn-primary {
     border: none;
 }
 
@@ -527,6 +562,11 @@ b, strong {
     padding: 40px 0;
     color: #333;
     font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 100px;
+    width: auto;
 }
 
 .footer .footer-title {
