@@ -152,6 +152,7 @@
     }
 }
 
+
 /* Thanh menu */
 .navbar {
     position: sticky;
@@ -251,134 +252,111 @@
     }
 }
 
-/* Các lớp CSS cơ bản */
-main {
-    font-family: Arial, sans-serif;
+/*main*/
+
+td{
+    vertical-align: middle;
 }
 
-main .section-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-main .section-title-small {
-    font-size: 1.8rem;
-    color: #555;
-}
-
-main .intro-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-main .intro-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-main .intro-list li {
-    color: #333;
-}
-
-/* Định kiểu cho các card */
-main .quality-card {
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    will-change: transform, box-shadow;
-}
-
-main .quality-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-
-}
-
-main .quality-card img {
+/* Tạo khoảng cách và đường viền cho bảng */
+.table {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Màu nền cho bảng */
 }
 
-main .quality-card:hover img {
-    transform: scale(1.0);
+.table th, .table td {
+    border: 1px solid #ddd; /* Viền nhẹ cho các ô */
+    padding: 10px; /* Khoảng cách giữa nội dung và viền */
+    text-align: center; /* Căn giữa nội dung trong các ô */
 }
 
-main .quality-card .card-title {
-    transition: color 0.3s ease-in-out;
-
+.table th {
+    background-color: #ff6f61; /* Màu nền cho tiêu đề cột */
+    color: white; /* Màu chữ tiêu đề cột */
+    font-size: 1.1rem; /* Kích thước chữ tiêu đề */
 }
 
-main .quality-card:hover .card-title {
+.table td {
+    background-color: #ffffff; /* Màu nền cho các ô dữ liệu */
+    font-size: 1rem; /* Kích thước chữ dữ liệu */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Đổi màu nền cho các hàng lẻ */
+}
+
+/* Thêm hiệu ứng hover cho hàng */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+/* Cải thiện hình ảnh sản phẩm */
+.table img {
+    max-width: 50px; /* Giới hạn chiều rộng */
+    height: auto; /* Đảm bảo tỉ lệ hình ảnh */
+    border-radius: 5px; /* Bo góc hình ảnh */
+}
+
+/* Thiết kế các nút */
+.btn {
+    border-radius: 5px; /* Bo góc nút */
+    font-size: 0.9rem; /* Kích thước chữ nút */
+    padding: 8px 12px; /* Khoảng cách bên trong nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Màu nền nút "Mua lại" */
+    color: white; /* Màu chữ */
+}
+.btn-primary a {
+    text-decoration: none;
+    color: white; /* Màu chữ */
+}
+
+.btn-primary:hover {
+    background-color: #e91e63; /* Màu khi hover */
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #e91e63
+}
+
+.btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-position: 0;
+    color: #fff;
+    border-color: #ff87b0;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-primary:focus, .form-check-input:focus, .form-control:focus, .form-select:focus, .input-group-text:focus {
     color: #ff6f61;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
 }
 
-main .card-body {
-    text-align: center;
+.btn-secondary {
+    background-color: #6c757d; /* Màu nền nút "Liên hệ shop" */
+    color: white; /* Màu chữ */
 }
 
-/* Đảm bảo responsive cho các card */
-@media (max-width: 768px) {
-    .quality-card {
-        margin-bottom: 20px;
-    }
+.btn-secondary:hover {
+    background-color: #495057; /* Màu khi hover */
 }
 
-/* Định kiểu cho các nút mạng xã hội */
-#contact-info .btn {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border-radius: 5px;
+/* Thêm khoảng cách cho tiêu đề */
+h1.text-center {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
 }
 
-/* Nút mạng xã hội khi di chuột qua */
-#contact-info .btn:hover {
-    opacity: 0.8;
-}
-
-/* Định dạng địa chỉ và thông tin liên hệ */
-#contact-info ul.intro-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#contact-info ul.intro-list li {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Đảm bảo tính responsive */
-@media (max-width: 768px) {
-    #contact-info ul.intro-list {
-        padding-left: 15px;
-    }
-
-    #contact-info .list-inline {
-        text-align: center;
-    }
-}
-
-
-/* Cải thiện giao diện trên mobile */
-@media (max-width: 768px) {
-    .intro-list {
-        padding-left: 15px;
-        /* Điều chỉnh khi trên màn hình nhỏ */
-    }
-
-    .intro-text {
-        font-size: 1rem;
-        /* Giảm font-size cho đoạn văn bản trên mobile */
-    }
-
-    .section-title,
-    .section-title-small {
-        text-align: center;
-        /* Căn giữa tiêu đề trên màn hình di động */
-    }
+/* Đảm bảo không gian giữa các nút */
+td button {
+    margin: 5px; /* Khoảng cách giữa các nút */
 }
 
 
