@@ -1,3 +1,52 @@
+body {
+    font-weight: 400;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%
+}
+
+h1 {
+    font-size: 26px
+}
+
+h2 {
+    font-size: 23px
+}
+
+h3 {
+    font-size: 21px
+}
+
+i, h4 {
+    font-size: 15px
+}
+
+#top, h5 {
+    font-size: 12px
+}
+
+h6 {
+    font-size: 10.2px
+}
+
+a {
+    color: #e91e63
+}
+
+ul,li {
+    list-style: none;
+}
+
+body, footer h5 {
+    font-family: Montserrat, sans-serif
+}
+
+#top .btn-link, #top a, .breadcrumb>li.breadcrumb-item>a, .list-unstyled a, .product-thumb .button-group button:hover, a, a:hover {
+    text-decoration: none;
+}
+
+
 /* Phần hotline và mạng xã hội, (Header) */
 .top-bar {
     background-color: #f8f8f8;
@@ -17,7 +66,78 @@
 }
 
 
-/* Phần chính của header */
+
+/*Xử lý reponsive header*/
+.main-header {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Tạo viền phân cách */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.icon-links a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-links .cart .cart-count {
+    background-color: #ff6347;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+/* Responsive cho thiết bị vừa (tablet) */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none; /* Ẩn thanh tìm kiếm trên tablet */
+    }
+
+    .icon-links a {
+        font-size: 14px; /* Thu nhỏ icon */
+    }
+}
+
+/* Responsive cho thiết bị nhỏ (mobile) */
+@media (max-width: 576px) {
+    .container {
+        flex-wrap: wrap; /* Chia các phần thành các dòng */
+    }
+
+    .logo {
+        flex-basis: 100%; /* Logo chiếm 100% chiều rộng */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-links {
+        flex-basis: 100%; /* Icon chuyển xuống dòng mới */
+        justify-content: center;
+    }
+
+    .icon-links a {
+        margin: 10px; /* Tạo khoảng cách giữa các icon */
+    }
+
+    .dropdown .dropdown-menu {
+        font-size: 14px; /* Thu nhỏ chữ trong menu */
+    }
+}
+
 .main-header {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
@@ -49,7 +169,6 @@
 }
 
 .main-header .cart .cart-count {
-    position: absolute;
     top: -10px;
     right: -13px;
     background-color: #ff6f61;
@@ -107,9 +226,9 @@
     color: #fff;
     padding: 6px 12px;
     background-color: #229ac8;
-    background-image: linear-gradient(to bottom, #e91e63, #e91e63);
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
     background-repeat: repeat-x;
-    border-color: #e91e63
+    border-color: #ff6f61
 }
 
 .navbar-toggler:focus {
@@ -198,11 +317,12 @@
     color: white;
     text-decoration: none;
     display: block;
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 .sidebar a:hover {
-    background-color: #ff6f61;
+    background-color: #e33c2b;
+    border-radius: 3px;
 }
 
 .content {
@@ -232,6 +352,14 @@
 .btn-save i {
     margin-right: 5px;
 }
+
+.label-email:before, .label-firstname:before, .label-lastname:before, .label-phone:before {
+    content: "* ";
+    color: red;
+}
+
+
+
 
 
 /*Footer*/
@@ -276,7 +404,7 @@
     margin-top: 10px;
 }
 
-.footer a {
+.footer, footer a, footer h5 {
     color: #333;
     text-decoration: none;
 }
@@ -286,6 +414,14 @@
     text-decoration: none;
 }
 
+.footer p {
+    margin-bottom: .75rem
+}
+
 .footer a {
     transition: all 0.3s ease;
+}
+
+.footer .col-md-3 {
+    padding: 0 20px
 }
