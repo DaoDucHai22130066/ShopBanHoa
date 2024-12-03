@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
-
 // Xử lý sự kiện cho nút xác nhận đơn hàng
 // Lấy các phần tử cần thiết
 const paymentMethods = document.querySelectorAll('input[name="payment_method"]');
@@ -45,9 +40,6 @@ confirmOrderButton.addEventListener('click', () => {
 
 // Khởi tạo trạng thái của nút "Xác nhận đơn hàng" khi trang được tải
 updateConfirmButtonState();
-
-
-
 
 
 
@@ -249,9 +241,6 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmDetailsDiv.classList.remove("d-none"); // Hiển thị nút "Xác nhận và tiếp tục"
     });
 });
-
-
-
 
 
 //Xử lý lấy thông tin phần chi tiết đơn hàng
