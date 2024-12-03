@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin tài khoản</title>
+    <title>Lịch sử đơn hàng</title>
     <!--    Shortcut Icon-->
-    <link rel="icon" href="images/icon-logo.png" type="image/png">
+    <link rel="shortcut icon" type="images/png" href="images/logo-icon.png" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/thong-tin-tai-khoan.css">
+    <link rel="stylesheet" href="css/lich-su-don-hang.css">
 </head>
 
 <body>
@@ -36,7 +35,8 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" width="" alt="Bloom & Shine Logo" class="img-fluid"></a>
+                    <a href="index.html"><img src="images/logo.png" width="" alt="Bloom & Shine Logo"
+                            class="img-fluid"></a>
                 </div>
 
                 <!-- Thanh tìm kiếm -->
@@ -49,11 +49,11 @@
 
                 <!-- Tài khoản, giỏ hàng, thanh toán -->
                 <div class="icon-links d-flex align-items-center">
+                    <!-- Dropdown Tài Khoản -->
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fas fa-user"></i> <span id="accountText">Tài khoản</span>
-                            <!-- Đây là phần sẽ thay đổi -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="accountDropdown">
                             <li><a class="dropdown-item" href="dangnhap.html" id="loginBtn">Đăng nhập</a></li>
@@ -66,13 +66,13 @@
                     </div>
                     <a href="giohang.html" class="cart">
                         <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count" id="cart-icon-span">0</span>
+                        <span class="cart-count">0</span>
                     </a>
+
                 </div>
             </div>
         </header>
     </header>
-
     <main>
         <!-- Thanh menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -88,12 +88,18 @@
                                 Hoa Sinh Nhật
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Giá Rẻ</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Mẹ</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Người Yêu</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Sinh Nhật</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Giỏ Hoa Sinh Nhật</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a>
+                                </li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Giá Rẻ</a>
+                                </li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Mẹ</a>
+                                </li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Người
+                                        Yêu</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Sinh Nhật</a>
+                                </li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Giỏ Hoa Sinh Nhật</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -101,11 +107,16 @@
                                 Hoa Khai Trương
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Khai Trương 2 Tầng</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Để Bàn</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Kệ Hoa Khai Trương</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Cao Cấp</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Giá Rẻ</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Khai Trương 2
+                                        Tầng</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Để
+                                        Bàn</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Kệ Hoa Khai Trương</a>
+                                </li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Cao
+                                        Cấp</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Giá
+                                        Rẻ</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -115,13 +126,17 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Nhỏ</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Vàng</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Trắng</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Trắng</a>
+                                </li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Tím</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Sọc</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Đốm</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 3 cành</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 5 cành</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 10 cành</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 3
+                                        cành</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 5
+                                        cành</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Chậu Lan Hồ Điệp 10
+                                        cành</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -136,7 +151,8 @@
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Kỷ Niệm</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa 8/3</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa 20/10</a></li>
-                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa 20/11 - Ngày Nhà Giáo</a></li>
+                                <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa 20/11 - Ngày Nhà
+                                        Giáo</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Tặng Mẹ</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Tốt Nghiệp</a></li>
                                 <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Tặng Mẹ</a></li>
@@ -178,74 +194,49 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <h4>TÀI KHOẢN</h4>
-                        <a href="thong-tin-tai-khoan.html">Thông tin tài khoản</a>
-                        <a href="doimatkhau.html">Đổi mật khẩu</a>
-                        <a href="trangthaidonhang.html">Trạng thái đơn hàng</a>
-                        <a href="lich-su-don-hang.html">Xem lịch sử mua hàng</a>
-                        <a href="#" id="logoutBtn">Đăng xuất</a>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="content">
-                        <h4>CẬP NHẬT THÔNG TIN TÀI KHOẢN</h4>
-                        <form id="accountInfoForm">
-                            <div class="form-group">
-                                <label>* Email của bạn:</label>
-                                <span id="emailInput"></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="label-firstname">Tên:</label>
-                                <input type="text" class="form-control" id="firstNameInput">
-                            </div>
-                            <div class="form-group">
-                                <label class="label-lastname">Họ:</label>
-                                <input type="text" class="form-control" id="lastNameInput">
-                            </div>
-                            <div class="form-group">
-                                <label class="label-phone">Điện thoại:</label>
-                                <input type="text" class="form-control" id="phoneInput">
-                            </div>
 
-                            <!-- Các trường khác không cần thay đổi -->
-                            <div class="form-group">
-                                <label>Địa chỉ:</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Quốc gia:</label>
-                                <select class="form-control">
-                                    <option>Việt Nam</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="input-shipping-zone" class="form-label">Tỉnh / thành phố</label>
-                                <select name="shipping_zone_id" id="input-shipping-zone" class="form-select">
-                                    <option value="0">Vui lòng chọn tỉnh/thành phố</option>
-                                    <option value="43" >TP.Hồ Chí Minh - Nội thành</option>
-                                    <option value="44" >TP.Hồ Chí Minh - Ngoại thành</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="input-shipping-custom-field-30" class="form-label">Quận / Huyện</label>
-                                <select name="shipping_custom_field[address][30]"
-                                        id="input-shipping-custom-field-30" class="form-select">
-                                    <option value="0">Vui lòng chọn quận/huyện</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-save" id="save-btn">
-                                <i class="fas fa-save"></i> Lưu
-                            </button>
-                        </form>
-                    </div>
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Trạng Thái Đơn Hàng</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Ảnh sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Mã đơn hàng</th>
+                                <th>Trạng thái đơn hàng</th>
+                                <th>Xác nhận đã giao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto"
+                                        class="img-fluid"></td>
+                                <td>Thanh tú</td>
+                                <td>1</td>
+                                <td>100.000đ</td>
+                                <td>
+                                    <div class="btn btn-primary">BOUQUET-10027</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Hàng đang được giao</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-secondary"> Xác nhận</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+
+
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -298,23 +289,23 @@
                     </ul>
                 </div>
 
-            <!-- Cột 4: Địa chỉ cửa hàng -->
-            <div class="col-md-3">
-                <h4 class="footer-title">Shop Hoa Bloom & Shine</h4>
-                <ul class="list-unstyled">
-                    <li>Cửa hàng chính: 142 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</li>
-                    <li>Cửa Hàng TP.HCM: 225/3 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP.HCM</li>
-                    <li>Chi nhánh Hà Nội: 65 Trần Phú, Ba Đình, Hà Nội</li>
-                    <li>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ZAS</li>
-                    <li>Mã số thuế: 031630426</li>
-                </ul>
+                <!-- Cột 4: Địa chỉ cửa hàng -->
+                <div class="col-md-3">
+                    <h4 class="footer-title">Shop Hoa Flowercorner</h4>
+                    <ul class="list-unstyled">
+                        <li>Cửa hàng chính: 142 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</li>
+                        <li>Cửa Hàng TP.HCM: 225/3 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP.HCM</li>
+                        <li>Chi nhánh Hà Nội: 65 Trần Phú, Ba Đình, Hà Nội</li>
+                        <li>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ZAS</li>
+                        <li>Mã số thuế: 031630426</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-    <script src="js/thong-tin-tai-khoan.js"></script>
-    <script src="js/thong-tin.js"></script>
+    </footer>
+
     <script src="js/themgio.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
