@@ -49,24 +49,6 @@ const districts = {
         {value: 66, text: "Huyện Nhà Bè"},
         {value: 67, text: "Huyện Cần Giờ"},
         {value: 68, text: "Huyện Hóc Môn"}
-    ],
-    45: [
-        {value: 69, text: "Quận Ba Đình"},
-        {value: 70, text: "Quận Hoàn Kiếm"},
-        {value: 71, text: "Quận Đống Đa"},
-        {value: 72, text: "Quận Thanh Xuân"},
-        {value: 73, text: "Quận Cầu Giấy"},
-        {value: 74, text: "Quận Hai Bà Trưng"},
-    ],
-    46: [
-        {value: 75, text: "Quận Hà Đông"},
-        {value: 76, text: "Quận Bắc Từ Liêm"},
-        {value: 77, text: "Quận Hoàng Mai"},
-        {value: 78, text: "Quận Long Biên"},
-        {value: 79, text: "Quận Tây Hồ"},
-        {value: 80, text: "Quận Nam Từ Liêm"},
-        {value: 81, text: "Huyện Mê Linh"},
-        {value: 82, text: "Huyện Đông Anh"}
     ]
 };
 
