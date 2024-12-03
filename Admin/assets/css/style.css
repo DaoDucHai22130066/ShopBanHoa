@@ -455,13 +455,13 @@ a.bg-danger:focus,a.bg-danger:hover,button.bg-danger:focus,button.bg-danger:hove
 }
 
 .btn-primary {
-    background-color: #009688;
-    border: 1px solid #009688
+    background-color: #ff6347;
+    border: 1px solid #ff6347
 }
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary {
-    background: #009688;
-    border-color: #009688
+    background: #ff6347;
+    border-color: #ff6347
 }
 
 .btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary.focus:active,.btn-primary:active:focus,.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle.btn-primary:hover {
@@ -1801,7 +1801,7 @@ html.menu-opened body {
 
 .sidebar-menu>ul>li>a:hover {
     color: #fff!important;
-    background-color: #01776c
+    background-color: #ff6347
 }
 
 .sidebar-menu>ul>li.active>a:hover {
@@ -2227,7 +2227,7 @@ html.menu-opened body {
 }
 
 .logoclass {
-    color: #009688;
+    color: #ff6347;
     font-size: 23px;
     font-weight: 600;
     margin-left: 4px
