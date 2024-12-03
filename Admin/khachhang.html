@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Admin - Quản lý Khách Hàng</title>
+    <title>Admin - Quản lý Người Dùng</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
@@ -52,7 +52,7 @@
                     <li class="list-divider"></li>
                     <li><a href="hoatuoi.html"><i class="fas fa-seedling"></i> <span>Hoa Tươi</span></a></li>
                     <li><a href="donhang.html"><i class="fas fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
-                    <li><a href="khachhang.html"><i class="fas fa-user"></i> <span>Khách Hàng</span></a></li>
+                    <li><a href="khachhang.html"><i class="fas fa-user"></i> <span>Người dùng</span></a></li>
                 </ul>
             </div>
         </div>
@@ -63,8 +63,8 @@
             <div class="page-header">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h4 class="card-title float-left mt-2">Danh Sách Khách Hàng</h4>
-                        <button class="btn btn-primary float-right" data-toggle="modal" data-target="#customerForm" onclick="openCustomerForm()">Thêm Khách Hàng</button>
+                        <h4 class="card-title float-left mt-2">Danh Sách Người dùng</h4>
+                        <button class="btn btn-primary float-right" data-toggle="modal" data-target="#customerForm" onclick="openCustomerForm()">Thêm Người Dùng</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                                     </tr>
                                     </thead>
                                     <tbody id="customerTable">
-                                    <!-- Dữ liệu khách hàng sẽ được thêm tại đây -->
+                                    <!-- Dữ liệu Người Dùng sẽ được thêm tại đây -->
                                     </tbody>
                                 </table>
                             </div>
@@ -98,12 +98,12 @@
                 </div>
             </div>
 
-            <!-- Modal Thêm/Sửa Khách Hàng -->
+            <!-- Modal Thêm/Sửa Người Dùng -->
             <div class="modal fade" id="customerForm" tabindex="-1" role="dialog" aria-labelledby="customerFormLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="customerFormLabel">Thêm Khách Hàng Mới</h5>
+                            <h5 class="modal-title" id="customerFormLabel">Thêm Người Dùng Mới</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -111,8 +111,8 @@
                         <div class="modal-body">
                             <form id="customerFormData">
                                 <div class="form-group">
-                                    <label for="customerName">Tên Khách Hàng</label>
-                                    <input type="text" class="form-control" id="customerName" placeholder="Tên khách hàng" required>
+                                    <label for="customerName">Tên Người Dùng</label>
+                                    <input type="text" class="form-control" id="customerName" placeholder="Tên Người Dùng" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="customerEmail">Email</label>
@@ -133,7 +133,7 @@
                                         <option value="user">Người Dùng</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Lưu Khách Hàng</button>
+                                <button type="submit" class="btn btn-primary">Lưu Người Dùng</button>
                             </form>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
 
         function openCustomerForm() {
             document.getElementById("customerFormData").reset(); // Reset form
-            document.getElementById("customerFormLabel").innerText = "Thêm Khách Hàng Mới"; // Set title
+            document.getElementById("customerFormLabel").innerText = "Thêm Người Dùng Mới"; // Set title
             const saveButton = document.querySelector("#customerForm .btn-primary");
             saveButton.onclick = addCustomer; // Gắn sự kiện thêm mới
         }
@@ -206,7 +206,7 @@
                 document.getElementById("customerPassword").value = customer.password;
                 document.getElementById("customerPhone").value = customer.phone;
                 document.getElementById("customerRole").value = customer.role;
-                document.getElementById("customerFormLabel").innerText = "Sửa Thông Tin Khách Hàng";
+                document.getElementById("customerFormLabel").innerText = "Sửa Thông Tin Người Dùng";
 
                 const saveButton = document.querySelector("#customerForm .btn-primary");
                 saveButton.onclick = function(event) {
@@ -238,7 +238,7 @@
         function deleteCustomer(id) {
             const customerIndex = customers.findIndex(c => c.id === id);
             if (customerIndex !== -1) {
-                customers.splice(customerIndex, 1); // Xóa khách hàng khỏi danh sách
+                customers.splice(customerIndex, 1); // Xóa Người Dùng khỏi danh sách
                 updateCustomerTable(); // Cập nhật bảng
             }
         }
