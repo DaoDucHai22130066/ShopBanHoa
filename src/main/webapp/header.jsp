@@ -19,7 +19,7 @@
         <div class="container d-flex justify-content-between align-items-center">
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" width="" alt="Bloom & Shine Logo" class="img-fluid"></a>
+                <a href="index.jsp"><img src="images/logo.png" width="" alt="Bloom & Shine Logo" class="img-fluid"></a>
             </div>
 
             <!-- Thanh tìm kiếm -->
@@ -38,16 +38,16 @@
                         <i class="fas fa-user"></i> <span id="accountText">Tài khoản</span>  <!-- Đây là phần sẽ thay đổi -->
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="accountDropdown">
-                        <li><a class="dropdown-item" href="dangnhap.html" id="loginBtn">Đăng nhập</a></li>
-                        <li><a class="dropdown-item" href="dangki.html" id="signupBtn">Đăng ký</a></li>
-                        <li><a class="dropdown-item" href="thong-tin-tai-khoan.html" id="accountBtn" style="display: none">Xem tài khoản</a></li>
+                        <li><a class="dropdown-item" href="dangnhap.jsp" id="loginBtn">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="dangki.jsp" id="signupBtn">Đăng ký</a></li>
+                        <li><a class="dropdown-item" href="thong-tin-tai-khoan.jsp" id="accountBtn" style="display: none">Xem tài khoản</a></li>
                         <li><a class="dropdown-item" href="#" id="logoutBtn" style="display: none">Đăng xuất</a></li>
                     </ul>
                 </div>
                 <!-- Tài khoản, giỏ hàng, thanh toán -->
                 <div class="icon-links">
 
-                    <a href="giohang.html" class="cart">
+                    <a href="giohang.jsp" class="cart">
 
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count" id="cart-icon-span">0</span>
@@ -84,24 +84,24 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown" role="button">
                             Hoa Khai Trương
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Khai Trương 2 Tầng</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Để Bàn</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Kệ Hoa Khai Trương</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Cao Cấp</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Khai Trương Giá Rẻ</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Lẵng Hoa Khai Trương 2 Tầng</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Để Bàn</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Kệ Hoa Khai Trương</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Cao Cấp</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Giá Rẻ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown" role="button">
                             Lan Hồ Điệp
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Nhỏ</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Vàng</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Nhỏ</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Vàng</a></li>
                             <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Trắng</a></li>
                             <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Tím</a></li>
                             <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lan Hồ Điệp Sọc</a></li>

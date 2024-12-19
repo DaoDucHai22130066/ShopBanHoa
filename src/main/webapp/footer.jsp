@@ -28,7 +28,7 @@
                 <h4 class="footer-title">Chăm Sóc Khách Hàng</h4>
                 <ul class="list-unstyled">
 
-                    <li><a href="Gioi-thieu-trang-web.html">Giới Thiệu</a></li>
+                    <li><a href="Gioi-thieu-trang-web.jsp">Giới Thiệu</a></li>
 
                     <li><a href="#">Liên Hệ</a></li>
                     <li><a href="#">Chính Sách Vận Chuyển</a></li>
