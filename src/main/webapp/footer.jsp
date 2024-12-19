@@ -16,8 +16,8 @@
                     <span>Tải ứng dụng ngay!</span>
                     <div>
 
-                        <img src="img/appstore.png.webp" alt="App Store">
-                        <img src="img/gplay.png.webp" alt="Google Play">
+                        <img src="Carousel/appstore.png.webp" alt="App Store">
+                        <img src="Carousel/gplay.png.webp" alt="Google Play">
                     </div>
                 </div>
             </div>
