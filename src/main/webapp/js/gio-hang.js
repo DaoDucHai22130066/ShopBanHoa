@@ -159,6 +159,6 @@ checkoutButton.addEventListener("click", function () {
     updateCart();
 
     // Điều hướng đến trang thanh toán
-    window.location.href = "thanh-toan.html";  // Điều hướng tới trang thanh toán
+    window.location.href = "thanh-toan.jsp";  // Điều hướng tới trang thanh toán
 });
 
