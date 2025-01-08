@@ -71,20 +71,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown1" role="button">
                             Hoa Sinh Nhật
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Cao Cấp</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Giá Rẻ</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Mẹ</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Hoa Sinh Nhật Tặng Người Yêu</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Lẵng Hoa Sinh Nhật</a></li>
-                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.html">Giỏ Hoa Sinh Nhật</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Cao Cấp</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Giá Rẻ</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Tặng Mẹ</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Tặng Người Yêu</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Lẵng Hoa Sinh Nhật</a></li>
+                            <li><a class="dropdown-item" href="hoa-sinh-nhat-cao-cap.jsp">Giỏ Hoa Sinh Nhật</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown2" role="button">
                             Hoa Khai Trương
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -96,7 +96,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown3" role="button">
                             Lan Hồ Điệp
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -112,7 +112,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.jsp" id="navbarDropdown4" role="button">
                             Chủ Đề
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -130,7 +130,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown5" role="button">
                             Thiết Kế
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -142,7 +142,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown" role="button">
+                        <a class="nav-link" href="hoa-sinh-nhat.html" id="navbarDropdown6" role="button">
                             Hoa Tươi
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
