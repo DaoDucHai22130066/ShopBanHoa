@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LapTrinhWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bea47b6b-7b98-4998-82da-f30e1219a2c8" name="Changes" comment="them cac file de khoi chay">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="SCSS File" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Tag Library Descriptor" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2qOLoXjbRH9GtwmATQL15RAFy2d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/22130287_ NguyenVanTien/LapTrinhWeb/src/main/webapp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp" />
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp\Carousel" />
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp\images" />
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp\jsp" />
+      <recent name="D:\22130287_ NguyenVanTien\LapTrinhWeb\src\main\webapp\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.31" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="LapTrinhWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/LapTrinhWeb_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="1a4babe0-4b5c-4a7e-b589-90f228662cd1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="LapTrinhWeb:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bea47b6b-7b98-4998-82da-f30e1219a2c8" name="Changes" comment="" />
+      <created>1734528866349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734528866349</updated>
+      <workItem from="1734528867856" duration="15979000" />
+      <workItem from="1734788881433" duration="1239000" />
+      <workItem from="1734955809918" duration="601000" />
+      <workItem from="1735186742263" duration="7600000" />
+      <workItem from="1735301531438" duration="5304000" />
+      <workItem from="1735906458266" duration="6403000" />
+      <workItem from="1736165526737" duration="657000" />
+      <workItem from="1736166204516" duration="452000" />
+    </task>
+    <task id="LOCAL-00001" summary="them trang thong-tin-tai-khoan">
+      <created>1735277896022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277896022</updated>
+    </task>
+    <task id="LOCAL-00002" summary="them trang doimatkhau">
+      <created>1735277913124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277913124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="them trang giohang">
+      <created>1735277928556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277928556</updated>
+    </task>
+    <task id="LOCAL-00004" summary="them cac phuong thuc quenmatkhau">
+      <created>1735277947478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277947478</updated>
+    </task>
+    <task id="LOCAL-00005" summary="them cac phuong thuc thanh toan">
+      <created>1735277964119</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277964119</updated>
+    </task>
+    <task id="LOCAL-00006" summary="them cac phuong thuc js con thieu">
+      <created>1735277979500</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735277979500</updated>
+    </task>
+    <task id="LOCAL-00007" summary="them cac phuong thuc js con thieu">
+      <created>1735278207583</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735278207583</updated>
+    </task>
+    <task id="LOCAL-00008" summary="them cac phuong thuc js con thieu">
+      <created>1735278336605</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735278336605</updated>
+    </task>
+    <task id="LOCAL-00009" summary="them cac phuong thuc js con thieu">
+      <created>1735310855251</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735310855251</updated>
+    </task>
+    <task id="LOCAL-00010" summary="them cac phuong thuc chi tiet san pham">
+      <created>1735311584922</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735311584922</updated>
+    </task>
+    <task id="LOCAL-00011" summary="them file gioi thieu">
+      <created>1735311618078</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735311618078</updated>
+    </task>
+    <task id="LOCAL-00012" summary="them phuong thuc giai quyet ve don hang">
+      <created>1735311641805</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735311641805</updated>
+    </task>
+    <task id="LOCAL-00013" summary="hoan thanh cac file can bo sung">
+      <created>1735311661030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735311661030</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hoan thanh cac file can bo sung">
+      <created>1735906625604</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735906625604</updated>
+    </task>
+    <task id="LOCAL-00015" summary="hoan thanh cac file can bo sung">
+      <created>1735906852714</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735906852714</updated>
+    </task>
+    <task id="LOCAL-00016" summary="xoa file du">
+      <created>1735915180952</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915180953</updated>
+    </task>
+    <task id="LOCAL-00017" summary="them phuong thuc ve trang hoa sinh nhat">
+      <created>1735915215116</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915215116</updated>
+    </task>
+    <task id="LOCAL-00018" summary="chinh sua trang lich su don hang">
+      <created>1735915232145</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915232145</updated>
+    </task>
+    <task id="LOCAL-00019" summary="chinh sua cac phuong thuc trang thai">
+      <created>1735915257164</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915257164</updated>
+    </task>
+    <task id="LOCAL-00020" summary="them cac file de khoi chay">
+      <created>1735915275763</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915275763</updated>
+    </task>
+    <task id="LOCAL-00021" summary="them cac file de khoi chay">
+      <created>1735915295728</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1735915295728</updated>
+    </task>
+    <task id="LOCAL-00022" summary="them cac file de khoi chay">
+      <created>1736165534785</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736165534785</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="them trang thong-tin-tai-khoan" />
+    <MESSAGE value="them trang doimatkhau" />
+    <MESSAGE value="them trang giohang" />
+    <MESSAGE value="them cac phuong thuc quenmatkhau" />
+    <MESSAGE value="them cac phuong thuc thanh toan" />
+    <MESSAGE value="them cac phuong thuc js con thieu" />
+    <MESSAGE value="them cac phuong thuc chi tiet san pham" />
+    <MESSAGE value="them file gioi thieu" />
+    <MESSAGE value="them phuong thuc giai quyet ve don hang" />
+    <MESSAGE value="hoan thanh cac file can bo sung" />
+    <MESSAGE value="xoa file du" />
+    <MESSAGE value="them phuong thuc ve trang hoa sinh nhat" />
+    <MESSAGE value="chinh sua trang lich su don hang" />
+    <MESSAGE value="chinh sua cac phuong thuc trang thai" />
+    <MESSAGE value="them cac file de khoi chay" />
+    <option name="LAST_COMMIT_MESSAGE" value="them cac file de khoi chay" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/header.jsp</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
