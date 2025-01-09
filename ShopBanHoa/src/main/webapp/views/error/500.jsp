@@ -51,7 +51,7 @@
 <div class="container">
     <h1>500</h1>
     <p>Oops! Something went wrong on our end. Please try again later.</p>
-    <a href="<%= request.getContextPath() %>/">Go back to Homepage</a>
+    <a href="../pages/index.jsp">Go back to Homepage</a>
     <div class="illustration">
         <img src="https://via.placeholder.com/400x200?text=Error+500" alt="Error 500 Illustration">
     </div>
