@@ -33,19 +33,19 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../../Carousel/carousel1.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 1" />
+                <img src="./Carousel/carousel1.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 1" />
             </div>
             <div class="carousel-item">
-                <img src="../../Carousel/carousel2.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 2" />
+                <img src="./Carousel/carousel2.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 2" />
             </div>
             <div class="carousel-item">
-                <img src="../../Carousel/carousel3.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 3" />
+                <img src="./Carousel/carousel3.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 3" />
             </div>
             <div class="carousel-item">
-                <img src="../../Carousel/carousel2.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 4" />
+                <img src="./Carousel/carousel2.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 4" />
             </div>
             <div class="carousel-item">
-                <img src="../../Carousel/carousel1.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 5" />
+                <img src="./Carousel/carousel1.webp" class="d-block w-100 banner" alt="Banner Quảng Cáo 5" />
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel" data-bs-slide="prev">
