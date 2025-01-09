@@ -9,98 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Carousel/appstore.png.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Carousel/carousel1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Carousel/carousel2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Carousel/carousel3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Carousel/gplay.png.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/Gioi-thieu-trang-web.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/WEB-INF/classes/com/shopbanhoa/shopbanhoa_web/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/chi-tiet-sp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/Gioi-thieu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/chi-tiet-sp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/flower.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/gio-hang.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/lich-su-don-hang.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/login-signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/thanh-toan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/thong-tin-tai-khoan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/css/trangthai.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/dangki.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/dangnhap.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/doimatkhau.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/giohang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/hoa-sinh-nhat-cao-cap.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/appstore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/bank-transfer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/cheque.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/cod.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/dichvu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/giaohoa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/gplay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/hoatuoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/hoatuoilaudai.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/icon-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/lichsuhinhthanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/logoSaleNoti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/onepay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/san-pham-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/san-pham-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/san-pham-4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/san-pham.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham10.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham11.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham12.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham13.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham14.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham15.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham16.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham17.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham18.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham19.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham20.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham21.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham22.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham23.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham24.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham8.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sanpham9.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sp-hoa-thanhtu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/sumenh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/vnpay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/images/weare.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/chitietsp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/dangki.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/dangnhap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/doimatkhau.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/gio-hang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/quenmatkhau.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/thanh-toan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/themgio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/thong-tin-tai-khoan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/js/thong-tin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/lich-su-don-hang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/quenmatkhau.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/thanh-toan.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/thong-tin-tai-khoan.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ShopBanHoa_web-1.0-SNAPSHOT/trangthaidonhang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/shopbanhoa/shopbanhoa_web/HelloServlet.class" afterDir="false" />
-    </list>
+    <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,7 +182,7 @@
       <workItem from="1736335962526" duration="229000" />
       <workItem from="1736336681090" duration="588000" />
       <workItem from="1736360193239" duration="5307000" />
-      <workItem from="1736386263397" duration="3884000" />
+      <workItem from="1736386263397" duration="4916000" />
     </task>
     <servers />
   </component>
