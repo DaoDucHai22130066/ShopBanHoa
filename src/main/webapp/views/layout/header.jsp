@@ -104,7 +104,7 @@
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Vàng</a></li>
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Trắng</a></li>
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Tím</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Sọc</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jspl">Lan Hồ Điệp Sọc</a></li>
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Đốm</a></li>
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Chậu Lan Hồ Điệp 3 cành</a></li>
                             <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Chậu Lan Hồ Điệp 5 cành</a></li>
