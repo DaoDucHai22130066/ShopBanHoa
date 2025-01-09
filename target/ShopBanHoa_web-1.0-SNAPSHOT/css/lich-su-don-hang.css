@@ -1,0 +1,459 @@
+/* Phần hotline và mạng xã hội, (Header) */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.top-bar .hotline {
+    margin-right: 30px;
+}
+
+
+/* Phần chính của header */
+.main-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo img {
+    height: 150px;
+    width: auto;
+}
+
+.main-header .search-bar {
+    max-width: 400px;
+    margin: auto;
+}
+
+.main-header .icon-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main-header .icon-links a:hover {
+    text-decoration: none;
+}
+
+.main-header .cart {
+    position: relative;
+}
+
+.main-header .cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -13px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.main-header .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+    background-color: #fff ;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .dropdown-menu .dropdown-item {
+    text-align: left;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+.main-header .dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+/*Xử lý reponsive header*/
+.main-header {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Tạo viền phân cách */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.icon-links a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-links .cart .cart-count {
+    background-color: #ff6347;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+/* Responsive cho thiết bị vừa (tablet) */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none; /* Ẩn thanh tìm kiếm trên tablet */
+    }
+
+    .icon-links a {
+        font-size: 14px; /* Thu nhỏ icon */
+    }
+}
+
+/* Responsive cho thiết bị nhỏ (mobile) */
+@media (max-width: 576px) {
+    .container {
+        flex-wrap: wrap; /* Chia các phần thành các dòng */
+    }
+
+    .logo {
+        flex-basis: 100%; /* Logo chiếm 100% chiều rộng */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-links {
+        flex-basis: 100%; /* Icon chuyển xuống dòng mới */
+        justify-content: center;
+    }
+
+    .icon-links a {
+        margin: 10px; /* Tạo khoảng cách giữa các icon */
+    }
+
+    .dropdown .dropdown-menu {
+        font-size: 14px; /* Thu nhỏ chữ trong menu */
+    }
+}
+
+/* Thanh menu */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng nếu muốn */
+}
+
+.navbar-nav .nav-link {
+    color: #3d3d3d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-flow: column
+}
+
+.navbar-light .navbar-toggler {
+    font-size: 15px;
+    font-stretch: expanded;
+    color: #fff;
+    padding: 6px 12px;
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
+    background-repeat: repeat-x;
+    border-color: #ff6f61
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-nav .nav-link:hover, .dropdown-menu .dropdown-item:hover {
+    color: #ff6f61;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #ff6f61;
+}
+
+.dropdown-item:active {
+    background-color: #ff6f61;
+    color: #f0f0f0;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+    padding: 0;
+    display: none;
+}
+
+.dropdown-menu.show .mini-tbl-product .text-end, .dropdown-menu.show .mini-tbl-product .text-start * {
+    line-height: 56px
+}
+
+/*Định dạng lại kích thước cho màn hình nhỏ*/
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 200px;
+        width: 100%
+    }
+}
+
+@media (max-width: 767px) {
+
+    #menu div.dropdown-menu {
+        margin-left: 0 !important;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, .1)
+    }
+
+    #menu .dropdown-menu a:hover,
+    #menu .dropdown-menu ul li a :hover {
+        background: rgba(0, 0, 0, .1)
+    }
+
+    #logo {
+        margin: 10px 0
+    }
+
+    #logo img {
+        max-width: 260px
+    }
+}
+
+
+/*main*/
+
+td{
+    vertical-align: middle;
+}
+
+/* Tạo khoảng cách và đường viền cho bảng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Màu nền cho bảng */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Viền nhẹ cho các ô */
+    padding: 10px; /* Khoảng cách giữa nội dung và viền */
+    text-align: center; /* Căn giữa nội dung trong các ô */
+}
+
+.table th {
+    background-color: #ff6f61; /* Màu nền cho tiêu đề cột */
+    color: white; /* Màu chữ tiêu đề cột */
+    font-size: 1.1rem; /* Kích thước chữ tiêu đề */
+}
+
+.table td {
+    background-color: #ffffff; /* Màu nền cho các ô dữ liệu */
+    font-size: 1rem; /* Kích thước chữ dữ liệu */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Đổi màu nền cho các hàng lẻ */
+}
+
+/* Thêm hiệu ứng hover cho hàng */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+/* Cải thiện hình ảnh sản phẩm */
+.table img {
+    max-width: 50px; /* Giới hạn chiều rộng */
+    height: auto; /* Đảm bảo tỉ lệ hình ảnh */
+    border-radius: 5px; /* Bo góc hình ảnh */
+}
+
+/* Thiết kế các nút */
+.btn {
+    border-radius: 5px; /* Bo góc nút */
+    font-size: 0.9rem; /* Kích thước chữ nút */
+    padding: 8px 12px; /* Khoảng cách bên trong nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Màu nền nút "Mua lại" */
+    color: white; /* Màu chữ */
+}
+.btn-primary a {
+    text-decoration: none;
+    color: white; /* Màu chữ */
+}
+
+.btn-primary:hover {
+    background-color: #e91e63; /* Màu khi hover */
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #ff6f61, #ff6f61);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #e91e63
+}
+
+.btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-position: 0;
+    color: #fff;
+    border-color: #ff87b0;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-primary:focus, .form-check-input:focus, .form-control:focus, .form-select:focus, .input-group-text:focus {
+    color: #ff6f61;
+    box-shadow: 0 0 0 .25rem rgb(255 232 240)
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Màu nền nút "Liên hệ shop" */
+    color: white; /* Màu chữ */
+}
+
+.btn-secondary:hover {
+    background-color: #495057; /* Màu khi hover */
+}
+
+/* Thêm khoảng cách cho tiêu đề */
+h1.text-center {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
+}
+
+/* Đảm bảo không gian giữa các nút */
+td button {
+    margin: 5px; /* Khoảng cách giữa các nút */
+}
+
+
+
+/* Biểu tượng nổi bên trái */
+.floating-icons {
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    z-index: 1000;
+}
+
+.floating-icons a {
+    display: block;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(255, 111, 109);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.floating-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-icons a i {
+    font-size: 20px;
+    color: #ff6f61;
+}
+
+/*Footer*/
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd
+}
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .footer-logo img {
+    height: 100px;
+    width: auto;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer .social-icons i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.footer .contact-info span,
+.footer .contact-info a {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer .certification img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer, footer a, footer h5 {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: .75rem
+}
+
+.footer .col-md-3 {
+    padding: 0 20px
+}
