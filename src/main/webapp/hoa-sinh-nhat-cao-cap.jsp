@@ -211,7 +211,7 @@ createPagination(pageNumber); // Làm mới thanh phân trang
 // Khởi tạo trang đầu tiên khi tải trang
 changePage(1);
 </script>
-<script src="js/themgio.js"></script>
+<script src=js/themgio.js></script>
 <script src="js/index.js"></script>
 
 </body>
