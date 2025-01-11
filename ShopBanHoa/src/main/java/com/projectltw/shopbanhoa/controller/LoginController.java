@@ -19,5 +19,7 @@ public class LoginController extends HttpServlet {
         PrintWriter out = response.getWriter();
         String uname = request.getParameter("uname");
         String pass = request.getParameter("pass");
+        out.println("<p> Username: "+uname+" </p>");
+        out.println("<p> Password: "+pass+" </p>");
     }
 }
