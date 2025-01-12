@@ -14,16 +14,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloom & Shine</title>
   <!--    Shortcut Icon-->
-  <link rel="icon" href="../../images/icon-logo.png" type="image/png">
+  <link rel="icon" href="./images/icon-logo.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- FontAwesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../css/chi-tiet-sp.css">
+  <link rel="stylesheet" href="./css/chi-tiet-sp.css">
 </head>
 <body>
-<jsp:include page="../layout/header.jsp"/>
+<jsp:include page="./header.jsp"/>
 <main>
 <div class="product-detail container">
   <div class="row">
@@ -411,12 +411,12 @@
   </div>
 </div>
 </main>
-<jsp:include page="../layout/footer.jsp"/>
+<jsp:include page="/footer.jsp"/>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../js/themgio.js"></script>
-<script src="../../js/chitietsp.js"></script>
+<script src="./js/themgio.js"></script>
+<script src="./js/chitietsp.js"></script>
 </body>
 </html>

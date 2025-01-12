@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoa Sinh Nhật Cao Cấp</title>
     <!--    Shortcut Icon-->
-    <link rel="icon" href="././images/icon-logo.png" type="image/png">
+    <link rel="icon" href="./images/icon-logo.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
@@ -50,7 +50,7 @@
 
     <div class="container product-section">
         <div class="row" id="product-list">
-            <!--Sản phẩm được đưa lên tại đây-->
+            <!--Sản phẩm được đưa lên tại đây-->>
         </div>
     </div>
 
@@ -91,8 +91,8 @@ window.addEventListener('scroll', handleScrollToTopBtn);
 
 
 const products = [
-{ id: "BOUQUET-10010", name: "Kiss Me", price: "300,000đ", image: "./images/sanpham18.webp", sale: "Giảm 30%" },
-{ id: "BOUQUET-10011", name: "Rose", price: "250,000đ", image: "./images/sanpham18.webp", sale: "Giảm 20%" },
+{ id: "BOUQUET-10010", name: "Kiss Me", price: "300,000đ", image: "./images/san-pham.webp", sale: "Giảm 30%" },
+{ id: "BOUQUET-10011", name: "Rose", price: "250,000đ", image: "images/san-pham-3.jpg", sale: "Giảm 20%" },
 { id: "BOUQUET-10012", name: "Lily", price: "180,000đ", image: "images/sanpham14.webp", sale: "Giảm 10%" },
 { id: "BOUQUET-10013", name: "Tulip", price: "220,000đ", image: "images/sanpham10.webp", sale: "Giảm 15%" },
 { id: "BOUQUET-10014", name: "Sunflower", price: "350,000đ", image: "images/sanpham12.webp", sale: "Giảm 25%" },
@@ -102,15 +102,15 @@ const products = [
 { id: "BOUQUET-10018", name: "Lotus", price: "400,000đ", image: "images/san-pham-4.webp", sale: "Giảm 20%" },
 { id: "BOUQUET-10019", name: "Tulip 2", price: "280,000đ", image: "images/san-pham-2.jpg", sale: "Giảm 10%" },
 { id: "BOUQUET-10020", name: "Chrysanthemum", price: "230,000đ", image: "images/sanpham16.webp", sale: "Giảm 5%" },
-{ name: "Lilac", price: "300,000đ", image: "./images/sanpham18.webp", sale: "Giảm 25%" },
-{ name: "Iris", price: "270,000đ", image: "images/sanpham19.webp", sale: "Giảm 10%" },
-{ name: "Violet", price: "350,000đ", image: "images/sanpham13.webp", sale: "Giảm 15%" },
-{ name: "Jasmine", price: "400,000đ", image: "images/sanpham7.webp", sale: "Giảm 20%" },
-{ name: "Carnation", price: "320,000đ", image: "images/sanpham20.webp", sale: "Giảm 30%" },
-{ name: "Magnolia", price: "500,000đ", image: "images/sanpham16.webp", sale: "Giảm 5%" },
-{ name: "Hydrangea", price: "350,000đ", image: "images/sanpham8.webp", sale: "Giảm 25%" },
-{ name: "Freesia", price: "280,000đ", image: "images/sanpham24.webp", sale: "Giảm 10%" },
-{ name: "Zinnia", price: "230,000đ", image: "images/sanpham13.webp", sale: "Giảm 15%" }
+{ id: "BOUQUET-10021", name: "Lilac", price: "300,000đ", image: "./images/sanpham18.webp", sale: "Giảm 25%" },
+{ id: "BOUQUET-10022", name: "Iris", price: "270,000đ", image: "images/sanpham19.webp", sale: "Giảm 10%" },
+{ id: "BOUQUET-10023", name: "Violet", price: "350,000đ", image: "images/sanpham13.webp", sale: "Giảm 15%" },
+{ id: "BOUQUET-10024", name: "Jasmine", price: "400,000đ", image: "images/sanpham7.webp", sale: "Giảm 20%" },
+{ id: "BOUQUET-10025", name: "Carnation", price: "320,000đ", image: "images/sanpham20.webp", sale: "Giảm 30%" },
+{ id: "BOUQUET-10026", name: "Magnolia", price: "500,000đ", image: "images/sanpham16.webp", sale: "Giảm 5%" },
+{ id: "BOUQUET-10027", name: "Hydrangea", price: "350,000đ", image: "images/sanpham8.webp", sale: "Giảm 25%" },
+{ id: "BOUQUET-10028", name: "Freesia", price: "280,000đ", image: "images/sanpham24.webp", sale: "Giảm 10%" },
+{ id: "BOUQUET-10029", name: "Zinnia", price: "230,000đ", image: "images/sanpham13.webp", sale: "Giảm 15%" }
 ];
 
 function createPagination(currentPage) {
@@ -188,7 +188,7 @@ const productElement = document.createElement("div");
 productElement.classList.add("col-md-3");
 productElement.innerHTML = `
 <div class="card product-card">
-    <a href="#"><img src="${products.image}" class="card-img-top" alt="${product.name}"></a>
+    <a href="#"><img src="${product.image}" class="card-img-top" alt="${product.name}"></a>
     <div class="card-body">
         <div class="sale-badge">${product.sale}</div>
         <h5 class="product-name">${product.name}</h5>
