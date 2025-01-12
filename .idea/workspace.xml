@@ -9,29 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Gioi-thieu-trang-web.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Gioi-thieu-trang-web.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/chi-tiet-sp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chi-tiet-sp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dangki.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dangki.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dangnhap.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dangnhap.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/doimatkhau.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/doimatkhau.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/giohang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/giohang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hoa-sinh-nhat-cao-cap.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hoa-sinh-nhat-cao-cap.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/thong-tin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/thong-tin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/lich-su-don-hang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lich-su-don-hang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/thanh-toan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thanh-toan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/thong-tin-tai-khoan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thong-tin-tai-khoan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/trangthaidonhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/trangthaidonhang.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="check" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +189,7 @@
       <workItem from="1736386263397" duration="4916000" />
       <workItem from="1736656083649" duration="18000" />
       <workItem from="1736656216239" duration="10059000" />
-      <workItem from="1736678769523" duration="3515000" />
+      <workItem from="1736678769523" duration="3868000" />
     </task>
     <task id="LOCAL-00001" summary="check">
       <option name="closed" value="true" />
@@ -237,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736679646679</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="check">
+      <option name="closed" value="true" />
+      <created>1736682569857</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736682569857</updated>
+    </task>
+    <task id="LOCAL-00005" summary="check">
+      <option name="closed" value="true" />
+      <created>1736682640602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736682640602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
