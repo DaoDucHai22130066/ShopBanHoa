@@ -41,7 +41,7 @@
                         <li><a class="dropdown-item" href="./dangnhap.jsp" id="loginBtn">Đăng nhập</a></li>
                         <li><a class="dropdown-item" href="./dangki.jsp" id="signupBtn">Đăng ký</a></li>
                         <li><a class="dropdown-item" href="./thong-tin-tai-khoan.jsp" id="accountBtn" style="display: none">Xem tài khoản</a></li>
-                        <li><a class="dropdown-item" href="#" id="logoutBtn" style="display: none">Đăng xuất</a></li>
+                        <li><a class="dropdown-item" href="./index.jsp" id="logoutBtn" style="display: none">Đăng xuất</a></li>
                     </ul>
                 </div>
                 <!-- Tài khoản, giỏ hàng, thanh toán -->

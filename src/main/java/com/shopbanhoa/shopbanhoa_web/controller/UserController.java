@@ -37,7 +37,7 @@ public class UserController extends HttpServlet {
             response.sendRedirect("login.jsp");
         } else {
             request.setAttribute("errorMessage", "Registration failed.");
-            request.getRequestDispatcher("/pages/dangki.jsp").forward(request, response);
+            request.getRequestDispatcher("/dangki.jsp").forward(request, response);
         }
     }
 
@@ -52,7 +52,7 @@ public class UserController extends HttpServlet {
             response.sendRedirect("index.jsp");
         } else {
             request.setAttribute("errorMessage", "Invalid credentials.");
-            request.getRequestDispatcher("/pages/dangnhap.jsp").forward(request, response);
+            request.getRequestDispatcher("/dangnhap.jsp").forward(request, response);
         }
     }
 }

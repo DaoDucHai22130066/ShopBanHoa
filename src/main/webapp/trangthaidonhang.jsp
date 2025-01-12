@@ -19,11 +19,11 @@
   <!-- FontAwesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../css/lich-su-don-hang.css">
+  <link rel="stylesheet" href="./css/lich-su-don-hang.css">
 </head>
 
 <body>
-<jsp:include page="../layout/header.jsp"/>
+<jsp:include page="./header.jsp"/>
 <main>
 <div class="container mt-5">
   <h1 class="text-center mb-4">Trạng Thái Đơn Hàng</h1>
@@ -43,7 +43,7 @@
         </thead>
         <tbody>
         <tr>
-          <td><img src="../../images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto"
+          <td><img src="./images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto"
                    class="img-fluid"></td>
           <td>Thanh tú</td>
           <td>1</td>
@@ -66,13 +66,13 @@
 
 
 </main>
-<jsp:include page="../layout/footer.jsp"/>
+<jsp:include page="./footer.jsp"/>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../js/themgio.js"></script>
-<script src="../../../../../ShopBanHoa/src/main/webapp/jsopBanHoa/src/main/webapp/js/index.js"></script>
+<script src="./js/themgio.js"></script>
+<script src="./js/index.js"></script>
 
 
 </body>

@@ -14,17 +14,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Đổi Mật Khẩu</title>
   <!--    Shortcut Icon-->
-  <link rel="icon" href="../../images/icon-logo.png" type="image/png">
+  <link rel="icon" href="./images/icon-logo.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../css/dangki.css" />
+  <link rel="stylesheet" href="./css/dangki.css" />
 </head>
 <body>
 <!-- Header -->
-<jsp:include page="../layout/header.jsp"/>
+<jsp:include page="./header.jsp"/>
 <main>
 <div class="container mt-5">
   <div class="card mx-auto shadow-sm" style="max-width: 400px">
@@ -53,13 +53,13 @@
   </div>
 </div>
 </main>
-<jsp:include page="../layout/footer.jsp"/>
+<jsp:include page="./footer.jsp"/>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../js/doimatkhau.js"></script>
-<script src="../../../../../ShopBanHoa/src/main/webapp/jsopBanHoa/src/main/webapp/js/index.js"></script>
+<script src="./js/doimatkhau.js"></script>
+<script src="./js/index.js"></script>
 
 </body>
 </html>

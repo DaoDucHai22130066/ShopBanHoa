@@ -29,7 +29,7 @@
   <div class="row">
     <!-- Phần ảnh sản phẩm -->
     <div class="col-md-6">
-      <img src="../../images/san-pham.webp" alt="Ảnh sản phẩm" class="product-image">
+      <img src="./images/san-pham.webp" alt="Ảnh sản phẩm" class="product-image">
     </div>
 
     <!-- Phần thông tin sản phẩm -->
@@ -96,7 +96,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham21.webp" alt="Mã Hồng">
+                  <img src="./images/sanpham21.webp" alt="Mã Hồng">
                 </div>
                 <div class="product-name">Mã Hồng</div>
                 <div class="product-price">920,000VNĐ</div>
@@ -106,7 +106,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham23.webp" alt="Ngày Ngọt Ngào">
+                  <img src="./images/sanpham23.webp" alt="Ngày Ngọt Ngào">
                 </div>
                 <div class="product-name">Ngày Ngọt Ngào</div>
                 <div class="product-price">1,010,000VNĐ</div>
@@ -116,7 +116,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham8.webp" alt="Cầu Vồng">
+                  <img src="./images/sanpham8.webp" alt="Cầu Vồng">
                 </div>
                 <div class="product-name">Cầu Vồng</div>
                 <div class="product-price">680,000VNĐ</div>
@@ -126,7 +126,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham16.webp" alt="Summer Delight">
+                  <img src="./images/sanpham16.webp" alt="Summer Delight">
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
@@ -140,7 +140,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham11.webp" alt="Hoa Tươi">
+                  <img src="./images/sanpham11.webp" alt="Hoa Tươi">
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
@@ -150,7 +150,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham17.webp" alt="Hương Đêm">
+                  <img src="./images/sanpham17.webp" alt="Hương Đêm">
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
@@ -160,7 +160,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/san-pham-3.jpg" alt="Đêm Huyền Bí">
+                  <img src="./images/san-pham-3.jpg" alt="Đêm Huyền Bí">
                 </div>
                 <div class="product-name">Đêm Huyền Bí</div>
                 <div class="product-price">800,000VNĐ</div>
@@ -170,7 +170,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/san-pham-4.webp" alt="Summer Delight">
+                  <img src="./images/san-pham-4.webp" alt="Summer Delight">
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
@@ -184,7 +184,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham13.webp" alt="Hoa Tươi">
+                  <img src="./images/sanpham13.webp" alt="Hoa Tươi">
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
@@ -194,7 +194,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham17.webp" alt="Hương Đêm">
+                  <img src="./images/sanpham17.webp" alt="Hương Đêm">
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
@@ -221,7 +221,7 @@
   <div class="row">
     <!-- Phần ảnh sản phẩm -->
     <div class="col-md-6">
-      <img src="../../images/san-pham.webp" alt="Ảnh sản phẩm" class="product-image">
+      <img src="./images/san-pham.webp" alt="Ảnh sản phẩm" class="product-image">
     </div>
 
     <!-- Phần thông tin sản phẩm -->
@@ -289,7 +289,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham21.webp" alt="Mã Hồng">
+                  <img src="./images/sanpham21.webp" alt="Mã Hồng">
                 </div>
                 <div class="product-name">Mã Hồng</div>
                 <div class="product-price">920,000VNĐ</div>
@@ -299,7 +299,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham23.webp" alt="Ngày Ngọt Ngào">
+                  <img src="./images/sanpham23.webp" alt="Ngày Ngọt Ngào">
                 </div>
                 <div class="product-name">Ngày Ngọt Ngào</div>
                 <div class="product-price">1,010,000VNĐ</div>
@@ -309,7 +309,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham8.webp" alt="Cầu Vồng">
+                  <img src="./images/sanpham8.webp" alt="Cầu Vồng">
                 </div>
                 <div class="product-name">Cầu Vồng</div>
                 <div class="product-price">680,000VNĐ</div>
@@ -319,7 +319,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham16.webp" alt="Summer Delight">
+                  <img src="./images/sanpham16.webp" alt="Summer Delight">
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
@@ -333,7 +333,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham11.webp" alt="Hoa Tươi">
+                  <img src="./images/sanpham11.webp" alt="Hoa Tươi">
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
@@ -343,7 +343,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham17.webp" alt="Hương Đêm">
+                  <img src="./images/sanpham17.webp" alt="Hương Đêm">
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
@@ -353,7 +353,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/san-pham-3.jpg" alt="Đêm Huyền Bí">
+                  <img src="./images/san-pham-3.jpg" alt="Đêm Huyền Bí">
                 </div>
                 <div class="product-name">Đêm Huyền Bí</div>
                 <div class="product-price">800,000VNĐ</div>
@@ -363,7 +363,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/san-pham-4.webp" alt="Summer Delight">
+                  <img src="./images/san-pham-4.webp" alt="Summer Delight">
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
@@ -377,7 +377,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham13.webp" alt="Hoa Tươi">
+                  <img src="./images/sanpham13.webp" alt="Hoa Tươi">
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
@@ -387,7 +387,7 @@
             <div class="col-md-3">
               <div class="product-card">
                 <div class="product-image">
-                  <img src="../../images/sanpham17.webp" alt="Hương Đêm">
+                  <img src="./images/sanpham17.webp" alt="Hương Đêm">
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>

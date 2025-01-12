@@ -18,10 +18,10 @@
   <!-- FontAwesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../css/lich-su-don-hang.css">
+  <link rel="stylesheet" href="./css/lich-su-don-hang.css">
 </head>
 <body>
-<jsp:include page="../layout/header.jsp"/>
+<jsp:include page="./header.jsp"/>
 <main>
 <div class="container mt-5">
   <h1 class="text-center mb-4">Lịch sử đơn hàng</h1>
@@ -40,7 +40,7 @@
         </thead>
         <tbody>
         <tr>
-          <td><img src="../../images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto" class="img-fluid"></td>
+          <td><img src="./images/sp-hoa-thanhtu.png" alt="Product Image" width="50" height="auto" class="img-fluid"></td>
           <td>Thanh tú</td>
           <td>1</td>
           <td>100.000đ</td>
@@ -59,7 +59,7 @@
 
 
 </main>
-<jsp:include page="../layout/footer.jsp"/>
+<jsp:include page="./footer.jsp"/>
 
 
 

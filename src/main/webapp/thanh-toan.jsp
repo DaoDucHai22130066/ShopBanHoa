@@ -13,20 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh Toán</title>
     <!--    Shortcut Icon-->
-    <link rel="icon" href="../../images/icon-logo.png" type="image/png">
+    <link rel="icon" href="./images/icon-logo.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../css/thanh-toan.css">
+    <link rel="stylesheet" href="./css/thanh-toan.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 
 </head>
 <body>
-<jsp:include page="../layout/header.jsp"/>
+<jsp:include page="./header.jsp"/>
 <main>
 <div id="checkout-checkout" class="container">
     <div class="row">
@@ -365,7 +365,7 @@
                                             <label for="input-payment-method-bank_transfer"
                                                    class="form-check-label">
                                                 <img class="payment-method-icon"
-                                                     src="../../images/bank-transfer.png" />
+                                                     src="./images/bank-transfer.png"  alt=""/>
                                                 Chuyển khoản ngân hàng
                                                 <span class="payment-brand-icon-bank_transfer"></span>
                                             </label>
@@ -375,7 +375,7 @@
                                                    id="input-payment-method-vnpay"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-vnpay" class="form-check-label">
-                                                <img class="payment-method-icon" src="../../images/vnpay.png" />
+                                                <img class="payment-method-icon" src="./images/vnpay.png"  alt=""/>
                                                 Thẻ ATM, Visa, Master, QR (VNPAY)
                                                 <span class="payment-brand-icon-vnpay"></span>
                                             </label>
@@ -385,7 +385,7 @@
                                                    id="input-payment-method-onepay"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-onepay" class="form-check-label">
-                                                <img class="payment-method-icon" src="../../images/onepay.png" />
+                                                <img class="payment-method-icon" src="./images/onepay.png"  alt=""/>
                                                 Visa, Master, JCB, UnionPay, Amex
                                                 <span class="payment-brand-icon-onepay"></span>
                                             </label>
@@ -395,7 +395,7 @@
                                                    id="input-payment-method-cheque"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-cheque" class="form-check-label">
-                                                <img class="payment-method-icon" src="../../images/cheque.png" />
+                                                <img class="payment-method-icon" src="./images/cheque.png"  alt=""/>
                                                 Ví điện tử
                                                 <span class="payment-brand-icon-cheque"></span>
                                             </label>
@@ -405,7 +405,7 @@
                                                    id="input-payment-method-paypal"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-paypal" class="form-check-label">
-                                                <img class="payment-method-icon" src="../../images/paypal.png" />
+                                                <img class="payment-method-icon" src="./images/paypal.png"  alt=""/>
                                                 Paypal (Paypal, Thẻ Visa, Master)
                                                 <span class="payment-brand-icon-paypal"></span>
                                             </label>
@@ -415,7 +415,7 @@
                                                    id="input-payment-method-cod"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-cod" class="form-check-label">
-                                                <img class="payment-method-icon" src="images/cod.png" />
+                                                <img class="payment-method-icon" src="images/cod.png"  alt=""/>
                                                 Thanh toán khi giao hàng
                                                 <span class="payment-brand-icon-cod"></span>
                                             </label>
@@ -453,16 +453,16 @@
 </div>
 
 </main>
-<jsp:include page="../layout/footer.jsp"/>
+<jsp:include page="./footer.jsp"/>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script src="../../js/thanh-toan.js"></script>
-<script src="../../js/themgio.js"></script>
-<script src="../../js/gio-hang.js"></script>
+<script src="./js/thanh-toan.js"></script>
+<script src="./js/themgio.js"></script>
+<script src="./js/gio-hang.js"></script>
 
 
 </body>

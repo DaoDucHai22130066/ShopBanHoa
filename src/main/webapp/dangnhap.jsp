@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập</title>
     <!--    Shortcut Icon-->
-    <link rel="icon" href="../../images/icon-logo.png" type="image/png">
+    <link rel="icon" href="./images/icon-logo.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../css/dangki.css" />
+    <link rel="stylesheet" href="./css/dangki.css" />
 </head>
 <body>
 <!-- Header -->
@@ -28,7 +28,7 @@
                 <h2 class="text-center mb-4">Đăng Nhập</h2>
                 <p class="text-center text-muted">
                     Nếu bạn chưa có tài khoản, vui lòng
-                    <a href="dangki.jsp">Đăng ký</a>.
+                    <a href="./dangki.jsp">Đăng ký</a>.
                 </p>
                 <form id="loginForm">
                     <div class="mb-3">
@@ -47,7 +47,7 @@
                 <p class="text-center text-muted">
                     Bạn quên mật khẩu ư? hãy bấm vào đây
                 <p style="text-align: center;">
-                    <a href="quenmatkhau.jsp">Quên mật khẩu</a>.
+                    <a href="./quenmatkhau.jsp">Quên mật khẩu</a>.
                 </p>
                 </p>
 
@@ -60,6 +60,6 @@
 
 <button id="scrollToTopBtn" title="Cuộn lên đầu trang">↑</button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../js/dangkidangnhap.js"></script>
+<script src="./js/dangkidangnhap.js"></script>
 </body>
 </html>

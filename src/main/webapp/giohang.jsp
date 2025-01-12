@@ -29,10 +29,10 @@
 <div id="checkout-cart" class="container">
     <ul class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="index.jsp"><i class="fas fa-home"> </i></a>
+            <a href="./index.jsp"><i class="fas fa-home"> </i></a>
         </li>
         <li class="breadcrumb-item">
-            <a href="giohang.jsp">Giỏ hàng</a>
+            <a href="./giohang.jsp">Giỏ hàng</a>
         </li>
     </ul>
 
@@ -65,10 +65,10 @@
             </div>
             <div class="d-inline-block pt-2 pd-2 w-100">
                 <div class="float-start">
-                    <a href="index.jsp" class="btn btn-light">Tiếp tục mua sắm</a>
+                    <a href="./index.jsp" class="btn btn-light">Tiếp tục mua sắm</a>
                 </div>
                 <div class="float-end">
-                    <a href="thanh-toan.jsp" class="btn btn-primary" id="checkoutButton">Thanh toán</a>
+                    <a href="/thanh-toan.jsp" class="btn btn-primary" id="checkoutButton">Thanh toán</a>
                 </div>
             </div>
         </div>
