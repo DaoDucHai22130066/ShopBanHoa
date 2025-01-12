@@ -10,42 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/SessionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/controll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/models.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/lich-su-don-hang.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/lich-su-don-hang.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trangthai.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trangthai.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/doimatkhau.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/doimatkhau.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/dichvu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/dichvu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/giaohoa.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/giaohoa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/hoatuoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/hoatuoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/icon-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/icon-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/san-pham-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/san-pham-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/san-pham-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/san-pham-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/san-pham-4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/san-pham-4.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/san-pham.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/san-pham.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sanpham5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/sanpham5.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sanpham6.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/sanpham6.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/chitietsp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/chitietsp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/doimatkhau.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/doimatkhau.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/gio-hang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/gio-hang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/quenmatkhau.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/quenmatkhau.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/thong-tin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/thong-tin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shopbanhoa/shopbanhoa_web/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shopbanhoa/shopbanhoa_web/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/ultis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
