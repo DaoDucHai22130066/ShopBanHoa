@@ -11,11 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Gioi-thieu-trang-web.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chi-tiet-sp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dangki.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dangnhap.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/doimatkhau.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/giohang.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/hoa-sinh-nhat-cao-cap.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lich-su-don-hang.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/thanh-toan.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/thong-tin-tai-khoan.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/trangthaidonhang.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +203,7 @@
       <workItem from="1736336681090" duration="588000" />
       <workItem from="1736360193239" duration="5307000" />
       <workItem from="1736386263397" duration="4916000" />
+      <workItem from="1736656083649" duration="18000" />
     </task>
     <servers />
   </component>
