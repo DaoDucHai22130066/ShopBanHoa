@@ -91,7 +91,7 @@ window.addEventListener('scroll', handleScrollToTopBtn);
 
 
 const products = [
-{ id: "BOUQUET-10010", name: "Kiss Me", price: "300,000đ", image: "<%= request.getContextPath() %>/images/san-pham.webp", sale: "Giảm 30%" },
+{ id: "BOUQUET-10010", name: "Kiss Me", price: "300,000đ", image: "/images/san-pham.webp", sale: "Giảm 30%" },
 { id: "BOUQUET-10011", name: "Rose", price: "250,000đ", image: "images/san-pham-3.jpg", sale: "Giảm 20%" },
 { id: "BOUQUET-10012", name: "Lily", price: "180,000đ", image: "images/sanpham14.webp", sale: "Giảm 10%" },
 { id: "BOUQUET-10013", name: "Tulip", price: "220,000đ", image: "images/sanpham10.webp", sale: "Giảm 15%" },
