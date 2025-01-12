@@ -30,7 +30,7 @@
                     Nếu bạn chưa có tài khoản, vui lòng
                     <a href="dangki.jsp">Đăng ký</a>.
                 </p>
-                <form id="loginForm">
+                <form id="loginForm" action="login">
                     <div class="mb-3">
                         <label for="loginEmail" class="form-label">E-mail</label>
                         <input type="email" class="form-control" id="loginEmail" placeholder="Email" required />
