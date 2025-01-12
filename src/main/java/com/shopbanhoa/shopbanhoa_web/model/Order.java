@@ -1,6 +1,5 @@
 package com.shopbanhoa.shopbanhoa_web.model;
 
-
 public class Order {
     private int id;
     private int userId;

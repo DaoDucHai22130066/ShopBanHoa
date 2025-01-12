@@ -10,22 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

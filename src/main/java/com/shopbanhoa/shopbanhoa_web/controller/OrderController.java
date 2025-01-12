@@ -3,8 +3,8 @@ package com.shopbanhoa.shopbanhoa_web.controller;
 import com.shopbanhoa.shopbanhoa_web.service.OrderService;
 import com.shopbanhoa.shopbanhoa_web.model.Order;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
 import java.io.IOException;
 
 public class OrderController extends HttpServlet {
