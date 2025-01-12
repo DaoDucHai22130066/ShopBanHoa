@@ -10,18 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c568baf8-6bee-4d12-a729-8c1e86f53327" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/SessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/ultis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/utils/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quenmatkhau.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopbanhoa/shopbanhoa_web/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +87,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>

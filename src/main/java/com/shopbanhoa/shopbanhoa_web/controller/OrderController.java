@@ -1,7 +1,7 @@
 package com.shopbanhoa.shopbanhoa_web.controller;
 
-import com.projectltw.shopbanhoa.service.OrderService;
-import com.projectltw.shopbanhoa.model.Order;
+import com.shopbanhoa.shopbanhoa_web.service.OrderService;
+import com.shopbanhoa.shopbanhoa_web.model.Order;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
