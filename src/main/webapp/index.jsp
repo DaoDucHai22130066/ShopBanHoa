@@ -12,11 +12,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 <!-- Header -->
-<jsp:include page="header.jsp"/>
+<jsp:include page="./header.jsp"/>
 
 <!-- Carousel quảng cáo -->
 <div class="container">
@@ -66,7 +66,7 @@
         <!-- Sản phẩm 1 -->
         <div class="col-md-3">
             <div class="card product-card">
-                <a href="chi-tiet-sp.jsp">
+                <a href="./chi-tiet-sp.jsp">
                     <img src="images/san-pham.webp" class="card-img-top" alt="Hoa 1" />
                 </a>
                 <div class="card-body">
