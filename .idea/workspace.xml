@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a80c95f-01a0-458a-88de-a05043d6eeba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat-cao-cap.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat-cao-cap.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     "JavaScript Debug.header.jsp.executor": "Run",
     "Tomcat Server.Tomcat 10.1.31.executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "DaoDucHai__22130066",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
