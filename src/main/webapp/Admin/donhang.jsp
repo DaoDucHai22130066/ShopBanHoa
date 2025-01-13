@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +17,7 @@
 <div class="main-wrapper">
     <div class="header">
         <div class="header-left">
-            <a href="trangchu.html" class="logo">
+            <a href="trangchu.jsp" class="logo">
                 <img src="assets/img/logo.png" width="50" height="70" alt="logo">
                 <span class="logoclass">Bloom & Shine</span>
             </a>
@@ -36,8 +37,8 @@
                             <p class="text-muted mb-0">Quản trị viên</p>
                         </div>
                     </div>
-                    <a class="dropdown-item" href="hosocuatoi.html">Hồ Sơ Của Tôi</a>
-                    <a class="dropdown-item" href="login.html">Logout</a>
+                    <a class="dropdown-item" href="hosocuatoi.jsp">Hồ Sơ Của Tôi</a>
+                    <a class="dropdown-item" href="../views/pages/dangnhap.jsp">Logout</a>
                 </div>
             </li>
         </ul>
@@ -48,11 +49,11 @@
         <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
-                    <li><a href="trangchu.html"><i class="fa-solid fa-house"></i> <span>Trang chủ</span></a></li>
+                    <li><a href="trangchu.jsp"><i class="fa-solid fa-house"></i> <span>Trang chủ</span></a></li>
                     <li class="list-divider"></li>
-                    <li><a href="hoatuoi.html"><i class="fas fa-seedling"></i> <span>Hoa Tươi</span></a></li>
-                    <li><a href="donhang.html"><i class="fas fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
-                    <li><a href="khachhang.html"><i class="fas fa-user"></i> <span>Người dùng</span></a></li>
+                    <li><a href="hoatuoi.jsp"><i class="fas fa-seedling"></i> <span>Hoa Tươi</span></a></li>
+                    <li><a href="donhang.jsp"><i class="fas fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
+                    <li><a href="khachhang.jsp"><i class="fas fa-user"></i> <span>Người dùng</span></a></li>
                 </ul>
             </div>
         </div>
@@ -189,7 +190,7 @@
                     <td>${order.productName}</td>
                     <td>${order.quantity}</td>
                     <td>${order.totalPrice.toFixed(2)} VNĐ</td>
-                    <td>${new Date(order.orderDate).toLocaleDateString()}</td>
+                    <td>${Date(order.orderDate).toLocaleDateString()}</td>
                     <td>${order.orderStatus}</td>
                     <td class="text-right">
                         <button class="btn btn-sm btn-info" onclick="editOrder(${order.id})">Sửa</button>
