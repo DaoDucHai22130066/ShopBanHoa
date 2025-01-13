@@ -16,7 +16,7 @@ function addToCart(event) {
     const button = event.target;
     const productName = button.getAttribute('data-product-name');
     const productPrice = button.getAttribute('data-product-price');
-    const productImg = button.getAttribute('data-product-img');
+    const productImg = button.getAttribute('data-product-img').replace('../../', ''); // Loại bỏ ../../ nếu cần
     const productId = button.getAttribute('data-product-id');
 
     // Lấy giỏ hàng từ localStorage hoặc khởi tạo giỏ hàng mới nếu chưa có

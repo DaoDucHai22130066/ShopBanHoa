@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 </head>
 <body>
 <!-- Header -->
@@ -76,7 +76,7 @@
                     </h5>
                     <p class="product-price">300,000đ</p>
                     <a href="#" class="btn btn-buy add-to-cart" data-product-name="Kiss Me" data-product-price="350000"
-                       data-product-img="images/san-pham.webp" data-product-id="BOUQUET-10001">Thêm Giỏ</a>
+                       data-product-img="../../images/san-pham.webp" data-product-id="BOUQUET-10001">Thêm Giỏ</a>
                     <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
@@ -473,7 +473,7 @@
 
 <button id="scrollToTopBtn" title="Cuộn lên đầu trang">↑</button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../../../../ShopBanHoa/src/main/webapp/jsopBanHoa/src/main/webapp/js/index.js"></script>
-<script src=""></script>
+<script src="../../js/index.js"></script>
+<script src="../../js/themgio.js"></script>
 </body>
 </html>

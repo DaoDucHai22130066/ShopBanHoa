@@ -1,0 +1,23 @@
+Index: .idea/webContexts.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"WebContextManager\">\n    <option name=\"state\">\n      <map>\n        <entry key=\"file://$PROJECT_DIR$/src/main/webapp/header.jsp\" value=\"file://$PROJECT_DIR$/src/main/webapp\" />\n        <entry key=\"file://$PROJECT_DIR$/src/main/webapp/hoa-sinh-nhat-cao-cap.jsp\" value=\"file://$PROJECT_DIR$/src/main/webapp\" />\n        <entry key=\"file://$PROJECT_DIR$/src/main/webapp/index.jsp\" value=\"file://$PROJECT_DIR$/src/main/webapp\" />\n        <entry key=\"file://$PROJECT_DIR$/src/main/webapp/thanh-toan.jsp\" value=\"file://$PROJECT_DIR$/src/main/webapp\" />\n      </map>\n    </option>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/webContexts.xml b/.idea/webContexts.xml
+--- a/.idea/webContexts.xml	(revision 913576beed9aa385396563013cc1b569fd57106a)
++++ b/.idea/webContexts.xml	(date 1736738740469)
+@@ -3,10 +3,7 @@
+   <component name="WebContextManager">
+     <option name="state">
+       <map>
+-        <entry key="file://$PROJECT_DIR$/src/main/webapp/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+-        <entry key="file://$PROJECT_DIR$/src/main/webapp/hoa-sinh-nhat-cao-cap.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+-        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+-        <entry key="file://$PROJECT_DIR$/src/main/webapp/thanh-toan.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
++        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/pages/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/pages" />
+       </map>
+     </option>
+   </component>
+diff --git a/src/main/webapp/404.jsp b/src/main/webapp/views/pages/404.jsp
+rename from src/main/webapp/404.jsp
+rename to src/main/webapp/views/pages/404.jsp
