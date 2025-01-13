@@ -19,9 +19,9 @@ function updateCart() {
     <td class="text-center">
         <input type="checkbox" class="select-product" data-product-id="${item.productId}" />
     </td>
-    <td class="text-center">
-        <img src="${item.productImg}" alt="${item.productName}" class="img-thumbnail" />
-    </td>
+<td class="text-center">
+    <img src="${item.productImg}" alt="${item.productName}" class="img-thumbnail" onerror="this.src='fallback-image.jpg'" />
+</td>
     <td class="text-start">${item.productName}</td>
     <td class="text-start">${item.productId}</td>
     <td class="text-start">

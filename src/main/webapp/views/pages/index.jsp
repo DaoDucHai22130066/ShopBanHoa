@@ -76,7 +76,7 @@
                     </h5>
                     <p class="product-price">300,000đ</p>
                     <a href="#" class="btn btn-buy add-to-cart" data-product-name="Kiss Me" data-product-price="350000"
-                       data-product-img="images/san-pham.webp" data-product-id="BOUQUET-10001">Thêm Giỏ</a>
+                       data-product-img="../../images/san-pham.webp" data-product-id="BOUQUET-10001">Thêm Giỏ</a>
                     <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
