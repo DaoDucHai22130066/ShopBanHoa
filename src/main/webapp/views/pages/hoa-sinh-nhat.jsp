@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hoa Sinh Nhật</title>
-  <link rel="icon" href="images/icon-logo.png" type="image/png">
+  <link rel="icon" href="../../images/icon-logo.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- FontAwesome CSS -->
@@ -62,6 +62,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Custom JS -->
 <script src="../../js/hoa-sinh-nhat-cao-cap.js"></script>
+<script src="../../js/themgio.js"></script>
 </body>
 
 </html>
