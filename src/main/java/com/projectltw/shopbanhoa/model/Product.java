@@ -20,6 +20,13 @@ public class Product {
     public Product() {
     }
 
+    public Product(int productId, String productName, String imagePath, String description, BigDecimal unitPrice) {
+        this.productId = productId;
+        this.productName = productName;
+        this.imagePath = imagePath;
+        this.description = description;
+        this.unitPrice = unitPrice;
+    }
     public Product(int productId, String productName, String description, BigDecimal unitPrice, int categoryId,
                    String categoryName, String imagePath, BigDecimal discountValue, int quantity,
                    Date updatedAt, Date createdAt) {

@@ -10,35 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a80c95f-01a0-458a-88de-a05043d6eeba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/CategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/TestConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/donhang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/hoatuoi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/hosocuatoi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/khachhang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/trangchu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/model/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/service/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/service/ServiceProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/DataBaseConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/DataBaseConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/donhang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/hoatuoi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/hosocuatoi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/khachhang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/trangchu.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/hoa-sinh-nhat-cao-cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/hoa-sinh-nhat-cao-cap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/thanh-toan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/thanh-toan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/Gioi-thieu-trang-web.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/Gioi-thieu-trang-web.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/chi-tiet-sp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/chi-tiet-sp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +79,7 @@
     "git-widget-placeholder": "DaoDucHai__22130066",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hp/Desktop/Project_banhang",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -279,7 +262,7 @@
       <workItem from="1736767487014" duration="2985000" />
       <workItem from="1736771619744" duration="400000" />
       <workItem from="1736772253312" duration="3920000" />
-      <workItem from="1736780208996" duration="27063000" />
+      <workItem from="1736780208996" duration="46956000" />
     </task>
     <servers />
   </component>

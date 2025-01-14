@@ -18,6 +18,24 @@
 <!-- Header -->
 <jsp:include page="../layout/header.jsp"/>
 
+<%@page import="java.util.List"%>
+<%@page import="com.projectltw.shopbanhoa.model.Product"%>
+<%@page import="com.projectltw.shopbanhoa.service.ServiceProduct"%>
+
+<%
+    List<Product> products = ServiceProduct.getTopDiscountedProducts();
+    for (Product product : products) {
+        System.out.println(product);
+    }
+    request.setAttribute("products", products);
+%>
+
+<%
+    Product product = ServiceProduct.getSingleProduct();
+    request.setAttribute("product", product);
+%>
+
+
 <!-- Carousel quảng cáo -->
 <div class="container">
     <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -58,72 +76,30 @@
         </button>
     </div>
 </div>
-
-<!-- Sản phẩm đang giảm giá -->
 <div class="container">
     <h2 class="section-title">Đang Giảm Giá</h2>
     <div class="row">
-        <!-- Sản phẩm 1 -->
-        <div class="col-md-3">
-            <div class="card product-card">
-                <a href="chi-tiet-sp.jsp">
-                    <img src="../../images/san-pham.webp" class="card-img-top" alt="Hoa 1" />
-                </a>
-                <div class="card-body">
-                    <div class="sale-badge">Giảm 30%</div>
-                    <h5 class="product-name">
-                        <a href="chi-tiet-sp.jsp">Kiss Me</a>
-                    </h5>
-                    <p class="product-price">300,000đ</p>
-                    <a href="#" class="btn btn-buy add-to-cart" data-product-name="Kiss Me" data-product-price="350000"
-                       data-product-img="../../images/san-pham.webp" data-product-id="BOUQUET-10001">Thêm Giỏ</a>
-                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
+        <c:forEach var="product" items="${discountedProducts}">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <a href="chi-tiet-sp.jsp">
+                        <img src="${product.imagePath}" class="card-img-top" alt="${product.productName}" />
+                    </a>
+                    <div class="card-body">
+                        <div class="sale-badge">Giảm 30%</div>
+                        <h5 class="product-name">
+                            <a href="chi-tiet-sp.jsp">${product.productName}</a>
+                        </h5>
+                        <p class="product-price">${product.unitPrice}đ</p>
+                        <a href="#" class="btn btn-buy add-to-cart">Thêm Giỏ</a>
+                        <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Sản phẩm 2 -->
-        <div class="col-md-3">
-            <div class="card product-card">
-                <img src="../../images/san-pham-2.jpg" class="card-img-top" alt="Hoa 2" />
-
-                <div class="card-body">
-                    <div class="sale-badge">Giảm 30%</div>
-                    <h5 class="product-name">Infallible</h5>
-                    <p class="product-price">350,000đ</p>
-                    <a href="#" class="btn btn-buy add-to-cart" data-product-name="Infallible" data-product-price="350000"
-                       data-product-img="images/san-pham.webp" data-product-id="BOUQUET-10002">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card product-card">
-                <img src="../../images/san-pham-3.jpg" class="card-img-top" alt="Hoa 2" />
-
-                <div class="card-body">
-                    <div class="sale-badge">Giảm 30%</div>
-                    <h5 class="product-name">Infallible</h5>
-                    <p class="product-price">350,000đ</p>
-                    <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card product-card">
-                <img src="../../images/san-pham-4.webp" class="card-img-top" alt="Hoa 2" />
-
-                <div class="card-body">
-                    <div class="sale-badge">Giảm 30%</div>
-                    <h5 class="product-name">Infallible</h5>
-                    <p class="product-price">350,000đ</p>
-                    <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
-                </div>
-            </div>
-        </div>
+        </c:forEach>
     </div>
 </div>
+
 
 <!-- Sản phẩm đặt nhiều nhất -->
 <div class="container">
@@ -138,7 +114,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -150,7 +126,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -163,7 +139,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -176,7 +152,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -197,7 +173,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -210,7 +186,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -223,7 +199,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -236,7 +212,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -256,7 +232,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -269,7 +245,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -282,7 +258,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -295,7 +271,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -315,7 +291,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -327,7 +303,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -340,7 +316,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -353,7 +329,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -371,7 +347,7 @@
                     <h5 class="product-name">Your Day</h5>
                     <p class="product-price">400,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -383,7 +359,7 @@
                     <h5 class="product-name">Pink Moon</h5>
                     <p class="product-price">450,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -396,7 +372,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>
@@ -409,7 +385,7 @@
                     <h5 class="product-name">Infallible</h5>
                     <p class="product-price">350,000đ</p>
                     <a href="#" class="btn btn-buy">Thêm Giỏ</a>
-                    <a href="#" class="btn btn-buy">Đặt Nhanh</a>
+                    <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt Nhanh</a>
                 </div>
             </div>
         </div>

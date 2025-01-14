@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDAO {
-    private Connection conn;
+    private Connection conn = null;
     public ProductDAO() {
         try {
             // Lấy kết nối từ lớp DataBaseConnect
@@ -25,47 +25,26 @@ public class ProductDAO {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        String categoryIdParam = request.getParameter("category_id");
-        if (categoryIdParam != null) {
-            try {
-                int categoryId = Integer.parseInt(categoryIdParam);
-                ProductDAO productDAO = new ProductDAO();
-                List<Product> products = productDAO.getProductsByCategory(categoryId);
-                request.setAttribute("products", products);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        request.getRequestDispatcher("/views/pages/hoa-sinh-nhat.jsp").forward(request, response);
-    }
-
-    public List<Product> getProductsByCategory(int categoryId) {
+    public List<Product> getTopDiscountedProducts() {
         List<Product> products = new ArrayList<>();
-        String query = "SELECT p.product_id, p.product_name, p.description, p.unit_price, i.path AS image_path " +
-                "FROM products p " +
-                "JOIN images i ON p.image_id = i.image_id " +
-                "WHERE p.category_id = ?";
-        try (Connection conn = DataBaseConnect.getConnection();
-             PreparedStatement ps = conn.prepareStatement(query)) {
-            ps.setInt(1, categoryId);
-            ResultSet rs = ps.executeQuery();
+        try (Connection connection = DataBaseConnect.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM products WHERE discount_id IS NOT NULL LIMIT 4");
+             ResultSet rs = statement.executeQuery()) {
             while (rs.next()) {
-                Product product = new Product();
-                product.setProductId(rs.getInt("product_id"));
-                product.setProductName(rs.getString("product_name"));
-                product.setDescription(rs.getString("description"));
-                product.setUnitPrice(rs.getBigDecimal("unit_price"));
-                product.setImagePath(rs.getString("image_path"));
+                Product product = new Product(
+                        rs.getInt("product_id"),
+                        rs.getString("product_name"),
+                        rs.getString("image_id"),
+                        rs.getString("description"),
+                        rs.getBigDecimal("unit_price")
+                );
                 products.add(product);
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return products;
     }
-
 
 
     public String getCategoryNameById(String categoryId) {

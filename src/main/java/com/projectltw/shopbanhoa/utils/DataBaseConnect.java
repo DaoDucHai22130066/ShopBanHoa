@@ -23,4 +23,13 @@ public class DataBaseConnect {
         }
         return conn;
     }
+
+    public static void main(String[] args) {
+        try {
+            System.out.println(new DataBaseConnect().getConnection());
+
+        } catch (Exception e) {
+
+        }
+    }
 }
