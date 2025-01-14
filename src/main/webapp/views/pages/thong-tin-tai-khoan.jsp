@@ -30,10 +30,10 @@
     <div class="col-md-3">
       <div class="sidebar">
         <h4>TÀI KHOẢN</h4>
-        <a href="thong-tin-tai-khoan.jsp">Thông tin tài khoản</a>
-        <a href="doimatkhau.jsp">Đổi mật khẩu</a>
-        <a href="trangthaidonhang.jsp">Trạng thái đơn hàng</a>
-        <a href="lich-su-don-hang.jsp">Xem lịch sử mua hàng</a>
+        <a href="../../views/pages/thong-tin-tai-khoan.jsp">Thông tin tài khoản</a>
+        <a href="../../views/pages/doimatkhau.jsp">Đổi mật khẩu</a>
+        <a href="../../views/pages/trangthaidonhang.jsp">Trạng thái đơn hàng</a>
+        <a href="../../views/pages/lich-su-don-hang.jsp">Xem lịch sử mua hàng</a>
         <a href="#" id="logoutBtn">Đăng xuất</a>
       </div>
     </div>
