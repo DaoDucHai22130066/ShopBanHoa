@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: hp
+  Date: 1/13/2025
+  Time: 7:46 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +24,7 @@
 <div class="main-wrapper">
     <div class="header">
         <div class="header-left">
-            <a href="trangchu.html" class="logo">
+            <a href="trangchu.jsp" class="logo">
                 <img src="assets/img/logo.png" width="50" height="70" alt="logo">
                 <span class="logoclass">Bloom & Shine</span>
             </a>
@@ -36,8 +44,8 @@
                             <p class="text-muted mb-0">Quản trị viên</p>
                         </div>
                     </div>
-                    <a class="dropdown-item" href="hosocuatoi.html">Hồ Sơ Của Tôi</a>
-                    <a class="dropdown-item" href="login.html">Logout</a>
+                    <a class="dropdown-item" href="hosocuatoi.jsp">Hồ Sơ Của Tôi</a>
+                    <a class="dropdown-item" href="../views/pages/dangnhap.jsp">Logout</a>
                 </div>
             </li>
         </ul>
@@ -48,11 +56,11 @@
         <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
-                    <li><a href="trangchu.html"><i class="fa-solid fa-house"></i> <span>Trang chủ</span></a></li>
+                    <li><a href="trangchu.jsp"><i class="fa-solid fa-house"></i> <span>Trang chủ</span></a></li>
                     <li class="list-divider"></li>
-                    <li><a href="hoatuoi.html"><i class="fas fa-seedling"></i> <span>Hoa Tươi</span></a></li>
-                    <li><a href="donhang.html"><i class="fas fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
-                    <li><a href="khachhang.html"><i class="fas fa-user"></i> <span>Người dùng</span></a></li>
+                    <li><a href="hoatuoi.jsp"><i class="fas fa-seedling"></i> <span>Hoa Tươi</span></a></li>
+                    <li><a href="donhang.jsp"><i class="fas fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
+                    <li><a href="khachhang.jsp"><i class="fas fa-user"></i> <span>Người dùng</span></a></li>
                 </ul>
             </div>
         </div>
@@ -183,7 +191,7 @@
                     <td>${flower.price.toLocaleString()} VNĐ</td>
                     <td>${flower.quantity}</td>
                     <td>${flower.description}</td>
-                    <td>${flower.status === 'available' ? '<span class="badge badge-success">Có sẵn</span>' : '<span class="badge badge-danger">Hết hàng</span>'}</td>
+                    <td>${flower.status == 'available' ? '<span class="badge badge-success">Có sẵn</span>' : '<span class="badge badge-danger">Hết hàng</span>'}</td>
                     <td class="text-right">
                         <button class="btn btn-sm btn-info" onclick="editFlower(${flower.id})">Sửa</button>
                                                 <button class="btn btn-sm btn-danger" onclick="deleteFlower(${flower.id})">Xóa</button>

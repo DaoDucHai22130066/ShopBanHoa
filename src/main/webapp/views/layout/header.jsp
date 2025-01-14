@@ -72,93 +72,91 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../hoa-sinh-nhat.jsp" id="navbarDropdown1" role="button">
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=1" id="navbarDropdown1" role="button">
                             Hoa Sinh Nhật
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Cao Cấp</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Giá Rẻ</a></li>
-                            <li><a class="dropdown-item" href="../hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Tặng Mẹ</a></li>
-                            <li><a class="dropdown-item" href="../hoa-sinh-nhat-cao-cap.jsp">Hoa Sinh Nhật Tặng Người Yêu</a></li>
-                            <li><a class="dropdown-item" href="../hoa-sinh-nhat-cao-cap.jsp">Lẵng Hoa Sinh Nhật</a></li>
-                            <li><a class="dropdown-item" href="../hoa-sinh-nhat-cao-cap.jsp">Giỏ Hoa Sinh Nhật</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=2">Hoa Sinh Nhật Cao Cấp</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=3">Hoa Sinh Nhật Giá Rẻ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=4">Hoa Sinh Nhật Tặng Mẹ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=5">Hoa Sinh Nhật Tặng Người Yêu</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=6">Lẵng Hoa Sinh Nhật</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=7">Giỏ Hoa Sinh Nhật</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../hoa-sinh-nhat.jsp" id="navbarDropdown2" role="button">
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=8" id="navbarDropdown2" role="button">
                             Hoa Khai Trương
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lẵng Hoa Khai Trương 2 Tầng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Để Bàn</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Kệ Hoa Khai Trương</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Cao Cấp</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Khai Trương Giá Rẻ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=9">Lẵng Hoa Khai Trương 2 Tầng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=10">Hoa Khai Trương Để Bàn</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=11">Kệ Hoa Khai Trương</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=12">Hoa Khai Trương Cao Cấp</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=13">Hoa Khai Trương Giá Rẻ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../hoa-sinh-nhat.jsp" id="navbarDropdown3" role="button">
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=48" id="navbarDropdown3" role="button">
                             Lan Hồ Điệp
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Nhỏ</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Vàng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Trắng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Tím</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jspl">Lan Hồ Điệp Sọc</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp Đốm</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Chậu Lan Hồ Điệp 3 cành</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Chậu Lan Hồ Điệp 5 cành</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Chậu Lan Hồ Điệp 10 cành</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=14">Lan Hồ Điệp Nhỏ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=15">Lan Hồ Điệp Vàng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=16">Lan Hồ Điệp Trắng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=17">Lan Hồ Điệp Tím</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=18">Lan Hồ Điệp Sọc</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=19">Lan Hồ Điệp Đốm</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=20">Chậu Lan Hồ Điệp 3 cành</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=21">Chậu Lan Hồ Điệp 5 cành</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=22">Chậu Lan Hồ Điệp 10 cành</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp" id="navbarDropdown4" role="button">
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=49" id="navbarDropdown4" role="button">
                             Chủ Đề
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Chúc Mừng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Cưới</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Chia Buồn</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Valentine</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Kỷ Niệm</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa 8/3</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa 20/10</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa 20/11 - Ngày Nhà Giáo</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Tặng Mẹ</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Tốt Nghiệp</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Tặng Mẹ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=23">Hoa Chúc Mừng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=24">Hoa Cưới</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=25">Hoa Chia Buồn</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=26">Hoa Valentine</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=27">Hoa Kỷ Niệm</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=28">Hoa 8/3</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=29">Hoa 20/10</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=30">Hoa 20/11 - Ngày Nhà Giáo</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=31">Hoa Tặng Mẹ</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=32">Hoa Tốt Nghiệp</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp" id="navbarDropdown5" role="button">Thiết Kế</a>
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=50" id="navbarDropdown5" role="button">Thiết Kế</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lẵng Hoa</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Giỏ Hoa</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Kệ Hoa</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Bình Hoa</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Bó Hoa</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=33">Lẵng Hoa</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=34">Giỏ Hoa</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=35">Kệ Hoa</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=36">Bình Hoa</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=37">Bó Hoa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp" id="navbarDropdown6" role="button">
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=51" id="navbarDropdown6" role="button">
                             Hoa Tươi
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Hồng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Hướng Dương</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Lan Hồ Điệp</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Mẫu Đơn</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Tulip</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Sen</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Đồng Tiền</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Cẩm Chướng</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Cẩm Tú Cầu</a></li>
-                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat-cao-cap.jsp">Hoa Ly</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=38">Hoa Hồng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=39">Hoa Hướng Dương</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=41">Hoa Mẫu Đơn</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=42">Hoa Tulip</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=43">Hoa Sen</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=44">Hoa Đồng Tiền</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=45">Hoa Cẩm Chướng</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=46">Cẩm Tú Cầu</a></li>
+                            <li><a class="dropdown-item" href="../pages/hoa-sinh-nhat.jsp?category_id=47">Hoa Ly</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hoa Tươi Giảm 30%</a>
+                        <a class="nav-link" href="../pages/hoa-sinh-nhat.jsp?category_id=52">Hoa Tươi Giảm 30%</a>
                     </li>
                 </ul>
             </div>

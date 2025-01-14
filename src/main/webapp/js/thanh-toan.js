@@ -34,7 +34,7 @@ confirmOrderButton.addEventListener('click', () => {
     if (!confirmOrderButton.disabled) {
         // Ví dụ: Hiển thị thông báo và tải lại trang
         alert('Đơn hàng của bạn đã được xác nhận!');
-        window.location.href = "index.html"; // Tải lại trang
+        window.location.href = "index.jsp"; // Tải lại trang
     }
 });
 

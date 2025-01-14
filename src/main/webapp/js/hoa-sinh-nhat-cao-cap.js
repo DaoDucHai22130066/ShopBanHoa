@@ -31,20 +31,40 @@ const products = [
     { id: "BOUQUET-10018", name: "Lotus", price: "400,000đ", image: "../../images/san-pham-4.webp", sale: "Giảm 20%" },
     { id: "BOUQUET-10019", name: "Tulip 2", price: "280,000đ", image: "../../images/san-pham-2.jpg", sale: "Giảm 10%" },
     { id: "BOUQUET-10020", name: "Chrysanthemum", price: "230,000đ", image: "../../images/sanpham16.webp", sale: "Giảm 5%" },
-    { name: "Lilac", price: "300,000đ", image: "../../images/sanpham18.webp", sale: "Giảm 25%" },
-    { name: "Iris", price: "270,000đ", image: "../../images/sanpham19.webp", sale: "Giảm 10%" },
-    { name: "Violet", price: "350,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" },
-    { name: "Jasmine", price: "400,000đ", image: "../../images/sanpham7.webp", sale: "Giảm 20%" },
-    { name: "Carnation", price: "320,000đ", image: "../../images/sanpham20.webp", sale: "Giảm 30%" },
-    { name: "Magnolia", price: "500,000đ", image: "../../images/sanpham16.webp", sale: "Giảm 5%" },
-    { name: "Hydrangea", price: "350,000đ", image: "../../images/sanpham8.webp", sale: "Giảm 25%" },
-    { name: "Freesia", price: "280,000đ", image: "../../images/sanpham24.webp", sale: "Giảm 10%" },
-    { name: "Zinnia", price: "230,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" }
+    { id: "BOUQUET-10021", name: "Lilac", price: "300,000đ", image: "../../images/sanpham18.webp", sale: "Giảm 25%" },
+    { id: "BOUQUET-10022", name: "Iris", price: "270,000đ", image: "../../images/sanpham19.webp", sale: "Giảm 10%" },
+    { id: "BOUQUET-10023", name: "Violet", price: "350,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" },
+    { id: "BOUQUET-10024", name: "Jasmine", price: "400,000đ", image: "../../images/sanpham7.webp", sale: "Giảm 20%" },
+    { id: "BOUQUET-10025", name: "Carnation", price: "320,000đ", image: "../../images/sanpham20.webp", sale: "Giảm 30%" },
+    { id: "BOUQUET-10026", name: "Magnolia", price: "500,000đ", image: "../../images/sanpham16.webp", sale: "Giảm 5%" },
+    { id: "BOUQUET-10027", name: "Hydrangea", price: "350,000đ", image: "../../images/sanpham8.webp", sale: "Giảm 25%" },
+    { id: "BOUQUET-10028", name: "Freesia", price: "280,000đ", image: "../../images/sanpham24.webp", sale: "Giảm 10%" },
+    { id: "BOUQUET-10029", name: "Zinnia", price: "230,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" },
+    { id: "BOUQUET-10030", name: "Kiss Me", price: "300,000đ", image: "../../images/san-pham.webp", sale: "Giảm 30%" },
+    { id: "BOUQUET-10031", name: "Rose", price: "250,000đ", image: "../../images/san-pham-3.jpg", sale: "Giảm 20%" },
+    { id: "BOUQUET-10032", name: "Lily", price: "180,000đ", image: "../../images/sanpham14.webp", sale: "Giảm 10%" },
+    { id: "BOUQUET-10033", name: "Tulip", price: "220,000đ", image: "../../images/sanpham10.webp", sale: "Giảm 15%" },
+    { id: "BOUQUET-10034", name: "Sunflower", price: "350,000đ", image: "../../images/sanpham12.webp", sale: "Giảm 25%" },
+    { id: "BOUQUET-10035", name: "Daisy", price: "200,000đ", image: "../../images/sanpham14.webp", sale: "Giảm 30%" },
+    { id: "BOUQUET-10036", name: "Orchid", price: "270,000đ", image: "../../images/sanpham15.webp", sale: "Giảm 5%" },
+    { id: "BOUQUET-10037", name: "Peony", price: "320,000đ", image: "../../images/sanpham11.webp", sale: "Giảm 15%" },
+    { id: "BOUQUET-10038", name: "Lotus", price: "400,000đ", image: "../../images/san-pham-4.webp", sale: "Giảm 20%" },
+    { id: "BOUQUET-10039", name: "Tulip 2", price: "280,000đ", image: "../../images/san-pham-2.jpg", sale: "Giảm 10%" },
+    { id: "BOUQUET-10040", name: "Chrysanthemum", price: "230,000đ", image: "../../images/sanpham16.webp", sale: "Giảm 5%" },
+    { id: "BOUQUET-10041", name: "Lilac", price: "300,000đ", image: "../../images/sanpham18.webp", sale: "Giảm 25%" },
+    { id: "BOUQUET-10042", name: "Iris", price: "270,000đ", image: "../../images/sanpham19.webp", sale: "Giảm 10%" },
+    { id: "BOUQUET-10043", name: "Violet", price: "350,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" },
+    { id: "BOUQUET-10044", name: "Jasmine", price: "400,000đ", image: "../../images/sanpham7.webp", sale: "Giảm 20%" },
+    { id: "BOUQUET-10045", name: "Carnation", price: "320,000đ", image: "../../images/sanpham20.webp", sale: "Giảm 30%" },
+    { id: "BOUQUET-10046", name: "Magnolia", price: "500,000đ", image: "../../images/sanpham16.webp", sale: "Giảm 5%" },
+    { id: "BOUQUET-10047", name: "Hydrangea", price: "350,000đ", image: "../../images/sanpham8.webp", sale: "Giảm 25%" },
+    { id: "BOUQUET-10048", name: "Freesia", price: "280,000đ", image: "../../images/sanpham24.webp", sale: "Giảm 10%" },
+    { id: "BOUQUET-10049", name: "Zinnia", price: "230,000đ", image: "../../images/sanpham13.webp", sale: "Giảm 15%" }
 ];
 
 // Tạo thanh phân trang
 function createPagination(currentPage) {
-    const itemsPerPage = 16;
+    const itemsPerPage = 12;
     const totalPages = 21;
     const paginationContainer = document.getElementById("pagination");
 
@@ -124,7 +144,7 @@ function changePage(pageNumber) {
              data-product-name="${product.name}"
              data-product-price="${product.price.replace(',', '').replace('đ', '')}"
              data-product-img="${product.image}">Thêm Giỏ</a>
-          <a href="chi-tiet-sp.html" class="btn btn-buy">Đặt nhanh</a>
+          <a href="chi-tiet-sp.jsp" class="btn btn-buy">Đặt nhanh</a>
         </div>
       </div>
     `;

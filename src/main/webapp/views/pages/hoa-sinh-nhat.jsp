@@ -1,11 +1,36 @@
+<%@ page import="com.projectltw.shopbanhoa.model.Product" %>
+<%@ page import="java.awt.*" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.projectltw.shopbanhoa.model.Category" %>
+<%@ page import="com.projectltw.shopbanhoa.dao.CategoryDAO" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%
+  String categoryIdParam = request.getParameter("category_id");
+  System.out.println("Received category_id: " + categoryIdParam);
+
+  Category category = null;
+  if (categoryIdParam != null) {
+    try {
+      int categoryId = Integer.parseInt(categoryIdParam);
+      CategoryDAO categoryDAO = new CategoryDAO();
+      category = categoryDAO.getCategoryById(categoryId);
+      System.out.println("Category from DAO: " + (category != null ? category.getName() : "null")); // Log kết quả từ DAO
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+%>
+
+
 <!DOCTYPE html>
 <html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hoa Sinh Nhật</title>
+  <title><%= (category != null) ? category.getName() : "Danh mục không tồn tại" %></title>
   <link rel="icon" href="../../images/icon-logo.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -20,7 +45,7 @@
 <jsp:include page="../layout/header.jsp" />
 
 <div class="container">
-  <h2 class="section-title">Hoa Sinh Nhật</h2>
+  <h2 class="section-title"><%= (category != null) ? category.getName() : "Danh mục không tồn tại" %></h2>
   <div class="sort-bar">
     <div class="view-options">
       <i class="fa fa-th"></i>
@@ -42,7 +67,34 @@
 
 <main>
   <div class="container product-section">
-    <div class="row" id="product-list"></div>
+    <div class="row" id="product-list">
+      <%
+        List<Product> products = (List<Product>) request.getAttribute("products");
+        if (products != null && !products.isEmpty()) {
+          for (Product product : products) {
+
+      %>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="<%= product.getImagePath() %>" class="card-img-top" alt="<%= product.getProductName() %>">
+          <div class="card-body">
+            <h5 class="card-title"><%= product.getProductName() %></h5>
+            <p class="card-text"><%= product.getDescription() %></p>
+            <p class="card-text text-danger">Giá: <%= product.getUnitPrice() %> VND</p>
+            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+          </div>
+        </div>
+      </div>
+      <%
+        }
+      } else {
+      %>
+      <p class="text-center">Không có sản phẩm nào trong danh mục này.</p>
+      <%
+        }
+      %>
+    </div>
+
   </div>
 
   <div id="pagination" class="pagination"></div>

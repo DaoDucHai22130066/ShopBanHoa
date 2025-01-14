@@ -68,7 +68,7 @@
           hàng nhanh chóng, chúng tôi đã mở rộng hệ thống cửa hàng trên toàn quốc.</p>
       </div>
       <div class="col-md-6">
-        <img src="images/lichsuhinhthanh.jpg" alt="History" class="img-fluid rounded shadow">
+        <img src="../../images/lichsuhinhthanh.jpg" alt="History" class="img-fluid rounded shadow">
       </div>
     </div>
   </section>
@@ -112,7 +112,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card quality-card">
-          <img src="images/hoatuoilaudai.jpeg" class="card-img-top" alt="Quality 1">
+          <img src="../../images/hoatuoilaudai.jpg" class="card-img-top" alt="Quality 1">
           <div class="card-body">
             <h5 class="card-title">Hoa tươi lâu dài</h5>
             <p class="card-text">Chúng tôi đảm bảo hoa của bạn sẽ tươi lâu, giữ được vẻ đẹp tự nhiên

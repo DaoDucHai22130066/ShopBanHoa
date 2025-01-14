@@ -10,8 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a80c95f-01a0-458a-88de-a05043d6eeba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/TestConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/donhang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/hoatuoi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/hosocuatoi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/khachhang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Admin/trangchu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/dao/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/DataBaseConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectltw/shopbanhoa/utils/DataBaseConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/donhang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/hoatuoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/hosocuatoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/khachhang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Admin/trangchu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/hoa-sinh-nhat-cao-cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/hoa-sinh-nhat-cao-cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/thanh-toan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/thanh-toan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/layout/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/Gioi-thieu-trang-web.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/Gioi-thieu-trang-web.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/pages/hoa-sinh-nhat.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -47,22 +76,43 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2rZWx43CX9rBlsP7OaOYWxn08Ju" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TestConnection.executor": "Run",
     "JavaScript Debug.header.jsp.executor": "Run",
+    "JavaScript Debug.hoa-sinh-nhat.jsp.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Smart Tomcat.Tomcat: ShopBanHoa.executor": "Debug",
     "Tomcat Server.Tomcat 10.1.31.executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
     "git-widget-placeholder": "DaoDucHai__22130066",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Desktop\ShopHoa\src\main\webapp\views\pages" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.projectltw.shopbanhoa.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +122,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.31">
+    <configuration name="TestConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.projectltw.shopbanhoa.utils.TestConnection" />
+      <module name="ShopBanHoa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.projectltw.shopbanhoa.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hoa-sinh-nhat.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ShopBanHoa_war_exploded/views/pages/hoa-sinh-nhat.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -160,8 +226,64 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Tomcat: ShopBanHoa" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="" />
+      <option name="contextPath" value="/ShopBanHoa" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.31" />
+          <option name="path" value="$USER_HOME$/Downloads/apache-tomcat-10.1.31-windows-x64/apache-tomcat-10.1.31" />
+          <option name="version" value="10.1.31.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.hoa-sinh-nhat.jsp" />
+        <item itemvalue="Application.TestConnection" />
+        <item itemvalue="Smart Tomcat.Tomcat: ShopBanHoa" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a80c95f-01a0-458a-88de-a05043d6eeba" name="Changes" comment="" />
+      <created>1736767328688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736767328688</updated>
+      <workItem from="1736767331334" duration="145000" />
+      <workItem from="1736767487014" duration="2985000" />
+      <workItem from="1736771619744" duration="400000" />
+      <workItem from="1736772253312" duration="3920000" />
+      <workItem from="1736780208996" duration="27063000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
