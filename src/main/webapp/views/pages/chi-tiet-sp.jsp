@@ -100,7 +100,7 @@
                 </div>
                 <div class="product-name">Mã Hồng</div>
                 <div class="product-price">920,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -110,7 +110,7 @@
                 </div>
                 <div class="product-name">Ngày Ngọt Ngào</div>
                 <div class="product-price">1,010,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="product-name">Cầu Vồng</div>
                 <div class="product-price">680,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -130,7 +130,7 @@
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -154,7 +154,7 @@
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -164,7 +164,7 @@
                 </div>
                 <div class="product-name">Đêm Huyền Bí</div>
                 <div class="product-price">800,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -174,7 +174,7 @@
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
-                <a href="hoa-sinh-nhat-cao-cap.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/hoa-sinh-nhat.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -198,7 +198,7 @@
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
-                <a href="hoa-sinh-nhat-cao-cap.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/hoa-sinh-nhat.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@
                 </div>
                 <div class="product-name">Mã Hồng</div>
                 <div class="product-price">920,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -303,7 +303,7 @@
                 </div>
                 <div class="product-name">Ngày Ngọt Ngào</div>
                 <div class="product-price">1,010,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -313,7 +313,7 @@
                 </div>
                 <div class="product-name">Cầu Vồng</div>
                 <div class="product-price">680,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -323,7 +323,7 @@
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
@@ -337,7 +337,7 @@
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -347,7 +347,7 @@
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -357,7 +357,7 @@
                 </div>
                 <div class="product-name">Đêm Huyền Bí</div>
                 <div class="product-price">800,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -367,7 +367,7 @@
                 </div>
                 <div class="product-name">Summer Delight</div>
                 <div class="product-price">660,000VNĐ</div>
-                <a href="chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/chi-tiet-sp.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
@@ -381,7 +381,7 @@
                 </div>
                 <div class="product-name">Hoa Tươi</div>
                 <div class="product-price">750,000VNĐ</div>
-                <a href="hoa-sinh-nhat-cao-cap.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/hoa-sinh-nhat.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -391,7 +391,7 @@
                 </div>
                 <div class="product-name">Hương Đêm</div>
                 <div class="product-price">840,000VNĐ</div>
-                <a href="hoa-sinh-nhat-cao-cap.jsp" class="buy-btn">ĐẶT HÀNG</a>
+                <a href="../../views/pages/hoa-sinh-nhat.jsp" class="buy-btn">ĐẶT HÀNG</a>
               </div>
             </div>
           </div>
