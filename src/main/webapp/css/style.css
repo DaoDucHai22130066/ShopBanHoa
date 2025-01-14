@@ -494,3 +494,19 @@
     color: #ff6f61;
     border: 2px solid #ff6f61;
 }
+.main-header .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.main-header .search-bar input {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.main-header .search-bar button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+}

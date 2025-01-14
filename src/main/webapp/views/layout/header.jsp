@@ -23,12 +23,26 @@
             </div>
 
             <!-- Thanh tìm kiếm -->
-            <div class="search-bar">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+            <div class="main-header search-bar">
+                <form action="search.jsp" method="GET" style="display: flex; align-items: center;">
+                    <input
+                            type="text"
+                            name="query"
+                            placeholder="Tìm kiếm sản phẩm..."
+                            class="form-control"
+                            style="width: 70%; margin-right: 10px;"
+                            required
+                    />
+                    <button
+                            type="submit"
+                            class="btn btn-primary"
+                            style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px;">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
+
+
             <!-- Tài khoản, giỏ hàng, thanh toán -->
 
             <div class="icon-links d-flex align-items-center">
