@@ -415,7 +415,7 @@
                                                    id="input-payment-method-cod"
                                                    class="form-check-input input-payment-method">
                                             <label for="input-payment-method-cod" class="form-check-label">
-                                                <img class="payment-method-icon" src="images/cod.png" />
+                                                <img class="payment-method-icon" src="../../images/cod.png" />
                                                 Thanh toán khi giao hàng
                                                 <span class="payment-brand-icon-cod"></span>
                                             </label>

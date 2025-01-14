@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Thông báo và chuyển hướng
             alert("Đăng ký thành công!");
-            window.location.href = "index.jsp";
+            window.location.href = "../../views/pages/index.jsp";
         });
     }
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ) {
                 localStorage.setItem("isLoggedIn", "true");
                 alert("Đăng nhập thành công!");
-                window.location.href = "index.jsp";
+                window.location.href = "../../views/pages/index.jsp";
             } else {
                 alert("Email hoặc mật khẩu không đúng!");
             }
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("isLoggedIn", "false");
             alert("Đăng xuất thành công!");
             updateDropdown();
-            window.location.href = "index.jsp";
+            window.location.href = "../../views/pages/index.jsp";
         });
     }
 

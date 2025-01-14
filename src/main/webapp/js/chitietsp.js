@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.setItem("selectedItems", JSON.stringify(selectedItems));
 
         // Chuyển đến trang thanh toán
-        window.location.href = "thanh-toan.jsp";
+        window.location.href = "../../views/pages/thanh-toan.jsp";
     });
 });
 

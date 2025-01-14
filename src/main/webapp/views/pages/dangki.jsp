@@ -25,7 +25,7 @@
             <div class="card-body">
                 <h2 class="text-center mb-4">Đăng ký tài khoản</h2>
                 <p class="text-center text-muted">
-                    Nếu bạn đã có tài khoản, vui lòng <a href="dangnhap.jsp">Đăng nhập</a>.
+                    Nếu bạn đã có tài khoản, vui lòng <a href="../../views/pages/dangnhap.jsp">Đăng nhập</a>.
                 </p>
                 <form id="registerForm">
                     <div class="mb-3">

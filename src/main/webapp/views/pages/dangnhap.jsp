@@ -28,7 +28,7 @@
                 <h2 class="text-center mb-4">Đăng Nhập</h2>
                 <p class="text-center text-muted">
                     Nếu bạn chưa có tài khoản, vui lòng
-                    <a href="dangki.jsp">Đăng ký</a>.
+                    <a href="../../views/pages/dangki.jsp">Đăng ký</a>.
                 </p>
                 <form id="loginForm" action="login">
                     <div class="mb-3">
@@ -47,7 +47,7 @@
                 <p class="text-center text-muted">
                     Bạn quên mật khẩu ư? hãy bấm vào đây
                 <p style="text-align: center;">
-                    <a href="quenmatkhau.jsp">Quên mật khẩu</a>.
+                    <a href="../../views/pages/quenmatkhau.jsp">Quên mật khẩu</a>.
                 </p>
                 </p>
 

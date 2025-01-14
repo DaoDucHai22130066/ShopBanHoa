@@ -45,7 +45,7 @@
           <td>1</td>
           <td>100.000đ</td>
           <td>
-            <button class="btn btn-primary"><a href="chi-tiet-sp.html">Mua lại</a></button>
+            <button class="btn btn-primary"><a href="../../views/pages/chi-tiet-sp.jsp">Mua lại</a></button>
           </td>
           <td>
             <button class="btn btn-secondary"><a href="https://www.facebook.com/messages/t/2859679667489525"></a>Liên hệ shop</button>
