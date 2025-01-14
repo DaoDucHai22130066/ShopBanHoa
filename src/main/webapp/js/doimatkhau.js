@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Kiểm tra nếu không có userData thì chuyển hướng về trang đăng nhập
     if (!userData) {
         alert("Bạn chưa đăng nhập. Vui lòng đăng nhập trước.");
-        window.location.href = "login.html"; // Điều hướng đến trang đăng nhập
+        window.location.href = "..//../views/pages/dangnhap.jsp"; // Điều hướng đến trang đăng nhập
     }
 
     // Xử lý đổi mật khẩu
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("userData", JSON.stringify(userData));
 
             alert("Mật khẩu đã được thay đổi thành công!");
-            window.location.href = "index.html"; // Quay về trang chủ sau khi đổi mật khẩu
+            window.location.href = "../../views/pages/index.jsp"; // Quay về trang chủ sau khi đổi mật khẩu
         });
     }
 });
